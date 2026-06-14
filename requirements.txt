@@ -1,0 +1,7 @@
+pandas
+numpy
+openai>=1.0.0
+duckdb
+fastapi
+uvicorn
+python-multipart

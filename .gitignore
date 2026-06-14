@@ -1,0 +1,56 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and local package installs
+.venv/
+venv/
+env/
+.python_packages/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data and generated artifacts
+data/raw/
+artifacts/
+sql_database/db/
+
+# Logs and temporary outputs
+*.log
+*.tmp
+*.bak
+
+# LaTeX build/cache outputs
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.xmpdata
+paper/*.abs
+paper/pdfa.xmpi
+paper/sample-*
+paper/*+minted.pdf
+paper/sample-*.pdf
+paper/build-all.log
+paper/dist/
+paper/_minted/
+paper/_minted-*/
+paper/.texmf-var/
+paper/.python-packages/
+paper/.misnamed-backup/
+paper/last year award papers/

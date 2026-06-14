@@ -1,0 +1,86 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "Otevrena-data-OIS-12-01-ciselnik-vekove-skupiny.csv",
+    "dc:title": "Číselník věkových skupin NZIS",
+    "dc:description": "Číselník věkových skupin používaných v otevřených datech Národního zdravotnického informačního systému (NZIS). Datové sady využívající tento číselník jsou označeny atributem \"využívané číselníky\" v metadatech datové sady.",
+    "dc:source": "ÚZIS ČR",
+    "dcat:keyword": [
+        "Národní zdravotnický informační systém",
+        "NZIS",
+        "zdravotnická data",
+        "číselník",
+        "věkový interval",
+        "věková skupina"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2024-07-24T09:17:08.822Z",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ciselnik",
+                "titles": "ciselnik",
+                "datatype": "anyURI",
+                "dc:description": "Identifikace číselníku v podobě jeho IRI"
+            },
+			{
+                "name": "ciselnik_kod",
+                "titles": "ciselnik_kod",
+                "datatype": "string",
+                "dc:description": "Kód číselníku v rámci sady číselníků v rámci NZIS, nejedná se o globálně jednoznačnou identifikaci číselníku."
+            },
+			{
+                "name": "ciselnik_nazev",
+                "titles": "ciselnik_nazev",
+                "datatype": "string",
+                "dc:description": "Název číselníku"
+            },
+			{
+                "name": "vek_IRI",
+                "titles": "vek_IRI",
+                "datatype": "anyURI",
+                "dc:description": "Identifikace položky věku v podobě jejího IRI."
+            },
+			{
+                "name": "vek_kod",
+                "titles": "vek_kod",
+                "datatype": "integer",
+                "dc:description": "Unikátní kód číselníkové položky, který odpovídá kódu věku uvedeném v datové sadě."
+            },
+            {
+                "name": "vek_nazev",
+                "titles": "vek_nazev",
+                "datatype": "string",
+                "dc:description": "Název číselníkové položky věku"
+            },
+            {
+                "name": "vek_od_vcetne",
+                "titles": "vek_od_vcetne",
+                "datatype": "integer",
+                "dc:description": "Dolní hranice věku dané věkové skupiny, včetně krajní hodnoty (uzavřený interval)"
+            },
+            {
+                "name": "vek_do_vcetne",
+                "titles": "vek_do_vcetne",
+                "datatype": "integer",
+                "dc:description": "Horní hranice věku dané věkové skupiny, včetně krajní hodnoty (uzavřený interval)"
+            }
+        ],
+		"primaryKey": "vek_kod"
+    }
+}

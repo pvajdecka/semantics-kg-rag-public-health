@@ -1,0 +1,51 @@
+[
+  {
+    "id": "RQ-1",
+    "question": "Does KG-RAG improve exact diagnosis-code recall over standard RAG for Czech disease-family queries whose table labels do not all share the user’s wording?",
+    "primary_evaluation_queries": [
+      "EQ-01",
+      "EQ-07"
+    ],
+    "main_metrics": [
+      "exact code-set recall",
+      "weighted recall by pocet_pripadu",
+      "false-positive code rate"
+    ],
+    "why_important": "This is the core scientific claim: KG hierarchy expansion should recover codes that pure retrieval may miss."
+  },
+  {
+    "id": "RQ-2",
+    "question": "Does KG-RAG improve typed analytical-scope construction for SQL/table answers involving informal Czech time, age, and region expressions?",
+    "primary_evaluation_queries": [
+      "EQ-02",
+      "EQ-03",
+      "EQ-04",
+      "EQ-05",
+      "EQ-06"
+    ],
+    "main_metrics": [
+      "year recall",
+      "age-group recall",
+      "region-value recall",
+      "measure identification accuracy"
+    ],
+    "why_important": "The demo will answer through SQL/rendered tables, so the system must recover the exact scope before aggregation."
+  },
+  {
+    "id": "RQ-3",
+    "question": "Can KG-RAG preserve or improve precision and provenance while increasing recall, especially for absent hierarchy members and lexical outsiders?",
+    "primary_evaluation_queries": [
+      "EQ-01",
+      "EQ-07",
+      "EQ-08",
+      "EQ-09",
+      "EQ-10"
+    ],
+    "main_metrics": [
+      "coverage-status accuracy",
+      "provenance completeness",
+      "no-regression on control cases"
+    ],
+    "why_important": "A top demo paper needs to show KG expansion is controlled, inspectable, and not just broader retrieval."
+  }
+]

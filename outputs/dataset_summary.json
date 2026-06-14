@@ -1,0 +1,482 @@
+{
+  "generated_at": "2026-06-13T09:01:38+00:00",
+  "downloaded_files": {
+    "infectious_diseases": {
+      "csv": {
+        "url": "https://datanzis.uzis.gov.cz/data/NR-27-ISIN/NR-27-01/Otevrena-data-NR-27-01-infekcni-nemoci.csv",
+        "local_path": "data/raw/infectious_diseases.csv",
+        "downloaded_at": "2026-06-13T09:00:19+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 30181795,
+        "sha256": "0af9f9f99ac37a4f38f790c8939696bb2eb80b9db1f83b6ef5e432ec3f8594a2"
+      },
+      "metadata": {
+        "url": "https://datanzis.uzis.gov.cz/data/NR-27-ISIN/NR-27-01/Otevrena-data-NR-27-01-infekcni-nemoci.csv-metadata.json",
+        "local_path": "data/metadata/infectious_diseases.metadata.json",
+        "downloaded_at": "2026-06-13T09:00:19+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 4088,
+        "sha256": "1fa7372b4bf4f9f6672b9f54478f3b06bfd42fdf00d663e3373082476ade4fc6"
+      }
+    },
+    "age_groups": {
+      "csv": {
+        "url": "https://datanzis.uzis.gov.cz/data/OIS-12-CIS/OIS-12-01/Otevrena-data-OIS-12-01-ciselnik-vekove-skupiny.csv",
+        "local_path": "data/raw/age_groups.csv",
+        "downloaded_at": "2026-06-13T09:00:27+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 42252,
+        "sha256": "b5059ceffa0fba951a12f99816ead2014fdb041c00bff5e251f997d474259ef2"
+      },
+      "metadata": {
+        "url": "https://datanzis.uzis.gov.cz/data/OIS-12-CIS/OIS-12-01/Otevrena-data-OIS-12-01-ciselnik-vekove-skupiny.csv-metadata.json",
+        "local_path": "data/metadata/age_groups.metadata.json",
+        "downloaded_at": "2026-06-13T09:00:27+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 3172,
+        "sha256": "f80d46cf1dbcc61627d983ad5566610e01ad98dccb1e5fff54974ff2c1dfd56d"
+      }
+    },
+    "mkn10_cz": {
+      "csv": {
+        "url": "https://data.mzcr.cz/data/distribuce/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv",
+        "local_path": "data/raw/mkn10_cz.csv",
+        "downloaded_at": "2026-06-13T09:00:27+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 13989166,
+        "sha256": "f2b3ecf958844d93f4e65a1445261ffef1aa58572aa38f908da6cba488b3fc0e"
+      },
+      "metadata": {
+        "url": "https://data.mzcr.cz/data/schemata/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv-metadata.json",
+        "local_path": "data/metadata/mkn10_cz.metadata.json",
+        "downloaded_at": "2026-06-13T09:00:27+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 4388,
+        "sha256": "442d30c59c64a88ee9e1c211aadf84e752d4ef784eaa4dd657d9f6b30a766a95"
+      }
+    },
+    "hospitalization": {
+      "csv": {
+        "url": "https://data.mzcr.cz/data/distribuce/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv.gz",
+        "local_path": "data/raw/hospitalization.csv",
+        "downloaded_at": "2026-06-13T09:00:30+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 110888129,
+        "sha256": "e260456f35da6f624211b102358ab8af336a17d7594ef976edb89215527c7d1b"
+      },
+      "metadata": {
+        "url": "https://data.mzcr.cz/data/schemata/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv-metadata.json",
+        "local_path": "data/metadata/hospitalization.metadata.json",
+        "downloaded_at": "2026-06-13T09:00:30+00:00",
+        "status": "cached",
+        "warnings": [],
+        "bytes": 8541,
+        "sha256": "25b0c57d2c80a0ef7ab2c8312be7d3361237a33cb9677b763a5e0f8fc408fd1d"
+      }
+    },
+    "samples": {
+      "infectious_diseases": {
+        "path": "data/samples/infectious_diseases_sample.csv",
+        "rows": 10000
+      },
+      "age_groups": {
+        "path": "data/samples/age_groups_sample.csv",
+        "rows": 228
+      },
+      "mkn10_cz": {
+        "path": "data/samples/mkn10_cz_sample.csv",
+        "rows": 10000
+      },
+      "hospitalization": {
+        "path": "data/samples/hospitalization_sample.csv",
+        "rows": 10000
+      }
+    }
+  },
+  "loaded_datasets": [
+    "age_groups",
+    "hospitalization",
+    "infectious_diseases",
+    "mkn10_cz"
+  ],
+  "failed_datasets": {},
+  "shapes": {
+    "infectious_diseases": {
+      "rows": 272858,
+      "columns": 11
+    },
+    "age_groups": {
+      "rows": 228,
+      "columns": 8
+    },
+    "mkn10_cz": {
+      "rows": 39136,
+      "columns": 12
+    },
+    "hospitalization": {
+      "rows": 1418107,
+      "columns": 28
+    }
+  },
+  "columns": {
+    "infectious_diseases": [
+      "rok",
+      "mesic",
+      "kraj_kod",
+      "kraj_nazev",
+      "diagnoza",
+      "diagnoza_nazev",
+      "vek_kod",
+      "vek_nazev",
+      "pohlavi",
+      "EWS",
+      "pocet_pripadu"
+    ],
+    "age_groups": [
+      "ciselnik",
+      "ciselnik_kod",
+      "ciselnik_nazev",
+      "vek_IRI",
+      "vek_kod",
+      "vek_nazev",
+      "vek_od_vcetne",
+      "vek_do_vcetne"
+    ],
+    "mkn10_cz": [
+      "ciselnik",
+      "ciselnik_kod",
+      "ciselnik_nazev",
+      "kod_IRI",
+      "kod",
+      "kod_tecka",
+      "nazev",
+      "kod_kapitola_rozsah",
+      "kod_kapitola_cislo",
+      "nazev_kapitola",
+      "platnost_od",
+      "platnost_do"
+    ],
+    "hospitalization": [
+      "rok",
+      "pohlavi",
+      "vek_kod",
+      "kraj_pacient",
+      "ZDG",
+      "operace",
+      "umrti",
+      "pocet_hosp",
+      "OD_ARO_JIP",
+      "OD_JIP",
+      "OD_ARO",
+      "OD_JIP1",
+      "OD_JIP2",
+      "OD_JIP3",
+      "OD_JIP4",
+      "OD_JIP5",
+      "OD_JIP6",
+      "OD_JIP7",
+      "OD_JIP8",
+      "OD_JIP9",
+      "OD_JIP10",
+      "OD_ARO1",
+      "OD_ARO2",
+      "OD_ARO3",
+      "OD_ARO4",
+      "OD_ARO5",
+      "OD_ARO6",
+      "OD_ARO7"
+    ]
+  },
+  "year_ranges": {
+    "infectious_diseases": {
+      "rok": {
+        "min": 2018,
+        "max": 2025
+      }
+    },
+    "age_groups": {},
+    "mkn10_cz": {},
+    "hospitalization": {
+      "rok": {
+        "min": 2010,
+        "max": 2024
+      }
+    }
+  },
+  "unique_value_counts": {
+    "infectious_diseases": {
+      "rok": 8,
+      "mesic": 12,
+      "kraj_kod": 15,
+      "kraj_nazev": 15,
+      "diagnoza": 114,
+      "diagnoza_nazev": 114,
+      "vek_kod": 17,
+      "vek_nazev": 17,
+      "pohlavi": 2,
+      "EWS": 74,
+      "pocet_pripadu": 247
+    },
+    "age_groups": {
+      "ciselnik": 1,
+      "ciselnik_kod": 1,
+      "ciselnik_nazev": 1,
+      "vek_IRI": 228,
+      "vek_nazev": 228
+    },
+    "mkn10_cz": {
+      "ciselnik": 1,
+      "ciselnik_kod": 1,
+      "ciselnik_nazev": 1,
+      "kod_IRI": 39076,
+      "kod": 39076,
+      "kod_tecka": 39076,
+      "nazev": 39068,
+      "kod_kapitola_rozsah": 22,
+      "kod_kapitola_cislo": 22,
+      "nazev_kapitola": 22,
+      "platnost_od": 14,
+      "platnost_do": 11
+    },
+    "hospitalization": {
+      "rok": 15,
+      "pohlavi": 2,
+      "vek_kod": 21,
+      "kraj_pacient": 15,
+      "ZDG": 1567,
+      "operace": 2,
+      "umrti": 2,
+      "pocet_hosp": 430,
+      "OD_ARO": 676,
+      "OD_JIP1": 233,
+      "OD_JIP2": 279,
+      "OD_JIP3": 288,
+      "OD_JIP4": 426,
+      "OD_JIP5": 214,
+      "OD_JIP6": 337,
+      "OD_JIP7": 506,
+      "OD_JIP8": 828,
+      "OD_JIP9": 163,
+      "OD_JIP10": 93,
+      "OD_ARO1": 110,
+      "OD_ARO2": 153,
+      "OD_ARO3": 227,
+      "OD_ARO4": 200,
+      "OD_ARO5": 68,
+      "OD_ARO6": 198,
+      "OD_ARO7": 568
+    }
+  },
+  "recommended_first_demo_dataset": "infectious_diseases",
+  "top_candidate_demo_scenarios": [
+    {
+      "id": "FINAL-DS-001",
+      "title": "KG-RAG improves recall over standard RAG for Czech public-health analytical scope retrieval",
+      "short_description": "A controlled comparison where standard RAG retrieves text/table chunks directly, while KG-RAG first expands user disease-group and category phrases through MKN-10-CZ and code-list relations before retrieval and scope construction.",
+      "dataset": "infectious_diseases primary table with MKN-10-CZ and age-group code lists as semantic support",
+      "columns_used": [
+        "rok",
+        "mesic",
+        "kraj_kod",
+        "kraj_nazev",
+        "diagnoza",
+        "diagnoza_nazev",
+        "vek_kod",
+        "vek_nazev",
+        "pohlavi",
+        "EWS",
+        "pocet_pripadu",
+        "mkn10_cz.kod",
+        "mkn10_cz.nazev",
+        "mkn10_cz.kod_kapitola_rozsah",
+        "age_groups.vek_kod",
+        "age_groups.vek_nazev",
+        "age_groups.vek_od_vcetne",
+        "age_groups.vek_do_vcetne"
+      ],
+      "example_questions": [
+        "For the user query “Compare intestinal infectious diseases in the Czech Republic”, which exact diagnosis codes must be retrieved before any answer is generated?",
+        "For “Compare intestinal infectious diseases across regions and age groups in recent years”, does the system recover the full typed scope needed for analysis?",
+        "Can the system explain which intestinal-infection codes are represented in the table, which relevant MKN code is absent, and which lexical match is outside the target group?"
+      ],
+      "standard_rag_version": "Embed and retrieve table-value chunks, row-group summaries, and metadata snippets; infer selected codes and dimensions from top-k retrieved text.",
+      "kg_rag_version": "Link the user phrase to typed MKN/code-list entities, expand through code-label-hierarchy relations, constrain retrieval to expanded codes/dimensions, and expose the selected analytical scope before summarization.",
+      "expected_benefit_to_test": "KG-RAG should improve exact diagnosis-code recall, typed analytical-scope recall, and coverage/precision explanations over standard RAG on the three exact evaluation questions.",
+      "primary_gold_case": {
+        "concept": "intestinal infectious diseases",
+        "mkn_range": "A00-A09",
+        "in_table_gold_codes": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "absent_relevant_mkn_codes": [
+          "A00"
+        ],
+        "reported_cases_for_in_table_gold": 362877
+      },
+      "baseline_retrieval_risk": "A lexical proxy for `střev` retrieves only 4 of 9 in-table A01-A09 gold codes, and includes B81 outside the A00-A09 range.",
+      "risks": [
+        "Standard dense RAG may recover more than the lexical proxy; this must be measured, not assumed.",
+        "Manual query paraphrase sets are required for fair recall evaluation.",
+        "KG expansion must mark A00 as absent from the infectious table rather than hallucinating rows.",
+        "Counts are reported case counts and must not be framed as prevalence, incidence, treatment guidance, or causal evidence."
+      ],
+      "demo_paper_fit_score_1_to_5": 5,
+      "evaluation_questions": [
+        "EQ-01",
+        "EQ-02",
+        "EQ-03"
+      ]
+    }
+  ],
+  "warnings": [
+    "Final comparison remains a design/evaluation plan; no RAG, KG-RAG, KG, or SQL QA implementation has been built."
+  ],
+  "next_steps": [
+    "Review official metadata/methodology before using epidemiological terminology.",
+    "Create typed value indexes and gold sets for recall evaluation.",
+    "Evaluate exact lexical/vector baselines before adding KG or semantic expansion.",
+    "Keep the first demo one-table-first unless supporting code-list coverage is clearly useful."
+  ],
+  "final_demo_direction": "Compare standard RAG with KG-RAG for recall of typed analytical scope, using intestinal infectious diseases A00-A09 as the primary gold case.",
+  "validated_supporting_code_coverage": {
+    "mkn10_exact_matches_using_kod": 114,
+    "infectious_diagnosis_code_count": 114,
+    "age_group_exact_matches_using_vek_kod": 17,
+    "infectious_age_group_code_count": 17
+  },
+  "mkn10_hierarchy_mapping_outputs": {
+    "mapping_csv": "outputs/mkn10_diagnosis_hierarchy_mapping.csv",
+    "mapping_json": "outputs/mkn10_diagnosis_hierarchy_mapping.json",
+    "block_summary_csv": "outputs/mkn10_block_summary_for_infectious_diseases.csv",
+    "report": "reports/mkn10_diagnosis_hierarchy_mapping.md",
+    "note": "Diagnosis and chapter fields are from the ÚZIS open MKN-10-CZ CSV; block fields are derived because the open CSV has no explicit block columns."
+  },
+  "final_research_questions": [
+    {
+      "id": "RQ-1",
+      "question": "Does KG-RAG improve exact diagnosis-code recall over standard RAG for Czech disease-family queries whose table labels do not all share the user’s wording?",
+      "primary_evaluation_queries": [
+        "EQ-01",
+        "EQ-07"
+      ],
+      "main_metrics": [
+        "exact code-set recall",
+        "weighted recall by pocet_pripadu",
+        "false-positive code rate"
+      ],
+      "why_important": "This is the core scientific claim: KG hierarchy expansion should recover codes that pure retrieval may miss."
+    },
+    {
+      "id": "RQ-2",
+      "question": "Does KG-RAG improve typed analytical-scope construction for SQL/table answers involving informal Czech time, age, and region expressions?",
+      "primary_evaluation_queries": [
+        "EQ-02",
+        "EQ-03",
+        "EQ-04",
+        "EQ-05",
+        "EQ-06"
+      ],
+      "main_metrics": [
+        "year recall",
+        "age-group recall",
+        "region-value recall",
+        "measure identification accuracy"
+      ],
+      "why_important": "The demo will answer through SQL/rendered tables, so the system must recover the exact scope before aggregation."
+    },
+    {
+      "id": "RQ-3",
+      "question": "Can KG-RAG preserve or improve precision and provenance while increasing recall, especially for absent hierarchy members and lexical outsiders?",
+      "primary_evaluation_queries": [
+        "EQ-01",
+        "EQ-07",
+        "EQ-08",
+        "EQ-09",
+        "EQ-10"
+      ],
+      "main_metrics": [
+        "coverage-status accuracy",
+        "provenance completeness",
+        "no-regression on control cases"
+      ],
+      "why_important": "A top demo paper needs to show KG expansion is controlled, inspectable, and not just broader retrieval."
+    }
+  ],
+  "final_evaluation_queries": [
+    {
+      "id": "EQ-01",
+      "query_cs": "Porovnej střevní infekční nemoci v České republice podle diagnózy.",
+      "query_en": "Compare intestinal infectious diseases in the Czech Republic by diagnosis.",
+      "primary_metric": "exact diagnosis-code recall and weighted recall by pocet_pripadu"
+    },
+    {
+      "id": "EQ-02",
+      "query_cs": "Porovnej střevní infekční nemoci v letech 2020 and 2023",
+      "query_en": "Compare intestinal infectious diseases in years 2020 and 2023.",
+      "primary_metric": "year recall + diagnosis-code recall"
+    },
+    {
+      "id": "EQ-03",
+      "query_cs": "Porovnej střevní infekční nemoci u dětí podle věkové skupiny.",
+      "query_en": "Compare intestinal infectious diseases in children by age group.",
+      "primary_metric": "official age-group recall"
+    },
+    {
+      "id": "EQ-04",
+      "query_cs": "Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.",
+      "query_en": "Compare intestinal infectious diseases in seniors 65+ by age group.",
+      "primary_metric": "official age-group recall"
+    },
+    {
+      "id": "EQ-05",
+      "query_cs": "Porovnej střevní infekční nemoci na Moravě podle kraje.",
+      "query_en": "Compare intestinal infectious diseases in Moravia by region.",
+      "primary_metric": "region alias recall"
+    },
+    {
+      "id": "EQ-06",
+      "query_cs": "Kolik případů střevních infekčních nemocí bylo v Praze?",
+      "query_en": "How many cases of intestinal infectious diseases were in Prague?",
+      "primary_metric": "official region value accuracy"
+    },
+    {
+      "id": "EQ-07",
+      "query_cs": "Porovnej virové infekce kůže a sliznic podle diagnózy.",
+      "query_en": "Compare viral infections of skin and mucous membranes by diagnosis.",
+      "primary_metric": "exact diagnosis-code recall"
+    },
+    {
+      "id": "EQ-08",
+      "query_cs": "Porovnej virové hepatitidy podle diagnózy.",
+      "query_en": "Compare viral hepatitis by diagnosis.",
+      "primary_metric": "control-case recall / no-regression"
+    },
+    {
+      "id": "EQ-09",
+      "query_cs": "Porovnej pneumonie podle diagnózy.",
+      "query_en": "Compare pneumonia by diagnosis.",
+      "primary_metric": "synonym robustness + code recall"
+    },
+    {
+      "id": "EQ-10",
+      "query_cs": "Porovnej pneumonie podle kraje.",
+      "query_en": "Compare pneumonia by region.",
+      "primary_metric": "diagnosis-code recall + region aggregation correctness"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SEMANTiCS RAG vs KG-RAG SQL Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <div class="brand-title">SEMANTiCS Demo</div>
+            <div class="brand-subtitle">RAG vs KG-RAG over SQL</div>
+          </div>
+        </div>
+        <nav class="tabs" aria-label="Demo modes">
+          <button class="tab-button active" data-tab="ai">AI Scope Builder</button>
+          <button class="tab-button" data-tab="manual">Manual SQL</button>
+        </nav>
+        <div class="status-card">
+          <div class="status-label">Database</div>
+          <div id="dbStatus" class="status-value">Loading...</div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Czech public-health table explorer</h1>
+            <p>Compare retrieval-only RAG with KG-assisted scope expansion, then inspect the SQL and resulting table.</p>
+          </div>
+          <div class="topbar-actions">
+            <button id="refreshHealth" class="icon-button" title="Refresh status">↻</button>
+          </div>
+        </header>
+
+        <section id="manualTab" class="tab-panel">
+          <div class="workspace-grid">
+            <section class="panel filters-panel">
+              <div class="display-columns-block">
+                <div class="display-columns-head">
+                  <div>
+                    <h2>Shown columns</h2>
+                    <p>Select grouping columns. Reported cases are always added last.</p>
+                  </div>
+                  <button id="resetManualColumns" class="secondary-button">Reset</button>
+                </div>
+                <div id="manualDisplayColumns" class="display-columns"></div>
+              </div>
+              <div class="panel-header">
+                <div>
+                  <h2>Manual filter builder</h2>
+                  <p>No AI is used here. Select columns and values; the app builds SQL directly.</p>
+                </div>
+                <button id="addFilter" class="primary-button">Add filter</button>
+              </div>
+              <div id="manualFilters" class="filter-list"></div>
+              <div class="actions-row">
+                <button id="runManual" class="primary-button">Run manual SQL</button>
+                <button id="clearManual" class="secondary-button">Clear</button>
+              </div>
+              <div class="artifact-box">
+                <h3>Selected values artifact</h3>
+                <div id="manualArtifacts" class="chips muted">No filters selected.</div>
+              </div>
+            </section>
+
+            <section id="manualResultPanel" class="panel result-panel hidden">
+              <div class="panel-header compact">
+                <h2>Manual result</h2>
+                <div class="sql-actions">
+                  <button id="toggleManualSql" class="secondary-button" aria-expanded="false">Show SQL</button>
+                  <button class="secondary-button" data-copy-target="manualSql">Copy SQL</button>
+                </div>
+              </div>
+              <pre id="manualSql" class="sql-box hidden">Run a manual query to see SQL.</pre>
+              <div id="manualTable"></div>
+              <div id="manualPager" class="pager"></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="aiTab" class="tab-panel active">
+          <section class="panel ai-panel">
+            <div class="ai-layout">
+              <div class="query-box">
+                <label for="evaluationSelect">Evaluation question</label>
+                <select id="evaluationSelect">
+                  <option value="">Custom question</option>
+                </select>
+                <div id="evaluationTranslation" class="evaluation-translation hidden" aria-live="polite"></div>
+                <label for="questionInput">Textual query</label>
+                <textarea id="questionInput" rows="4" placeholder="Zadejte dotaz nad daty."></textarea>
+              </div>
+              <div class="method-box">
+                <label>Method</label>
+                <div class="segmented">
+                  <button class="segment active" data-method="rag">RAG</button>
+                  <button class="segment" data-method="full_kg_rag">KG-RAG</button>
+                </div>
+                <button id="runAi" class="primary-button wide">Run AI scope builder</button>
+                <div id="aiProgress" class="ai-progress hidden" aria-live="polite">
+                  <div class="progress-head">
+                    <span class="spinner" aria-hidden="true"></span>
+                    <span id="aiProgressStatus">Preparing request</span>
+                  </div>
+                  <div id="aiElapsed" class="elapsed-time">0.0s</div>
+                  <ol id="aiProgressSteps" class="progress-steps"></ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="workspace-grid">
+            <section class="panel">
+              <div class="panel-header compact">
+                <h2>Extraction artifacts</h2>
+              </div>
+              <div class="artifact-section">
+                <h3>Potential entity spans</h3>
+                <div id="highlightedQuery" class="highlight-box">No query yet.</div>
+              </div>
+              <div class="artifact-section">
+                <h3>Extracted database entities</h3>
+                <div id="entityChips" class="chips muted">Run a query to see extracted database entities.</div>
+              </div>
+              <div class="artifact-section">
+                <h3>Resolved database scope</h3>
+                <div id="normalizedQuery" class="highlight-box">No resolved scope yet.</div>
+              </div>
+              <div class="artifact-section">
+                <h3>Retrieval evidence</h3>
+                <div id="retrievalArtifacts" class="evidence-list">No evidence yet.</div>
+              </div>
+            </section>
+
+            <section class="panel result-panel">
+              <div class="panel-header compact">
+                <h2>SQL and answer table</h2>
+                <div class="view-toggle">
+                  <button class="mini-tab active" data-view="sql">SQL</button>
+                  <button class="mini-tab" data-view="kg">KG graph</button>
+                </div>
+              </div>
+              <div id="sqlView">
+                <pre id="aiSql" class="sql-box">Run an AI query to see generated SQL.</pre>
+              </div>
+              <div id="kgView" class="hidden">
+                <svg id="kgGraph" class="kg-graph" role="img" aria-label="KG subgraph"></svg>
+                <div id="kgDetails" class="kg-details muted">No KG relation selected.</div>
+              </div>
+              <div id="aiTable"></div>
+              <div id="aiPager" class="pager"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

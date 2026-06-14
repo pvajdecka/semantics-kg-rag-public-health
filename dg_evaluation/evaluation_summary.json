@@ -1,0 +1,238 @@
+{
+  "diagnosis_by_method": {
+    "RAG": {
+      "macro_precision": 0.72,
+      "macro_recall": 0.47619047619047616,
+      "macro_f1": 0.5666666666666667,
+      "micro_precision": 0.72,
+      "micro_recall": 0.43902439024390244,
+      "micro_f1": 0.5454545454545455,
+      "exact_diagnosis_count": 1,
+      "total_questions": 10,
+      "exact_diagnosis_rate": 0.1,
+      "tp": 36,
+      "fp": 14,
+      "fn": 46
+    },
+    "KG-RAG": {
+      "macro_precision": 1.0,
+      "macro_recall": 0.888888888888889,
+      "macro_f1": 0.9214285714285714,
+      "micro_precision": 1.0,
+      "micro_recall": 0.8780487804878049,
+      "micro_f1": 0.9350649350649352,
+      "exact_diagnosis_count": 8,
+      "total_questions": 10,
+      "exact_diagnosis_rate": 0.8,
+      "tp": 72,
+      "fp": 0,
+      "fn": 10
+    }
+  },
+  "all_filters_by_method": {
+    "RAG": {
+      "correct": 1,
+      "total_questions": 10,
+      "accuracy": 0.1
+    },
+    "KG-RAG": {
+      "correct": 6,
+      "total_questions": 10,
+      "accuracy": 0.6
+    }
+  },
+  "generated_at": "2026-06-14T01:38:02.481310+00:00",
+  "questions": 10,
+  "methods": [
+    "RAG",
+    "KG-RAG"
+  ],
+  "ground_truth": {
+    "EQ-01": {
+      "question": "Porovnej střevní infekční nemoci v České republice podle diagnózy.",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ]
+      },
+      "diagnosis_source": "DuckDB table-present diagnosis codes in range A00-A09"
+    },
+    "EQ-02": {
+      "question": "Porovnej střevní infekční nemoci v letech 2020 and 2023",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "report_year": [
+          2020,
+          2023
+        ]
+      },
+      "diagnosis_source": "Gold diagnosis codes intersected with DuckDB fact table"
+    },
+    "EQ-03": {
+      "question": "Porovnej střevní infekční nemoci u dětí podle věkové skupiny.",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "age_group_name_cs": [
+          "0 let",
+          "10–14 let",
+          "1–4 roky",
+          "5–9 let"
+        ]
+      },
+      "diagnosis_source": "Gold diagnosis codes intersected with DuckDB fact table"
+    },
+    "EQ-04": {
+      "question": "Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "age_group_name_cs": [
+          "65–69 let",
+          "70–74 let",
+          "75+ let"
+        ]
+      },
+      "diagnosis_source": "Gold diagnosis codes intersected with DuckDB fact table"
+    },
+    "EQ-05": {
+      "question": "Porovnej střevní infekční nemoci na Moravě podle kraje.",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "region_name_cs": [
+          "Jihomoravský kraj",
+          "Moravskoslezský kraj",
+          "Olomoucký kraj",
+          "Zlínský kraj"
+        ]
+      },
+      "diagnosis_source": "Gold diagnosis codes intersected with DuckDB fact table"
+    },
+    "EQ-06": {
+      "question": "Kolik případů střevních infekčních nemocí bylo v Praze?",
+      "filters": {
+        "diagnosis_code": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "A09"
+        ],
+        "region_name_cs": [
+          "Hl. m. Praha"
+        ]
+      },
+      "diagnosis_source": "Gold diagnosis codes intersected with DuckDB fact table"
+    },
+    "EQ-07": {
+      "question": "Porovnej virové infekce kůže a sliznic podle diagnózy.",
+      "filters": {
+        "diagnosis_code": [
+          "B00",
+          "B01",
+          "B02",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09"
+        ]
+      },
+      "diagnosis_source": "DuckDB table-present diagnosis codes in range B00-B09"
+    },
+    "EQ-08": {
+      "question": "Porovnej virové hepatitidy podle diagnózy.",
+      "filters": {
+        "diagnosis_code": [
+          "B15",
+          "B16",
+          "B17",
+          "B18",
+          "B19"
+        ]
+      },
+      "diagnosis_source": "DuckDB table-present diagnosis codes in range B15-B19"
+    },
+    "EQ-09": {
+      "question": "Porovnej pneumonie podle diagnózy.",
+      "filters": {
+        "diagnosis_code": [
+          "J12",
+          "J13",
+          "J14",
+          "J15",
+          "J16",
+          "J17",
+          "J18"
+        ]
+      },
+      "diagnosis_source": "DuckDB table-present diagnosis codes in range J12-J18"
+    },
+    "EQ-10": {
+      "question": "Porovnej pneumonie podle kraje.",
+      "filters": {
+        "diagnosis_code": [
+          "J12",
+          "J13",
+          "J14",
+          "J15",
+          "J16",
+          "J17",
+          "J18"
+        ]
+      },
+      "diagnosis_source": "DuckDB table-present diagnosis codes in range J12-J18"
+    }
+  }
+}

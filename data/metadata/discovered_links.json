@@ -1,0 +1,486 @@
+{
+  "mkn10_cz": {
+    "page_url": "https://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data",
+    "discovered_at": "2026-06-13T09:00:27+00:00",
+    "parser": "beautifulsoup",
+    "all_links": [
+      {
+        "url": "https://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data",
+        "text": "Přejít na obsah"
+      },
+      {
+        "url": "https://www.nzip.cz/",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/o-nzip",
+        "text": "O NZIP"
+      },
+      {
+        "url": "https://www.nzip.cz/o-nzis-open",
+        "text": "O NZIS Open"
+      },
+      {
+        "url": "https://www.nzip.cz/zapojene-organizace",
+        "text": "Zapojené organizace"
+      },
+      {
+        "url": "https://www.nzip.cz/partneri-media",
+        "text": "Pro partnery a média"
+      },
+      {
+        "url": "https://www.nzip.cz/udalosti-komunikace",
+        "text": "Události, komunikace"
+      },
+      {
+        "url": "https://www.nzip.cz/newsletter",
+        "text": "Newsletter"
+      },
+      {
+        "url": "https://www.nzip.cz/faq",
+        "text": "Často kladené dotazy"
+      },
+      {
+        "url": "https://www.nzip.cz/kdo-jsme",
+        "text": "Kdo jsme"
+      },
+      {
+        "url": "javascript:;",
+        "text": "Více"
+      },
+      {
+        "url": "https://www.nzip.cz/prihlaseni",
+        "text": "Přihlášení pro autory"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/zivotni-situace",
+        "text": "Životní situace"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/prevence-zdravy-zivotni-styl",
+        "text": "Prevence a zdravý životní styl"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/informace-o-nemocech",
+        "text": "Informace o nemocech"
+      },
+      {
+        "url": "https://www.nzip.cz/vyhledavaci-mapy",
+        "text": "Mapa zdravotní péče"
+      },
+      {
+        "url": "https://www.nzip.cz/hry",
+        "text": "Hry"
+      },
+      {
+        "url": "https://www.nzip.cz/rejstrik-pojmu",
+        "text": "Rejstřík pojmů"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/doporucene-weby",
+        "text": "Doporučené weby"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/datove-zpravodajstvi",
+        "text": "Datové zpravodajství"
+      },
+      {
+        "url": "https://www.nzip.cz/napiste-nam",
+        "text": "Napište nám"
+      },
+      {
+        "url": "https://www.nzip.cz/kategorie/443-ciselniky",
+        "text": "Číselníky"
+      },
+      {
+        "url": "https://www.nzip.cz/kategorie/444-ciselniky-otevrena-data",
+        "text": "Číselníky: otevřená data"
+      },
+      {
+        "url": "mailto:miroslav.zvolsky@uzis.cz",
+        "text": "Miroslav Zvolský"
+      },
+      {
+        "url": "https://www.nzip.cz/data/ciselniky/metodicke-popisy/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz-2025-01.pdf",
+        "text": "Zobrazit dokumentaci"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/5894",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​5894"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/2066",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​2066"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/6004",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​6004"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/6019",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​6019"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/1754",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​1754"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/schemata/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv-metadata.json",
+        "text": "Otevřít schéma"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/distribuce/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv",
+        "text": "Stáhnout"
+      },
+      {
+        "url": "http://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data",
+        "text": "http://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data"
+      },
+      {
+        "url": "https://www.who.int/standards/classifications/classification-of-diseases",
+        "text": "Světovou zdravotnickou organizací ( WHO )"
+      },
+      {
+        "url": "https://mkn10.uzis.cz/",
+        "text": "https://mkn10.uzis.cz/"
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://twitter.com/intent/tweet?text=Podívejte se na zajímavý článek na NZIP http://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data&hashtags=NZIP,MZCR,UZISCR",
+        "text": ""
+      },
+      {
+        "url": "https://www.linkedin.com/shareArticle/?mini=true&url=http://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data&source=LinkedIn",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/clanek/2430-ciselnik-icz-pojistovny-historicke-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/clanek/2431-ciselnik-icz-pojistovny-posledni-dostupne-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/clanek/2293-ciselnik-reprodukcni-zdravi-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/clanek/2182-ciselnik-vekove-skupiny-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://www.mzcr.cz/",
+        "text": "www.mzcr.cz"
+      },
+      {
+        "url": "https://www.uzis.cz/",
+        "text": "www.uzis.cz"
+      },
+      {
+        "url": "https://www.nzip.cz/prohlaseni-o-pristupnosti",
+        "text": "Prohlášení o přístupnosti"
+      },
+      {
+        "url": "https://www.nzip.cz/mapa-obsahu-portalu",
+        "text": "Mapa obsahu"
+      },
+      {
+        "url": "https://facebook.com/nzip.cz",
+        "text": ""
+      },
+      {
+        "url": "https://instagram.com/nzip.cz",
+        "text": ""
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCmj0_-t_g4BjXjMJvNxtYYw/",
+        "text": ""
+      },
+      {
+        "url": "https://twitter.com/nzip_cz",
+        "text": ""
+      },
+      {
+        "url": "https://www.linkedin.com/company/nzis-open/",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz",
+        "text": "https://www.nzip.cz"
+      },
+      {
+        "url": "http://www.mzcr.cz/",
+        "text": "Ministerstvo zdravotnictví"
+      },
+      {
+        "url": "http://uzis.cz/",
+        "text": "Ústav zdravotnických informací a statistiky ČR"
+      },
+      {
+        "url": "https://webstudio.team/",
+        "text": ""
+      }
+    ],
+    "csv_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv-metadata.json",
+        "text": "Otevřít schéma"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/distribuce/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv",
+        "text": "Stáhnout"
+      }
+    ],
+    "json_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv-metadata.json",
+        "text": "Otevřít schéma"
+      }
+    ],
+    "metadata_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/463/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv-metadata.json",
+        "text": "Otevřít schéma"
+      }
+    ],
+    "pdf_links": [
+      {
+        "url": "https://www.nzip.cz/data/ciselniky/metodicke-popisy/Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz-2025-01.pdf",
+        "text": "Zobrazit dokumentaci"
+      }
+    ],
+    "warnings": []
+  },
+  "hospitalization": {
+    "page_url": "https://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data",
+    "discovered_at": "2026-06-13T09:00:30+00:00",
+    "parser": "beautifulsoup",
+    "all_links": [
+      {
+        "url": "https://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data",
+        "text": "Přejít na obsah"
+      },
+      {
+        "url": "https://www.nzip.cz/",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz/o-nzip",
+        "text": "O NZIP"
+      },
+      {
+        "url": "https://www.nzip.cz/o-nzis-open",
+        "text": "O NZIS Open"
+      },
+      {
+        "url": "https://www.nzip.cz/zapojene-organizace",
+        "text": "Zapojené organizace"
+      },
+      {
+        "url": "https://www.nzip.cz/partneri-media",
+        "text": "Pro partnery a média"
+      },
+      {
+        "url": "https://www.nzip.cz/udalosti-komunikace",
+        "text": "Události, komunikace"
+      },
+      {
+        "url": "https://www.nzip.cz/newsletter",
+        "text": "Newsletter"
+      },
+      {
+        "url": "https://www.nzip.cz/faq",
+        "text": "Často kladené dotazy"
+      },
+      {
+        "url": "https://www.nzip.cz/kdo-jsme",
+        "text": "Kdo jsme"
+      },
+      {
+        "url": "javascript:;",
+        "text": "Více"
+      },
+      {
+        "url": "https://www.nzip.cz/prihlaseni",
+        "text": "Přihlášení pro autory"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/zivotni-situace",
+        "text": "Životní situace"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/prevence-zdravy-zivotni-styl",
+        "text": "Prevence a zdravý životní styl"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/informace-o-nemocech",
+        "text": "Informace o nemocech"
+      },
+      {
+        "url": "https://www.nzip.cz/vyhledavaci-mapy",
+        "text": "Mapa zdravotní péče"
+      },
+      {
+        "url": "https://www.nzip.cz/hry",
+        "text": "Hry"
+      },
+      {
+        "url": "https://www.nzip.cz/rejstrik-pojmu",
+        "text": "Rejstřík pojmů"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/doporucene-weby",
+        "text": "Doporučené weby"
+      },
+      {
+        "url": "https://www.nzip.cz/modul/datove-zpravodajstvi",
+        "text": "Datové zpravodajství"
+      },
+      {
+        "url": "https://www.nzip.cz/napiste-nam",
+        "text": "Napište nám"
+      },
+      {
+        "url": "https://www.nzip.cz/kategorie/353-narodni-registr-intenzivni-pece",
+        "text": "Národní registr intenzivní péče"
+      },
+      {
+        "url": "https://www.nzip.cz/kategorie/354-narodni-registr-intenzivni-pece-otevrena-data",
+        "text": "Národní registr intenzivní péče: otevřená data"
+      },
+      {
+        "url": "https://www.nzip.cz/data/2182-ciselnik-vekove-skupiny-otevrena-data",
+        "text": "Číselník věkových skupin NZIS"
+      },
+      {
+        "url": "mailto:andrea.kyselova@uzis.cz",
+        "text": "Andrea Kyseľová"
+      },
+      {
+        "url": "https://www.nzip.cz/data/nrip/metodicke-popisy/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece-2025-01.pdf",
+        "text": "Zobrazit dokumentaci"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/5894",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​5894"
+      },
+      {
+        "url": "http://eurovoc.europa.eu/3368",
+        "text": "http:/​/​eur​ovoc.europ​a.eu/​3368"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/schemata/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv-metadata.json",
+        "text": "Otevřít schéma"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/distribuce/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv.gz",
+        "text": "Stáhnout"
+      },
+      {
+        "url": "http://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data",
+        "text": "http://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data"
+      },
+      {
+        "url": "https://www.uzis.cz/index.php?pg=nzis",
+        "text": "Národního zdravotnického informačního systému (NZIS)"
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data",
+        "text": ""
+      },
+      {
+        "url": "https://twitter.com/intent/tweet?text=Podívejte se na zajímavý článek na NZIP http://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data&hashtags=NZIP,MZCR,UZISCR",
+        "text": ""
+      },
+      {
+        "url": "https://www.linkedin.com/shareArticle/?mini=true&url=http://www.nzip.cz/data/2225-hospitalizacni-pripady-akutni-intezivni-pece-otevrena-data&source=LinkedIn",
+        "text": ""
+      },
+      {
+        "url": "https://www.mzcr.cz/",
+        "text": "www.mzcr.cz"
+      },
+      {
+        "url": "https://www.uzis.cz/",
+        "text": "www.uzis.cz"
+      },
+      {
+        "url": "https://www.nzip.cz/prohlaseni-o-pristupnosti",
+        "text": "Prohlášení o přístupnosti"
+      },
+      {
+        "url": "https://www.nzip.cz/mapa-obsahu-portalu",
+        "text": "Mapa obsahu"
+      },
+      {
+        "url": "https://facebook.com/nzip.cz",
+        "text": ""
+      },
+      {
+        "url": "https://instagram.com/nzip.cz",
+        "text": ""
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCmj0_-t_g4BjXjMJvNxtYYw/",
+        "text": ""
+      },
+      {
+        "url": "https://twitter.com/nzip_cz",
+        "text": ""
+      },
+      {
+        "url": "https://www.linkedin.com/company/nzis-open/",
+        "text": ""
+      },
+      {
+        "url": "https://www.nzip.cz",
+        "text": "https://www.nzip.cz"
+      },
+      {
+        "url": "http://www.mzcr.cz/",
+        "text": "Ministerstvo zdravotnictví"
+      },
+      {
+        "url": "http://uzis.cz/",
+        "text": "Ústav zdravotnických informací a statistiky ČR"
+      },
+      {
+        "url": "https://webstudio.team/",
+        "text": ""
+      }
+    ],
+    "csv_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv-metadata.json",
+        "text": "Otevřít schéma"
+      },
+      {
+        "url": "https://data.mzcr.cz/data/distribuce/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv.gz",
+        "text": "Stáhnout"
+      }
+    ],
+    "json_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv-metadata.json",
+        "text": "Otevřít schéma"
+      }
+    ],
+    "metadata_links": [
+      {
+        "url": "https://data.mzcr.cz/data/schemata/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv-metadata.json",
+        "text": "Otevřít schéma"
+      }
+    ],
+    "pdf_links": [
+      {
+        "url": "https://www.nzip.cz/data/nrip/metodicke-popisy/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece-2025-01.pdf",
+        "text": "Zobrazit dokumentaci"
+      }
+    ],
+    "warnings": []
+  }
+}

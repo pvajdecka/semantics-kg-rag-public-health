@@ -1,0 +1,8 @@
+SELECT
+  region_code,
+  region_name_cs,
+  CAST(SUM(reported_case_count) AS BIGINT) AS reported_case_count
+FROM fact_infectious_disease_cases_enriched
+WHERE diagnosis_code BETWEEN 'J12' AND 'J18'
+GROUP BY region_code, region_name_cs
+ORDER BY reported_case_count DESC, region_code;

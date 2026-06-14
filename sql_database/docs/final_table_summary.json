@@ -1,0 +1,11 @@
+{
+  "table": "fact_infectious_disease_cases_enriched",
+  "row_count": 272858,
+  "column_count": 31,
+  "sum_reported_case_count": 997446,
+  "diagnosis_count": 114,
+  "region_count": 15,
+  "age_group_count": 17,
+  "year_min": 2018,
+  "year_max": 2025
+}

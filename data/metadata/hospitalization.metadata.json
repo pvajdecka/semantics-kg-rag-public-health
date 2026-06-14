@@ -1,0 +1,205 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv",
+    "dc:title": "Hospitalizační případy akutní a intenzivní péče v ČR a jejich charakteristiky – vývoj v čase",
+    "dc:description": "Datová sada umožňuje hodnotit počet hospitalizačních případů od roku 2010 až do posledního uzavřeného roku. Obsah datové sady zahrnuje přehled základních sociodemografických údajů, kraj bydliště pacienta a diagnózu hospitalizačního případu. Dále datová sada zahrnuje informaci o operaci či eventuálním úmrtí během hospitalizace a počtu hospitalizačních případů s intenzivní péčí. Využívané číselníky: Číselník věkových skupin NZIS (https://www.nzip.cz/data/2182-ciselnik-vekove-skupiny-otevrena-data).",
+    "dc:source": "ÚZIS ČR",
+    "dcat:keyword": [
+        "NRIP",
+        "Národní registr intenzivní péče",
+        "hospitalizační případy akutní péče",
+        "hlavní diagnóza hospitalizačního případu",
+        "hospitalizace",
+        "intenzivní péče "
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2024-09-26T13:41:37.859Z",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "rok",
+                "titles": "rok",
+                "datatype": "integer",
+                "dc:description": "rok, v němž došlo k propuštění pacienta z nemocnice"
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "integer",
+                "dc:description": "pohlaví pacienta"
+            },
+            {
+                "name": "vek_kod",
+                "titles": "vek_kod",
+                "datatype": "integer",
+                "dc:description": "kód pětileté věkové skupiny pacienta (v době poskytnutí zdravotní služby) vycházející z číselníku věkových skupin"
+            },
+            {
+                "name": "kraj_pacient",
+                "titles": "kraj_pacient",
+                "datatype": "string",
+                "dc:description": "kraj bydliště pacienta v době poskytnutí zdravotní služby"
+            },
+            {
+                "name": "ZDG",
+                "titles": "ZDG",
+                "datatype": "string",
+                "dc:description": "hlavní diagnóza pacienta dle MKN-10 kódu v délce 3 znaků, se kterou byla zdravotní služba vykázána"
+            },
+            {
+                "name": "operace",
+                "titles": "operace",
+                "datatype": "integer",
+                "dc:description": "operace za hospitalizace"
+            },
+            {
+                "name": "umrti",
+                "titles": "umrti",
+                "datatype": "string",
+                "dc:description": "úmrtí za hospitalizace"
+            },
+            {
+                "name": "pocet_hosp",
+                "titles": "pocet_hosp",
+                "datatype": "integer",
+                "dc:description": "počet hospitalizačních případů akutní a intenzivní péče "
+            },
+            {
+                "name": "OD_ARO_JIP",
+                "titles": "OD_ARO_JIP",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní a resuscitační péče"
+            },
+            {
+                "name": "OD_JIP",
+                "titles": "OD_JIP",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče"
+            },
+            {
+                "name": "OD_ARO",
+                "titles": "OD_ARO",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče"
+            },
+            {
+                "name": "OD_JIP1",
+                "titles": "OD_JIP1",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů na spinální jednotce"
+            },
+            {
+                "name": "OD_JIP2",
+                "titles": "OD_JIP2",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče vyššího stupně o pacienta s tiss 20–29 body"
+            },
+            {
+                "name": "OD_JIP3",
+                "titles": "OD_JIP3",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče nižšího stupně o pacienta s tiss 15–19 body"
+            },
+            {
+                "name": "OD_JIP4",
+                "titles": "OD_JIP4",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče nižšího stupně o pacienta s tiss 9–14 body"
+            },
+            {
+                "name": "OD_JIP5",
+                "titles": "OD_JIP5",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče o kojence, děti a dorost–vyšší stupeň"
+            },
+            {
+                "name": "OD_JIP6",
+                "titles": "OD_JIP6",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů intenzivní péče o kojence, děti a dorost–nižší stupeň"
+            },
+            {
+                "name": "OD_JIP7",
+                "titles": "OD_JIP7",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů neonatální intenzivní péče–vyšší stupeň"
+            },
+            {
+                "name": "OD_JIP8",
+                "titles": "OD_JIP8",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů neonatální intenzivní péče–nižší stupeň"
+            },
+            {
+                "name": "OD_JIP9",
+                "titles": "OD_JIP9",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů porodnické intenzivní péče"
+            },
+            {
+                "name": "OD_JIP10",
+                "titles": "OD_JIP10",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů porodnické intermediární péče"
+            },
+            {
+                "name": "OD_ARO1",
+                "titles": "OD_ARO1",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče o pacienta s tiss 50 a více body"
+            },
+            {
+                "name": "OD_ARO2",
+                "titles": "OD_ARO2",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče o pacienta s tiss 40–49 body"
+            },
+            {
+                "name": "OD_ARO3",
+                "titles": "OD_ARO3",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče o pacienta s tiss 30–39 body"
+            },
+            {
+                "name": "OD_ARO4",
+                "titles": "OD_ARO4",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče o kojence, děti a dorost"
+            },
+            {
+                "name": "OD_ARO5",
+                "titles": "OD_ARO5",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů resuscitační péče v dětské kardiologii a dětské kardiochirurgii"
+            },
+            {
+                "name": "OD_ARO6",
+                "titles": "OD_ARO6",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů neonatální resuscitační péče – vyšší stupeň"
+            },
+            {
+                "name": "OD_ARO7",
+                "titles": "OD_ARO7",
+                "datatype": "integer",
+                "dc:description": "Suma ošetřovacích dnů neonatální resuscitační péče – nižší stupeň"
+            }
+        ]
+    }
+}

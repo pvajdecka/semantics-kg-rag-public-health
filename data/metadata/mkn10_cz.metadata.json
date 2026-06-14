@@ -1,0 +1,109 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "Otevrena-data-OIS-12-03-ciselnik-mkn-10-cz.csv",
+    "dc:title": "Číselník MKN-10-CZ (česká verze 10. revize Mezinárodní klasifikace nemocí)",
+    "dc:description": "Číselník položek české verze 10. revize Mezinárodní klasifikace nemocí (MKN-10) usnadňuje práci s datovými sadami obsahujícími kódy MKN-10, které se používají pro kódování diagnóz, stavů a okolností souvisejících se zdravotním stavem. Datové sady využívající tento číselník jsou označeny atributem \"využívané číselníky\" v metadatech datové sady.",
+    "dc:source": "ÚZIS ČR",
+    "dcat:keyword": [
+        "Mezinárodní klasifikace nemocí",
+        "MKN-10",
+        "číselník",
+        "diagnóza",
+        "Národní zdravotnický informační systém",
+        "NZIS"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2025-08-24T10:36:56.315Z",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "ciselnik",
+                "titles": "ciselnik",
+                "datatype": "anyURI",
+                "dc:description": "Identifikace číselníku v podobě jeho IRI"
+            },
+            {
+                "name": "ciselnik_kod",
+                "titles": "ciselnik_kod",
+                "datatype": "string",
+                "dc:description": "Kód číselníku v rámci sady číselníků NZIS, nejedná se o globálně jednoznačnou identifikaci číselníku"
+            },
+            {
+                "name": "ciselnik_nazev",
+                "titles": "ciselnik_nazev",
+                "datatype": "string",
+                "dc:description": "Název číselníku"
+            },
+            {
+                "name": "kod_IRI",
+                "titles": "kod_IRI",
+                "datatype": "anyURI",
+                "dc:description": "Identifikace číselníkové položky MKN-10 v podobě jejího IRI"
+            },
+            {
+                "name": "kod",
+                "titles": "kod",
+                "datatype": "string",
+                "dc:description": "Unikátní kód číselníkové položky MKN-10"
+            },
+            {
+                "name": "kod_tecka",
+                "titles": "kod_tecka",
+                "datatype": "string",
+                "dc:description": "Unikátní kód číselníkové položky MKN-10 včetně tečky, vhodné pro zobrazení nebo tiskový výstup, mezinárodně srozumitelný formát kódu"
+            },
+            {
+                "name": "nazev",
+                "titles": "nazev",
+                "datatype": "string",
+                "dc:description": "Název kategorie (kódované položky) MKN-10 plný, délka není omezena"
+            },
+            {
+                "name": "kod_kapitola_rozsah",
+                "titles": "kod_kapitola_rozsah",
+                "datatype": "string",
+                "dc:description": "Rozsah třímístných kategorií kódů MKN-10, které spadají do stejné kapitoly"
+            },
+            {
+                "name": "kod_kapitola_cislo",
+                "titles": "kod_kapitola_cislo",
+                "datatype": "string",
+                "dc:description": "Římské pořadové číslo kapitoly MKN-10"
+            },
+            {
+                "name": "nazev_kapitola",
+                "titles": "nazev_kapitola",
+                "datatype": "string",
+                "dc:description": "Název kapitoly MKN-10, pod kterou daná položka MKN-10 spadá"
+            },
+            {
+                "name": "platnost_od",
+                "titles": "platnost_od",
+                "datatype": "date",
+                "dc:description": "Datum zahájení platnosti položky MKN-10."
+            },
+            {
+                "name": "platnost_do",
+                "titles": "platnost_do",
+                "datatype": "date",
+                "dc:description": "Datum ukončení platnosti položky MKN-10. Pokud je hodnota prázdná, je položka stále platná."
+            }
+        ]
+    }
+}

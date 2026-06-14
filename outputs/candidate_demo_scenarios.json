@@ -1,0 +1,94 @@
+[
+  {
+    "id": "FINAL-DS-001",
+    "title": "KG-RAG improves recall over standard RAG for Czech public-health analytical scope retrieval",
+    "short_description": "A controlled comparison where standard RAG retrieves text/table chunks directly, while KG-RAG first expands user disease-group and category phrases through MKN-10-CZ and code-list relations before retrieval and scope construction.",
+    "dataset": "infectious_diseases primary table with MKN-10-CZ and age-group code lists as semantic support",
+    "columns_used": [
+      "rok",
+      "mesic",
+      "kraj_kod",
+      "kraj_nazev",
+      "diagnoza",
+      "diagnoza_nazev",
+      "vek_kod",
+      "vek_nazev",
+      "pohlavi",
+      "EWS",
+      "pocet_pripadu",
+      "mkn10_cz.kod",
+      "mkn10_cz.nazev",
+      "mkn10_cz.kod_kapitola_rozsah",
+      "age_groups.vek_kod",
+      "age_groups.vek_nazev",
+      "age_groups.vek_od_vcetne",
+      "age_groups.vek_do_vcetne"
+    ],
+    "example_questions": [
+      "Porovnej střevní infekční nemoci v České republice podle diagnózy.",
+      "Porovnej střevní infekční nemoci v letech 2020 and 2023",
+      "Porovnej střevní infekční nemoci u dětí podle věkové skupiny.",
+      "Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.",
+      "Porovnej střevní infekční nemoci na Moravě podle kraje.",
+      "Kolik případů střevních infekčních nemocí bylo v Praze?",
+      "Porovnej virové infekce kůže a sliznic podle diagnózy.",
+      "Porovnej virové hepatitidy podle diagnózy.",
+      "Porovnej pneumonie podle diagnózy.",
+      "Porovnej pneumonie podle kraje."
+    ],
+    "standard_rag_version": "Embed and retrieve table-value chunks, row-group summaries, and metadata snippets; infer selected codes and dimensions from top-k retrieved text.",
+    "kg_rag_version": "Link the user phrase to typed MKN/code-list entities, expand through code-label-hierarchy relations, constrain retrieval to expanded codes/dimensions, and expose the selected analytical scope before summarization.",
+    "expected_benefit_to_test": "KG-RAG should improve recall for hard disease-family, age, and region-normalization questions, while matching standard RAG on easier control families.",
+    "primary_gold_case": {
+      "concept": "intestinal infectious diseases",
+      "mkn_range": "A00-A09",
+      "in_table_gold_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "absent_relevant_mkn_codes": [
+        "A00"
+      ],
+      "reported_cases_for_in_table_gold": 362877
+    },
+    "baseline_retrieval_risk": "A lexical proxy for `střev` retrieves only 4 of 9 in-table A01-A09 gold codes, and includes B81 outside the A00-A09 range.",
+    "risks": [
+      "Standard dense RAG may recover more than the lexical proxy; this must be measured, not assumed.",
+      "Manual query paraphrase sets are required for fair recall evaluation.",
+      "KG expansion must mark A00 as absent from the infectious table rather than hallucinating rows.",
+      "Counts are reported case counts and must not be framed as prevalence, incidence, treatment guidance, or causal evidence."
+    ],
+    "demo_paper_fit_score_1_to_5": 5,
+    "evaluation_questions": [
+      "EQ-01",
+      "EQ-02",
+      "EQ-03",
+      "EQ-04",
+      "EQ-05",
+      "EQ-06",
+      "EQ-07",
+      "EQ-08",
+      "EQ-09",
+      "EQ-10"
+    ],
+    "evaluation_queries": [
+      "EQ-01",
+      "EQ-02",
+      "EQ-03",
+      "EQ-04",
+      "EQ-05",
+      "EQ-06",
+      "EQ-07",
+      "EQ-08",
+      "EQ-09",
+      "EQ-10"
+    ]
+  }
+]

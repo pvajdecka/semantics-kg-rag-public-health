@@ -1,0 +1,25 @@
+kapitola_kod,kapitola_nazev,blok_kod,blok_nazev,pocet_diagnoz,pocet_pripadu_total
+I.,Některé infekční a parazitární nemoci,A00-A09,Střevní infekční nemoci,9,362877
+I.,Některé infekční a parazitární nemoci,A20-A28,Některé bakteriální zoonózy,5,1058
+I.,Některé infekční a parazitární nemoci,A30-A49,Jiné bakteriální nemoci,11,103373
+I.,Některé infekční a parazitární nemoci,A50-A64,Infekce přenášené převážně pohlavním stykem,3,16079
+I.,Některé infekční a parazitární nemoci,A65-A69,Jiné spirochetové nemoci,1,37573
+I.,Některé infekční a parazitární nemoci,A70-A74,Jiné nemoci způsobené chlamydiemi,2,150
+I.,Některé infekční a parazitární nemoci,A75-A79,Rickettsiózy,3,54
+I.,Některé infekční a parazitární nemoci,A80-A89,Virové infekce centrální nervové soustavy,7,7737
+I.,Některé infekční a parazitární nemoci,A92-A99,Virové horečky a virové hemoragické horečky přenášené členovci,6,640
+I.,Některé infekční a parazitární nemoci,B00-B09,Virové infekce charakterizované postižením kůže a sliznice,9,344853
+I.,Některé infekční a parazitární nemoci,B15-B19,Virová hepatitida,5,19491
+I.,Některé infekční a parazitární nemoci,B25-B34,Jiné virové nemoci,5,14347
+I.,Některé infekční a parazitární nemoci,B35-B49,Mykózy,5,3493
+I.,Některé infekční a parazitární nemoci,B50-B64,Protozoární nemoci,9,1044
+I.,Některé infekční a parazitární nemoci,B65-B83,Helmintózy – hlístové nemoci,14,8551
+I.,Některé infekční a parazitární nemoci,B85-B89,Zavšivení‚ akarióza a jiná napadení,3,48512
+I.,Některé infekční a parazitární nemoci,B95-B98,Bakteriální‚ virová a jiná infekční agens,2,318
+I.,Některé infekční a parazitární nemoci,B99,Jiné infekční nemoci,1,9
+VI.,Nemoci nervové soustavy,G00-G09,Zánětlivé nemoci centrální nervové soustavy,1,732
+VI.,Nemoci nervové soustavy,G50-G59,Onemocnění nervů‚ nervových kořenů a pletení,1,43
+VI.,Nemoci nervové soustavy,G60-G64,Polyneuropatie a jiné nemoci periferní nervové soustavy,1,4
+X.,Nemoci dýchací soustavy,J00-J06,Akutní infekce horních dýchacích cest,1,1
+X.,Nemoci dýchací soustavy,J09-J18,Chřipka a zánět plic (pneumonie),8,18934
+XX.,Vnější příčiny nemocnosti a úmrtnosti,W50-W64,Vystavení životným mechanickým silám,2,7573

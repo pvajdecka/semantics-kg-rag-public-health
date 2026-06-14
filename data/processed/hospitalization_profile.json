@@ -1,0 +1,3253 @@
+{
+  "dataset_key": "hospitalization",
+  "profiled_at": "2026-06-13T09:01:26+00:00",
+  "source_url": "https://data.mzcr.cz/data/distribuce/421/Otevrena-data-NR-23-01-hospitalizacni-pripady-akutni-intezivni-pece.csv.gz",
+  "local_file_path": "data/raw/hospitalization.csv",
+  "encoding_used": "utf-8-sig",
+  "separator_used": ",",
+  "shape": {
+    "rows": 1418107,
+    "columns": 28
+  },
+  "columns": [
+    "rok",
+    "pohlavi",
+    "vek_kod",
+    "kraj_pacient",
+    "ZDG",
+    "operace",
+    "umrti",
+    "pocet_hosp",
+    "OD_ARO_JIP",
+    "OD_JIP",
+    "OD_ARO",
+    "OD_JIP1",
+    "OD_JIP2",
+    "OD_JIP3",
+    "OD_JIP4",
+    "OD_JIP5",
+    "OD_JIP6",
+    "OD_JIP7",
+    "OD_JIP8",
+    "OD_JIP9",
+    "OD_JIP10",
+    "OD_ARO1",
+    "OD_ARO2",
+    "OD_ARO3",
+    "OD_ARO4",
+    "OD_ARO5",
+    "OD_ARO6",
+    "OD_ARO7"
+  ],
+  "dtypes": {
+    "rok": "int64",
+    "pohlavi": "int64",
+    "vek_kod": "int64",
+    "kraj_pacient": "object",
+    "ZDG": "object",
+    "operace": "int64",
+    "umrti": "int64",
+    "pocet_hosp": "int64",
+    "OD_ARO_JIP": "int64",
+    "OD_JIP": "int64",
+    "OD_ARO": "int64",
+    "OD_JIP1": "int64",
+    "OD_JIP2": "int64",
+    "OD_JIP3": "int64",
+    "OD_JIP4": "int64",
+    "OD_JIP5": "int64",
+    "OD_JIP6": "int64",
+    "OD_JIP7": "int64",
+    "OD_JIP8": "int64",
+    "OD_JIP9": "int64",
+    "OD_JIP10": "int64",
+    "OD_ARO1": "int64",
+    "OD_ARO2": "int64",
+    "OD_ARO3": "int64",
+    "OD_ARO4": "int64",
+    "OD_ARO5": "int64",
+    "OD_ARO6": "int64",
+    "OD_ARO7": "int64"
+  },
+  "first_5_rows": [
+    {
+      "rok": 2010,
+      "pohlavi": 1,
+      "vek_kod": 66000004,
+      "kraj_pacient": "CZ010",
+      "ZDG": "A02",
+      "operace": 0,
+      "umrti": 0,
+      "pocet_hosp": 1,
+      "OD_ARO_JIP": 13,
+      "OD_JIP": 13,
+      "OD_ARO": 0,
+      "OD_JIP1": 0,
+      "OD_JIP2": 0,
+      "OD_JIP3": 0,
+      "OD_JIP4": 0,
+      "OD_JIP5": 0,
+      "OD_JIP6": 13,
+      "OD_JIP7": 0,
+      "OD_JIP8": 0,
+      "OD_JIP9": 0,
+      "OD_JIP10": 0,
+      "OD_ARO1": 0,
+      "OD_ARO2": 0,
+      "OD_ARO3": 0,
+      "OD_ARO4": 0,
+      "OD_ARO5": 0,
+      "OD_ARO6": 0,
+      "OD_ARO7": 0
+    },
+    {
+      "rok": 2010,
+      "pohlavi": 1,
+      "vek_kod": 66000004,
+      "kraj_pacient": "CZ010",
+      "ZDG": "A04",
+      "operace": 0,
+      "umrti": 0,
+      "pocet_hosp": 2,
+      "OD_ARO_JIP": 8,
+      "OD_JIP": 8,
+      "OD_ARO": 0,
+      "OD_JIP1": 0,
+      "OD_JIP2": 0,
+      "OD_JIP3": 0,
+      "OD_JIP4": 0,
+      "OD_JIP5": 0,
+      "OD_JIP6": 8,
+      "OD_JIP7": 0,
+      "OD_JIP8": 0,
+      "OD_JIP9": 0,
+      "OD_JIP10": 0,
+      "OD_ARO1": 0,
+      "OD_ARO2": 0,
+      "OD_ARO3": 0,
+      "OD_ARO4": 0,
+      "OD_ARO5": 0,
+      "OD_ARO6": 0,
+      "OD_ARO7": 0
+    },
+    {
+      "rok": 2010,
+      "pohlavi": 1,
+      "vek_kod": 66000004,
+      "kraj_pacient": "CZ010",
+      "ZDG": "A05",
+      "operace": 0,
+      "umrti": 0,
+      "pocet_hosp": 1,
+      "OD_ARO_JIP": 1,
+      "OD_JIP": 1,
+      "OD_ARO": 0,
+      "OD_JIP1": 0,
+      "OD_JIP2": 0,
+      "OD_JIP3": 0,
+      "OD_JIP4": 0,
+      "OD_JIP5": 0,
+      "OD_JIP6": 1,
+      "OD_JIP7": 0,
+      "OD_JIP8": 0,
+      "OD_JIP9": 0,
+      "OD_JIP10": 0,
+      "OD_ARO1": 0,
+      "OD_ARO2": 0,
+      "OD_ARO3": 0,
+      "OD_ARO4": 0,
+      "OD_ARO5": 0,
+      "OD_ARO6": 0,
+      "OD_ARO7": 0
+    },
+    {
+      "rok": 2010,
+      "pohlavi": 1,
+      "vek_kod": 66000004,
+      "kraj_pacient": "CZ010",
+      "ZDG": "A08",
+      "operace": 0,
+      "umrti": 0,
+      "pocet_hosp": 28,
+      "OD_ARO_JIP": 55,
+      "OD_JIP": 55,
+      "OD_ARO": 0,
+      "OD_JIP1": 0,
+      "OD_JIP2": 0,
+      "OD_JIP3": 0,
+      "OD_JIP4": 0,
+      "OD_JIP5": 0,
+      "OD_JIP6": 55,
+      "OD_JIP7": 0,
+      "OD_JIP8": 0,
+      "OD_JIP9": 0,
+      "OD_JIP10": 0,
+      "OD_ARO1": 0,
+      "OD_ARO2": 0,
+      "OD_ARO3": 0,
+      "OD_ARO4": 0,
+      "OD_ARO5": 0,
+      "OD_ARO6": 0,
+      "OD_ARO7": 0
+    },
+    {
+      "rok": 2010,
+      "pohlavi": 1,
+      "vek_kod": 66000004,
+      "kraj_pacient": "CZ010",
+      "ZDG": "A09",
+      "operace": 0,
+      "umrti": 0,
+      "pocet_hosp": 18,
+      "OD_ARO_JIP": 30,
+      "OD_JIP": 30,
+      "OD_ARO": 0,
+      "OD_JIP1": 0,
+      "OD_JIP2": 0,
+      "OD_JIP3": 0,
+      "OD_JIP4": 0,
+      "OD_JIP5": 1,
+      "OD_JIP6": 29,
+      "OD_JIP7": 0,
+      "OD_JIP8": 0,
+      "OD_JIP9": 0,
+      "OD_JIP10": 0,
+      "OD_ARO1": 0,
+      "OD_ARO2": 0,
+      "OD_ARO3": 0,
+      "OD_ARO4": 0,
+      "OD_ARO5": 0,
+      "OD_ARO6": 0,
+      "OD_ARO7": 0
+    }
+  ],
+  "memory_usage_bytes": 445397546,
+  "duplicate_row_count": 4205,
+  "missing_value_counts": {
+    "rok": 0,
+    "pohlavi": 0,
+    "vek_kod": 0,
+    "kraj_pacient": 0,
+    "ZDG": 0,
+    "operace": 0,
+    "umrti": 0,
+    "pocet_hosp": 0,
+    "OD_ARO_JIP": 0,
+    "OD_JIP": 0,
+    "OD_ARO": 0,
+    "OD_JIP1": 0,
+    "OD_JIP2": 0,
+    "OD_JIP3": 0,
+    "OD_JIP4": 0,
+    "OD_JIP5": 0,
+    "OD_JIP6": 0,
+    "OD_JIP7": 0,
+    "OD_JIP8": 0,
+    "OD_JIP9": 0,
+    "OD_JIP10": 0,
+    "OD_ARO1": 0,
+    "OD_ARO2": 0,
+    "OD_ARO3": 0,
+    "OD_ARO4": 0,
+    "OD_ARO5": 0,
+    "OD_ARO6": 0,
+    "OD_ARO7": 0
+  },
+  "missing_value_percentages": {
+    "rok": 0.0,
+    "pohlavi": 0.0,
+    "vek_kod": 0.0,
+    "kraj_pacient": 0.0,
+    "ZDG": 0.0,
+    "operace": 0.0,
+    "umrti": 0.0,
+    "pocet_hosp": 0.0,
+    "OD_ARO_JIP": 0.0,
+    "OD_JIP": 0.0,
+    "OD_ARO": 0.0,
+    "OD_JIP1": 0.0,
+    "OD_JIP2": 0.0,
+    "OD_JIP3": 0.0,
+    "OD_JIP4": 0.0,
+    "OD_JIP5": 0.0,
+    "OD_JIP6": 0.0,
+    "OD_JIP7": 0.0,
+    "OD_JIP8": 0.0,
+    "OD_JIP9": 0.0,
+    "OD_JIP10": 0.0,
+    "OD_ARO1": 0.0,
+    "OD_ARO2": 0.0,
+    "OD_ARO3": 0.0,
+    "OD_ARO4": 0.0,
+    "OD_ARO5": 0.0,
+    "OD_ARO6": 0.0,
+    "OD_ARO7": 0.0
+  },
+  "categorical_columns": {
+    "rok": {
+      "unique_count": 15,
+      "top_20_values": [
+        {
+          "value": "2011",
+          "count": 100488
+        },
+        {
+          "value": "2012",
+          "count": 100329
+        },
+        {
+          "value": "2010",
+          "count": 100029
+        },
+        {
+          "value": "2013",
+          "count": 97914
+        },
+        {
+          "value": "2014",
+          "count": 96879
+        },
+        {
+          "value": "2015",
+          "count": 95624
+        },
+        {
+          "value": "2016",
+          "count": 94433
+        },
+        {
+          "value": "2017",
+          "count": 93900
+        },
+        {
+          "value": "2019",
+          "count": 93680
+        },
+        {
+          "value": "2024",
+          "count": 93676
+        },
+        {
+          "value": "2018",
+          "count": 93412
+        },
+        {
+          "value": "2023",
+          "count": 92369
+        },
+        {
+          "value": "2022",
+          "count": 91460
+        },
+        {
+          "value": "2020",
+          "count": 87636
+        },
+        {
+          "value": "2021",
+          "count": 86278
+        }
+      ],
+      "example_values": [
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "pohlavi": {
+      "unique_count": 2,
+      "top_20_values": [
+        {
+          "value": "1",
+          "count": 727660
+        },
+        {
+          "value": "2",
+          "count": 690447
+        }
+      ],
+      "example_values": [
+        "1",
+        "2"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "vek_kod": {
+      "unique_count": 21,
+      "top_20_values": [
+        {
+          "value": "66065069",
+          "count": 126190
+        },
+        {
+          "value": "66070074",
+          "count": 125698
+        },
+        {
+          "value": "66060064",
+          "count": 113422
+        },
+        {
+          "value": "66075079",
+          "count": 112981
+        },
+        {
+          "value": "66055059",
+          "count": 97998
+        },
+        {
+          "value": "66080084",
+          "count": 92002
+        },
+        {
+          "value": "66050054",
+          "count": 84195
+        },
+        {
+          "value": "66000004",
+          "count": 79258
+        },
+        {
+          "value": "66045049",
+          "count": 75912
+        },
+        {
+          "value": "66040044",
+          "count": 67599
+        },
+        {
+          "value": "66085089",
+          "count": 63607
+        },
+        {
+          "value": "66035039",
+          "count": 59988
+        },
+        {
+          "value": "66015019",
+          "count": 58607
+        },
+        {
+          "value": "66030034",
+          "count": 51599
+        },
+        {
+          "value": "66010014",
+          "count": 50081
+        },
+        {
+          "value": "66005009",
+          "count": 44728
+        },
+        {
+          "value": "66025029",
+          "count": 42733
+        },
+        {
+          "value": "66020024",
+          "count": 35748
+        },
+        {
+          "value": "66090094",
+          "count": 28981
+        },
+        {
+          "value": "66095999",
+          "count": 6761
+        }
+      ],
+      "example_values": [
+        "66000004",
+        "66005009",
+        "66010014",
+        "66015019",
+        "66020024",
+        "66025029",
+        "66030034",
+        "66035039",
+        "66040044",
+        "66045049",
+        "66050054",
+        "66055059",
+        "66060064",
+        "66065069",
+        "66070074",
+        "66075079",
+        "66080084",
+        "66085089",
+        "66090094",
+        "66095999"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "kraj_pacient": {
+      "unique_count": 15,
+      "top_20_values": [
+        {
+          "value": "CZ064",
+          "count": 150282
+        },
+        {
+          "value": "CZ020",
+          "count": 147790
+        },
+        {
+          "value": "CZ010",
+          "count": 144205
+        },
+        {
+          "value": "CZ080",
+          "count": 135684
+        },
+        {
+          "value": "CZ042",
+          "count": 110167
+        },
+        {
+          "value": "CZ031",
+          "count": 92437
+        },
+        {
+          "value": "CZ071",
+          "count": 83461
+        },
+        {
+          "value": "CZ072",
+          "count": 83042
+        },
+        {
+          "value": "CZ063",
+          "count": 81323
+        },
+        {
+          "value": "CZ052",
+          "count": 73425
+        },
+        {
+          "value": "CZ051",
+          "count": 71445
+        },
+        {
+          "value": "CZ053",
+          "count": 70905
+        },
+        {
+          "value": "CZ032",
+          "count": 64739
+        },
+        {
+          "value": "CZ099",
+          "count": 58729
+        },
+        {
+          "value": "CZ041",
+          "count": 50473
+        }
+      ],
+      "example_values": [
+        "CZ010",
+        "CZ020",
+        "CZ031",
+        "CZ032",
+        "CZ041",
+        "CZ042",
+        "CZ051",
+        "CZ052",
+        "CZ053",
+        "CZ063",
+        "CZ064",
+        "CZ071",
+        "CZ072",
+        "CZ080",
+        "CZ099"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "ZDG": {
+      "unique_count": 1567,
+      "top_20_values": [
+        {
+          "value": "ostatni",
+          "count": 27954
+        },
+        {
+          "value": "S06",
+          "count": 17768
+        },
+        {
+          "value": "A41",
+          "count": 16360
+        },
+        {
+          "value": "J96",
+          "count": 13973
+        },
+        {
+          "value": "K56",
+          "count": 13557
+        },
+        {
+          "value": "I21",
+          "count": 13109
+        },
+        {
+          "value": "I63",
+          "count": 12727
+        },
+        {
+          "value": "I50",
+          "count": 12695
+        },
+        {
+          "value": "S72",
+          "count": 12512
+        },
+        {
+          "value": "J18",
+          "count": 11631
+        },
+        {
+          "value": "K80",
+          "count": 11617
+        },
+        {
+          "value": "I61",
+          "count": 11436
+        },
+        {
+          "value": "K85",
+          "count": 10724
+        },
+        {
+          "value": "G40",
+          "count": 10326
+        },
+        {
+          "value": "I70",
+          "count": 9930
+        },
+        {
+          "value": "K25",
+          "count": 9672
+        },
+        {
+          "value": "I46",
+          "count": 9028
+        },
+        {
+          "value": "S22",
+          "count": 8982
+        },
+        {
+          "value": "I25",
+          "count": 8972
+        },
+        {
+          "value": "I26",
+          "count": 8626
+        }
+      ],
+      "example_values": [
+        "A02",
+        "A04",
+        "A05",
+        "A08",
+        "A09",
+        "A37",
+        "A39",
+        "A40",
+        "A41",
+        "A49",
+        "A84",
+        "B00",
+        "B01",
+        "B08",
+        "B27",
+        "B34",
+        "C22",
+        "C47",
+        "C71",
+        "C81"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "operace": {
+      "unique_count": 2,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 776944
+        },
+        {
+          "value": "1",
+          "count": 641163
+        }
+      ],
+      "example_values": [
+        "0",
+        "1"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "umrti": {
+      "unique_count": 2,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1244689
+        },
+        {
+          "value": "1",
+          "count": 173418
+        }
+      ],
+      "example_values": [
+        "0",
+        "1"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "pocet_hosp": {
+      "unique_count": 430,
+      "top_20_values": [
+        {
+          "value": "1",
+          "count": 836083
+        },
+        {
+          "value": "2",
+          "count": 227036
+        },
+        {
+          "value": "3",
+          "count": 103711
+        },
+        {
+          "value": "4",
+          "count": 59135
+        },
+        {
+          "value": "5",
+          "count": 38175
+        },
+        {
+          "value": "6",
+          "count": 26632
+        },
+        {
+          "value": "7",
+          "count": 19399
+        },
+        {
+          "value": "8",
+          "count": 14666
+        },
+        {
+          "value": "9",
+          "count": 11570
+        },
+        {
+          "value": "10",
+          "count": 9326
+        },
+        {
+          "value": "11",
+          "count": 7498
+        },
+        {
+          "value": "12",
+          "count": 6280
+        },
+        {
+          "value": "13",
+          "count": 5301
+        },
+        {
+          "value": "14",
+          "count": 4467
+        },
+        {
+          "value": "15",
+          "count": 3959
+        },
+        {
+          "value": "16",
+          "count": 3370
+        },
+        {
+          "value": "17",
+          "count": 2926
+        },
+        {
+          "value": "18",
+          "count": 2614
+        },
+        {
+          "value": "19",
+          "count": 2361
+        },
+        {
+          "value": "20",
+          "count": 2141
+        }
+      ],
+      "example_values": [
+        "1",
+        "2",
+        "28",
+        "18",
+        "54",
+        "3",
+        "6",
+        "5",
+        "7",
+        "4",
+        "10",
+        "21",
+        "109",
+        "26",
+        "43",
+        "16",
+        "8",
+        "25",
+        "60",
+        "27"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO": {
+      "unique_count": 676,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1118431
+        },
+        {
+          "value": "1",
+          "count": 70424
+        },
+        {
+          "value": "2",
+          "count": 41923
+        },
+        {
+          "value": "3",
+          "count": 25775
+        },
+        {
+          "value": "4",
+          "count": 18658
+        },
+        {
+          "value": "5",
+          "count": 15138
+        },
+        {
+          "value": "6",
+          "count": 12580
+        },
+        {
+          "value": "7",
+          "count": 10644
+        },
+        {
+          "value": "8",
+          "count": 9231
+        },
+        {
+          "value": "9",
+          "count": 8014
+        },
+        {
+          "value": "10",
+          "count": 6995
+        },
+        {
+          "value": "11",
+          "count": 6242
+        },
+        {
+          "value": "12",
+          "count": 5746
+        },
+        {
+          "value": "13",
+          "count": 5199
+        },
+        {
+          "value": "14",
+          "count": 4716
+        },
+        {
+          "value": "15",
+          "count": 4164
+        },
+        {
+          "value": "16",
+          "count": 3646
+        },
+        {
+          "value": "17",
+          "count": 3409
+        },
+        {
+          "value": "18",
+          "count": 2982
+        },
+        {
+          "value": "19",
+          "count": 2917
+        }
+      ],
+      "example_values": [
+        "0",
+        "8",
+        "2",
+        "4",
+        "1",
+        "3",
+        "5",
+        "11",
+        "7",
+        "16",
+        "19",
+        "33",
+        "15",
+        "108",
+        "1090",
+        "81",
+        "421",
+        "28",
+        "64",
+        "126"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP1": {
+      "unique_count": 233,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1411454
+        },
+        {
+          "value": "7",
+          "count": 209
+        },
+        {
+          "value": "2",
+          "count": 202
+        },
+        {
+          "value": "4",
+          "count": 200
+        },
+        {
+          "value": "1",
+          "count": 194
+        },
+        {
+          "value": "3",
+          "count": 184
+        },
+        {
+          "value": "8",
+          "count": 182
+        },
+        {
+          "value": "6",
+          "count": 167
+        },
+        {
+          "value": "9",
+          "count": 162
+        },
+        {
+          "value": "5",
+          "count": 138
+        },
+        {
+          "value": "10",
+          "count": 137
+        },
+        {
+          "value": "14",
+          "count": 121
+        },
+        {
+          "value": "13",
+          "count": 115
+        },
+        {
+          "value": "11",
+          "count": 112
+        },
+        {
+          "value": "12",
+          "count": 91
+        },
+        {
+          "value": "23",
+          "count": 89
+        },
+        {
+          "value": "21",
+          "count": 87
+        },
+        {
+          "value": "15",
+          "count": 86
+        },
+        {
+          "value": "35",
+          "count": 84
+        },
+        {
+          "value": "18",
+          "count": 80
+        }
+      ],
+      "example_values": [
+        "0",
+        "58",
+        "4",
+        "7",
+        "44",
+        "13",
+        "8",
+        "54",
+        "1",
+        "123",
+        "65",
+        "32",
+        "79",
+        "14",
+        "48",
+        "3",
+        "55",
+        "35",
+        "6",
+        "76"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP2": {
+      "unique_count": 279,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 919845
+        },
+        {
+          "value": "1",
+          "count": 148164
+        },
+        {
+          "value": "2",
+          "count": 81184
+        },
+        {
+          "value": "3",
+          "count": 50500
+        },
+        {
+          "value": "4",
+          "count": 35721
+        },
+        {
+          "value": "5",
+          "count": 26861
+        },
+        {
+          "value": "6",
+          "count": 21101
+        },
+        {
+          "value": "7",
+          "count": 16636
+        },
+        {
+          "value": "8",
+          "count": 13693
+        },
+        {
+          "value": "9",
+          "count": 11302
+        },
+        {
+          "value": "10",
+          "count": 9357
+        },
+        {
+          "value": "11",
+          "count": 8057
+        },
+        {
+          "value": "12",
+          "count": 7047
+        },
+        {
+          "value": "13",
+          "count": 6071
+        },
+        {
+          "value": "14",
+          "count": 5399
+        },
+        {
+          "value": "15",
+          "count": 4730
+        },
+        {
+          "value": "16",
+          "count": 4235
+        },
+        {
+          "value": "17",
+          "count": 3656
+        },
+        {
+          "value": "18",
+          "count": 3320
+        },
+        {
+          "value": "19",
+          "count": 2938
+        }
+      ],
+      "example_values": [
+        "0",
+        "2",
+        "7",
+        "1",
+        "6",
+        "4",
+        "8",
+        "5",
+        "21",
+        "3",
+        "11",
+        "50",
+        "15",
+        "36",
+        "150",
+        "35",
+        "30",
+        "12",
+        "19",
+        "13"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP3": {
+      "unique_count": 288,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 702277
+        },
+        {
+          "value": "1",
+          "count": 235953
+        },
+        {
+          "value": "2",
+          "count": 122615
+        },
+        {
+          "value": "3",
+          "count": 74584
+        },
+        {
+          "value": "4",
+          "count": 51392
+        },
+        {
+          "value": "5",
+          "count": 37326
+        },
+        {
+          "value": "6",
+          "count": 28692
+        },
+        {
+          "value": "7",
+          "count": 22354
+        },
+        {
+          "value": "8",
+          "count": 17700
+        },
+        {
+          "value": "9",
+          "count": 14274
+        },
+        {
+          "value": "10",
+          "count": 12181
+        },
+        {
+          "value": "11",
+          "count": 9907
+        },
+        {
+          "value": "12",
+          "count": 8568
+        },
+        {
+          "value": "13",
+          "count": 7336
+        },
+        {
+          "value": "14",
+          "count": 6467
+        },
+        {
+          "value": "15",
+          "count": 5466
+        },
+        {
+          "value": "16",
+          "count": 4867
+        },
+        {
+          "value": "17",
+          "count": 4328
+        },
+        {
+          "value": "18",
+          "count": 3862
+        },
+        {
+          "value": "19",
+          "count": 3340
+        }
+      ],
+      "example_values": [
+        "0",
+        "1",
+        "2",
+        "7",
+        "3",
+        "4",
+        "6",
+        "12",
+        "21",
+        "14",
+        "8",
+        "10",
+        "5",
+        "19",
+        "9",
+        "11",
+        "22",
+        "23",
+        "30",
+        "40"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP4": {
+      "unique_count": 426,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 554707
+        },
+        {
+          "value": "1",
+          "count": 244409
+        },
+        {
+          "value": "2",
+          "count": 139084
+        },
+        {
+          "value": "3",
+          "count": 92356
+        },
+        {
+          "value": "4",
+          "count": 66669
+        },
+        {
+          "value": "5",
+          "count": 50322
+        },
+        {
+          "value": "6",
+          "count": 38746
+        },
+        {
+          "value": "7",
+          "count": 30505
+        },
+        {
+          "value": "8",
+          "count": 23890
+        },
+        {
+          "value": "9",
+          "count": 19538
+        },
+        {
+          "value": "10",
+          "count": 16215
+        },
+        {
+          "value": "11",
+          "count": 13866
+        },
+        {
+          "value": "12",
+          "count": 11957
+        },
+        {
+          "value": "13",
+          "count": 10268
+        },
+        {
+          "value": "14",
+          "count": 8886
+        },
+        {
+          "value": "15",
+          "count": 7728
+        },
+        {
+          "value": "16",
+          "count": 6806
+        },
+        {
+          "value": "17",
+          "count": 5914
+        },
+        {
+          "value": "18",
+          "count": 5170
+        },
+        {
+          "value": "19",
+          "count": 4637
+        }
+      ],
+      "example_values": [
+        "0",
+        "1",
+        "3",
+        "5",
+        "7",
+        "2",
+        "9",
+        "4",
+        "6",
+        "20",
+        "8",
+        "25",
+        "14",
+        "17",
+        "16",
+        "10",
+        "19",
+        "13",
+        "40",
+        "22"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP5": {
+      "unique_count": 214,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1366849
+        },
+        {
+          "value": "1",
+          "count": 18161
+        },
+        {
+          "value": "2",
+          "count": 9095
+        },
+        {
+          "value": "3",
+          "count": 5484
+        },
+        {
+          "value": "4",
+          "count": 3737
+        },
+        {
+          "value": "5",
+          "count": 2771
+        },
+        {
+          "value": "6",
+          "count": 1947
+        },
+        {
+          "value": "7",
+          "count": 1516
+        },
+        {
+          "value": "8",
+          "count": 1146
+        },
+        {
+          "value": "9",
+          "count": 1005
+        },
+        {
+          "value": "10",
+          "count": 722
+        },
+        {
+          "value": "11",
+          "count": 646
+        },
+        {
+          "value": "12",
+          "count": 509
+        },
+        {
+          "value": "13",
+          "count": 447
+        },
+        {
+          "value": "14",
+          "count": 412
+        },
+        {
+          "value": "15",
+          "count": 333
+        },
+        {
+          "value": "16",
+          "count": 309
+        },
+        {
+          "value": "17",
+          "count": 244
+        },
+        {
+          "value": "18",
+          "count": 240
+        },
+        {
+          "value": "20",
+          "count": 200
+        }
+      ],
+      "example_values": [
+        "0",
+        "1",
+        "11",
+        "100",
+        "30",
+        "4",
+        "2",
+        "3",
+        "21",
+        "15",
+        "6",
+        "12",
+        "14",
+        "10",
+        "7",
+        "167",
+        "8",
+        "35",
+        "5",
+        "41"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP6": {
+      "unique_count": 337,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1223204
+        },
+        {
+          "value": "1",
+          "count": 58665
+        },
+        {
+          "value": "2",
+          "count": 34182
+        },
+        {
+          "value": "3",
+          "count": 20563
+        },
+        {
+          "value": "4",
+          "count": 14320
+        },
+        {
+          "value": "5",
+          "count": 10136
+        },
+        {
+          "value": "6",
+          "count": 7705
+        },
+        {
+          "value": "7",
+          "count": 6134
+        },
+        {
+          "value": "8",
+          "count": 4953
+        },
+        {
+          "value": "9",
+          "count": 3816
+        },
+        {
+          "value": "10",
+          "count": 3292
+        },
+        {
+          "value": "11",
+          "count": 2765
+        },
+        {
+          "value": "12",
+          "count": 2450
+        },
+        {
+          "value": "13",
+          "count": 2070
+        },
+        {
+          "value": "14",
+          "count": 1740
+        },
+        {
+          "value": "15",
+          "count": 1569
+        },
+        {
+          "value": "16",
+          "count": 1390
+        },
+        {
+          "value": "17",
+          "count": 1158
+        },
+        {
+          "value": "18",
+          "count": 1113
+        },
+        {
+          "value": "19",
+          "count": 1009
+        }
+      ],
+      "example_values": [
+        "13",
+        "8",
+        "1",
+        "55",
+        "29",
+        "10",
+        "314",
+        "58",
+        "0",
+        "5",
+        "6",
+        "7",
+        "4",
+        "12",
+        "2",
+        "15",
+        "19",
+        "37",
+        "3",
+        "21"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP7": {
+      "unique_count": 506,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1410255
+        },
+        {
+          "value": "1",
+          "count": 1381
+        },
+        {
+          "value": "2",
+          "count": 910
+        },
+        {
+          "value": "3",
+          "count": 734
+        },
+        {
+          "value": "4",
+          "count": 536
+        },
+        {
+          "value": "5",
+          "count": 442
+        },
+        {
+          "value": "6",
+          "count": 333
+        },
+        {
+          "value": "7",
+          "count": 277
+        },
+        {
+          "value": "8",
+          "count": 226
+        },
+        {
+          "value": "9",
+          "count": 198
+        },
+        {
+          "value": "10",
+          "count": 167
+        },
+        {
+          "value": "12",
+          "count": 148
+        },
+        {
+          "value": "11",
+          "count": 143
+        },
+        {
+          "value": "13",
+          "count": 116
+        },
+        {
+          "value": "14",
+          "count": 113
+        },
+        {
+          "value": "15",
+          "count": 98
+        },
+        {
+          "value": "16",
+          "count": 73
+        },
+        {
+          "value": "17",
+          "count": 67
+        },
+        {
+          "value": "21",
+          "count": 65
+        },
+        {
+          "value": "18",
+          "count": 57
+        }
+      ],
+      "example_values": [
+        "0",
+        "4",
+        "1",
+        "6",
+        "2",
+        "5",
+        "44",
+        "3",
+        "27",
+        "1978",
+        "14",
+        "311",
+        "20",
+        "45",
+        "9",
+        "152",
+        "8",
+        "15",
+        "51",
+        "16"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP8": {
+      "unique_count": 828,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1404466
+        },
+        {
+          "value": "1",
+          "count": 1564
+        },
+        {
+          "value": "2",
+          "count": 1296
+        },
+        {
+          "value": "3",
+          "count": 1044
+        },
+        {
+          "value": "4",
+          "count": 914
+        },
+        {
+          "value": "5",
+          "count": 782
+        },
+        {
+          "value": "6",
+          "count": 643
+        },
+        {
+          "value": "7",
+          "count": 572
+        },
+        {
+          "value": "8",
+          "count": 450
+        },
+        {
+          "value": "10",
+          "count": 396
+        },
+        {
+          "value": "9",
+          "count": 394
+        },
+        {
+          "value": "11",
+          "count": 310
+        },
+        {
+          "value": "13",
+          "count": 286
+        },
+        {
+          "value": "12",
+          "count": 255
+        },
+        {
+          "value": "14",
+          "count": 250
+        },
+        {
+          "value": "15",
+          "count": 204
+        },
+        {
+          "value": "17",
+          "count": 194
+        },
+        {
+          "value": "18",
+          "count": 173
+        },
+        {
+          "value": "16",
+          "count": 170
+        },
+        {
+          "value": "20",
+          "count": 149
+        }
+      ],
+      "example_values": [
+        "0",
+        "4",
+        "3",
+        "22",
+        "5",
+        "12",
+        "1",
+        "10",
+        "2",
+        "26",
+        "2188",
+        "55",
+        "72",
+        "80",
+        "6",
+        "13",
+        "25",
+        "21",
+        "11",
+        "37"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP9": {
+      "unique_count": 163,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1406924
+        },
+        {
+          "value": "1",
+          "count": 2324
+        },
+        {
+          "value": "2",
+          "count": 1529
+        },
+        {
+          "value": "3",
+          "count": 1102
+        },
+        {
+          "value": "4",
+          "count": 825
+        },
+        {
+          "value": "5",
+          "count": 577
+        },
+        {
+          "value": "6",
+          "count": 479
+        },
+        {
+          "value": "7",
+          "count": 424
+        },
+        {
+          "value": "8",
+          "count": 365
+        },
+        {
+          "value": "9",
+          "count": 291
+        },
+        {
+          "value": "10",
+          "count": 245
+        },
+        {
+          "value": "11",
+          "count": 202
+        },
+        {
+          "value": "12",
+          "count": 197
+        },
+        {
+          "value": "13",
+          "count": 181
+        },
+        {
+          "value": "14",
+          "count": 154
+        },
+        {
+          "value": "15",
+          "count": 136
+        },
+        {
+          "value": "16",
+          "count": 125
+        },
+        {
+          "value": "17",
+          "count": 120
+        },
+        {
+          "value": "18",
+          "count": 104
+        },
+        {
+          "value": "19",
+          "count": 99
+        }
+      ],
+      "example_values": [
+        "0",
+        "3",
+        "4",
+        "16",
+        "1",
+        "12",
+        "2",
+        "6",
+        "8",
+        "20",
+        "23",
+        "5",
+        "9",
+        "21",
+        "15",
+        "11",
+        "38",
+        "18",
+        "55",
+        "37"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_JIP10": {
+      "unique_count": 93,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1413859
+        },
+        {
+          "value": "1",
+          "count": 983
+        },
+        {
+          "value": "2",
+          "count": 665
+        },
+        {
+          "value": "3",
+          "count": 473
+        },
+        {
+          "value": "4",
+          "count": 342
+        },
+        {
+          "value": "5",
+          "count": 240
+        },
+        {
+          "value": "6",
+          "count": 208
+        },
+        {
+          "value": "7",
+          "count": 191
+        },
+        {
+          "value": "8",
+          "count": 142
+        },
+        {
+          "value": "10",
+          "count": 97
+        },
+        {
+          "value": "9",
+          "count": 92
+        },
+        {
+          "value": "11",
+          "count": 90
+        },
+        {
+          "value": "13",
+          "count": 59
+        },
+        {
+          "value": "14",
+          "count": 55
+        },
+        {
+          "value": "15",
+          "count": 54
+        },
+        {
+          "value": "12",
+          "count": 53
+        },
+        {
+          "value": "16",
+          "count": 36
+        },
+        {
+          "value": "18",
+          "count": 34
+        },
+        {
+          "value": "20",
+          "count": 34
+        },
+        {
+          "value": "22",
+          "count": 33
+        }
+      ],
+      "example_values": [
+        "0",
+        "7",
+        "1",
+        "2",
+        "5",
+        "4",
+        "6",
+        "3",
+        "12",
+        "67",
+        "14",
+        "15",
+        "19",
+        "11",
+        "16",
+        "13",
+        "56",
+        "46",
+        "23",
+        "8"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO1": {
+      "unique_count": 110,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1323592
+        },
+        {
+          "value": "1",
+          "count": 39979
+        },
+        {
+          "value": "2",
+          "count": 17392
+        },
+        {
+          "value": "3",
+          "count": 8734
+        },
+        {
+          "value": "4",
+          "count": 5832
+        },
+        {
+          "value": "5",
+          "count": 3890
+        },
+        {
+          "value": "6",
+          "count": 3065
+        },
+        {
+          "value": "7",
+          "count": 2374
+        },
+        {
+          "value": "8",
+          "count": 1864
+        },
+        {
+          "value": "9",
+          "count": 1511
+        },
+        {
+          "value": "10",
+          "count": 1287
+        },
+        {
+          "value": "11",
+          "count": 1078
+        },
+        {
+          "value": "12",
+          "count": 964
+        },
+        {
+          "value": "13",
+          "count": 759
+        },
+        {
+          "value": "14",
+          "count": 669
+        },
+        {
+          "value": "15",
+          "count": 537
+        },
+        {
+          "value": "16",
+          "count": 467
+        },
+        {
+          "value": "17",
+          "count": 411
+        },
+        {
+          "value": "19",
+          "count": 333
+        },
+        {
+          "value": "18",
+          "count": 331
+        }
+      ],
+      "example_values": [
+        "0",
+        "3",
+        "1",
+        "2",
+        "4",
+        "6",
+        "14",
+        "13",
+        "5",
+        "11",
+        "10",
+        "7",
+        "9",
+        "8",
+        "28",
+        "12",
+        "38",
+        "27",
+        "26",
+        "33"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO2": {
+      "unique_count": 153,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1248898
+        },
+        {
+          "value": "1",
+          "count": 56920
+        },
+        {
+          "value": "2",
+          "count": 27604
+        },
+        {
+          "value": "3",
+          "count": 16812
+        },
+        {
+          "value": "4",
+          "count": 11900
+        },
+        {
+          "value": "5",
+          "count": 9156
+        },
+        {
+          "value": "6",
+          "count": 7260
+        },
+        {
+          "value": "7",
+          "count": 5957
+        },
+        {
+          "value": "8",
+          "count": 4864
+        },
+        {
+          "value": "9",
+          "count": 3958
+        },
+        {
+          "value": "10",
+          "count": 3384
+        },
+        {
+          "value": "11",
+          "count": 2775
+        },
+        {
+          "value": "12",
+          "count": 2346
+        },
+        {
+          "value": "13",
+          "count": 1968
+        },
+        {
+          "value": "14",
+          "count": 1698
+        },
+        {
+          "value": "15",
+          "count": 1476
+        },
+        {
+          "value": "16",
+          "count": 1288
+        },
+        {
+          "value": "17",
+          "count": 1053
+        },
+        {
+          "value": "18",
+          "count": 923
+        },
+        {
+          "value": "19",
+          "count": 821
+        }
+      ],
+      "example_values": [
+        "0",
+        "3",
+        "2",
+        "4",
+        "1",
+        "5",
+        "18",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "21",
+        "20",
+        "13",
+        "16",
+        "19",
+        "32",
+        "15",
+        "12"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO3": {
+      "unique_count": 227,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1191172
+        },
+        {
+          "value": "1",
+          "count": 69248
+        },
+        {
+          "value": "2",
+          "count": 35918
+        },
+        {
+          "value": "3",
+          "count": 21855
+        },
+        {
+          "value": "4",
+          "count": 15758
+        },
+        {
+          "value": "5",
+          "count": 12245
+        },
+        {
+          "value": "6",
+          "count": 9727
+        },
+        {
+          "value": "7",
+          "count": 8020
+        },
+        {
+          "value": "8",
+          "count": 6661
+        },
+        {
+          "value": "9",
+          "count": 5597
+        },
+        {
+          "value": "10",
+          "count": 4736
+        },
+        {
+          "value": "11",
+          "count": 4090
+        },
+        {
+          "value": "12",
+          "count": 3539
+        },
+        {
+          "value": "13",
+          "count": 3069
+        },
+        {
+          "value": "14",
+          "count": 2662
+        },
+        {
+          "value": "15",
+          "count": 2307
+        },
+        {
+          "value": "16",
+          "count": 2054
+        },
+        {
+          "value": "17",
+          "count": 1804
+        },
+        {
+          "value": "18",
+          "count": 1594
+        },
+        {
+          "value": "19",
+          "count": 1407
+        }
+      ],
+      "example_values": [
+        "0",
+        "1",
+        "5",
+        "2",
+        "4",
+        "3",
+        "10",
+        "7",
+        "11",
+        "34",
+        "13",
+        "8",
+        "19",
+        "6",
+        "12",
+        "15",
+        "37",
+        "9",
+        "20",
+        "16"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO4": {
+      "unique_count": 200,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1404756
+        },
+        {
+          "value": "1",
+          "count": 4356
+        },
+        {
+          "value": "2",
+          "count": 2303
+        },
+        {
+          "value": "3",
+          "count": 1127
+        },
+        {
+          "value": "4",
+          "count": 813
+        },
+        {
+          "value": "5",
+          "count": 685
+        },
+        {
+          "value": "6",
+          "count": 524
+        },
+        {
+          "value": "7",
+          "count": 413
+        },
+        {
+          "value": "8",
+          "count": 385
+        },
+        {
+          "value": "9",
+          "count": 295
+        },
+        {
+          "value": "10",
+          "count": 258
+        },
+        {
+          "value": "11",
+          "count": 189
+        },
+        {
+          "value": "12",
+          "count": 169
+        },
+        {
+          "value": "13",
+          "count": 153
+        },
+        {
+          "value": "15",
+          "count": 127
+        },
+        {
+          "value": "14",
+          "count": 102
+        },
+        {
+          "value": "16",
+          "count": 101
+        },
+        {
+          "value": "18",
+          "count": 90
+        },
+        {
+          "value": "17",
+          "count": 90
+        },
+        {
+          "value": "20",
+          "count": 82
+        }
+      ],
+      "example_values": [
+        "0",
+        "8",
+        "2",
+        "4",
+        "1",
+        "3",
+        "11",
+        "7",
+        "16",
+        "5",
+        "33",
+        "15",
+        "13",
+        "28",
+        "17",
+        "41",
+        "6",
+        "104",
+        "52",
+        "20"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO5": {
+      "unique_count": 68,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1414680
+        },
+        {
+          "value": "1",
+          "count": 1082
+        },
+        {
+          "value": "2",
+          "count": 586
+        },
+        {
+          "value": "3",
+          "count": 306
+        },
+        {
+          "value": "4",
+          "count": 206
+        },
+        {
+          "value": "5",
+          "count": 156
+        },
+        {
+          "value": "6",
+          "count": 139
+        },
+        {
+          "value": "7",
+          "count": 119
+        },
+        {
+          "value": "8",
+          "count": 97
+        },
+        {
+          "value": "9",
+          "count": 90
+        },
+        {
+          "value": "10",
+          "count": 72
+        },
+        {
+          "value": "12",
+          "count": 56
+        },
+        {
+          "value": "11",
+          "count": 46
+        },
+        {
+          "value": "13",
+          "count": 45
+        },
+        {
+          "value": "17",
+          "count": 39
+        },
+        {
+          "value": "14",
+          "count": 31
+        },
+        {
+          "value": "15",
+          "count": 28
+        },
+        {
+          "value": "18",
+          "count": 27
+        },
+        {
+          "value": "20",
+          "count": 26
+        },
+        {
+          "value": "16",
+          "count": 25
+        }
+      ],
+      "example_values": [
+        "0",
+        "19",
+        "30",
+        "4",
+        "15",
+        "11",
+        "6",
+        "2",
+        "1",
+        "27",
+        "35",
+        "5",
+        "14",
+        "3",
+        "13",
+        "22",
+        "7",
+        "18",
+        "21",
+        "9"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO6": {
+      "unique_count": 198,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1412868
+        },
+        {
+          "value": "1",
+          "count": 625
+        },
+        {
+          "value": "2",
+          "count": 464
+        },
+        {
+          "value": "4",
+          "count": 427
+        },
+        {
+          "value": "3",
+          "count": 381
+        },
+        {
+          "value": "5",
+          "count": 358
+        },
+        {
+          "value": "6",
+          "count": 311
+        },
+        {
+          "value": "7",
+          "count": 262
+        },
+        {
+          "value": "8",
+          "count": 205
+        },
+        {
+          "value": "9",
+          "count": 153
+        },
+        {
+          "value": "10",
+          "count": 143
+        },
+        {
+          "value": "11",
+          "count": 135
+        },
+        {
+          "value": "12",
+          "count": 128
+        },
+        {
+          "value": "13",
+          "count": 105
+        },
+        {
+          "value": "14",
+          "count": 85
+        },
+        {
+          "value": "15",
+          "count": 81
+        },
+        {
+          "value": "16",
+          "count": 59
+        },
+        {
+          "value": "21",
+          "count": 58
+        },
+        {
+          "value": "20",
+          "count": 57
+        },
+        {
+          "value": "19",
+          "count": 56
+        }
+      ],
+      "example_values": [
+        "0",
+        "2",
+        "5",
+        "1",
+        "10",
+        "180",
+        "57",
+        "136",
+        "28",
+        "4",
+        "54",
+        "45",
+        "6",
+        "12",
+        "14",
+        "7",
+        "11",
+        "3",
+        "18",
+        "297"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "OD_ARO7": {
+      "unique_count": 568,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 1411930
+        },
+        {
+          "value": "1",
+          "count": 1002
+        },
+        {
+          "value": "2",
+          "count": 644
+        },
+        {
+          "value": "3",
+          "count": 474
+        },
+        {
+          "value": "4",
+          "count": 341
+        },
+        {
+          "value": "5",
+          "count": 281
+        },
+        {
+          "value": "6",
+          "count": 241
+        },
+        {
+          "value": "7",
+          "count": 195
+        },
+        {
+          "value": "8",
+          "count": 155
+        },
+        {
+          "value": "9",
+          "count": 152
+        },
+        {
+          "value": "10",
+          "count": 126
+        },
+        {
+          "value": "14",
+          "count": 96
+        },
+        {
+          "value": "11",
+          "count": 96
+        },
+        {
+          "value": "12",
+          "count": 86
+        },
+        {
+          "value": "13",
+          "count": 81
+        },
+        {
+          "value": "15",
+          "count": 69
+        },
+        {
+          "value": "16",
+          "count": 69
+        },
+        {
+          "value": "17",
+          "count": 55
+        },
+        {
+          "value": "19",
+          "count": 53
+        },
+        {
+          "value": "18",
+          "count": 51
+        }
+      ],
+      "example_values": [
+        "0",
+        "98",
+        "1",
+        "2",
+        "910",
+        "24",
+        "284",
+        "3",
+        "10",
+        "81",
+        "34",
+        "18",
+        "7",
+        "4",
+        "51",
+        "14",
+        "1182",
+        "239",
+        "67",
+        "90"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    }
+  },
+  "unique_value_counts_for_categorical_columns": {
+    "rok": 15,
+    "pohlavi": 2,
+    "vek_kod": 21,
+    "kraj_pacient": 15,
+    "ZDG": 1567,
+    "operace": 2,
+    "umrti": 2,
+    "pocet_hosp": 430,
+    "OD_ARO": 676,
+    "OD_JIP1": 233,
+    "OD_JIP2": 279,
+    "OD_JIP3": 288,
+    "OD_JIP4": 426,
+    "OD_JIP5": 214,
+    "OD_JIP6": 337,
+    "OD_JIP7": 506,
+    "OD_JIP8": 828,
+    "OD_JIP9": 163,
+    "OD_JIP10": 93,
+    "OD_ARO1": 110,
+    "OD_ARO2": 153,
+    "OD_ARO3": 227,
+    "OD_ARO4": 200,
+    "OD_ARO5": 68,
+    "OD_ARO6": 198,
+    "OD_ARO7": 568
+  },
+  "numeric_summaries": {
+    "rok": {
+      "min": 2010.0,
+      "max": 2024.0,
+      "mean": 2016.8471821942915,
+      "median": 2017.0,
+      "sum": 2860105107.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "pohlavi": {
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.4868793398523525,
+      "median": 1.0,
+      "sum": 2108554.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "vek_kod": {
+      "min": 66000004.0,
+      "max": 70001000.0,
+      "mean": 66050215.042113885,
+      "median": 66055059.0,
+      "sum": 93666272302727.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "operace": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.45212596792766696,
+      "median": 0.0,
+      "sum": 641163.0,
+      "zeros": 776944,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "umrti": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.12228837457258161,
+      "median": 0.0,
+      "sum": 173418.0,
+      "zeros": 1244689,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "pocet_hosp": {
+      "min": 1.0,
+      "max": 1191.0,
+      "mean": 3.3786047174155405,
+      "median": 1.0,
+      "sum": 4791223.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO_JIP": {
+      "min": 1.0,
+      "max": 7588.0,
+      "mean": 14.89119297768081,
+      "median": 5.0,
+      "sum": 21117305.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP": {
+      "min": 0.0,
+      "max": 6109.0,
+      "mean": 12.536042766871612,
+      "median": 4.0,
+      "sum": 17777450.0,
+      "zeros": 36595,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO": {
+      "min": 0.0,
+      "max": 2563.0,
+      "mean": 2.3551502108091986,
+      "median": 0.0,
+      "sum": 3339855.0,
+      "zeros": 1118431,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP1": {
+      "min": 0.0,
+      "max": 663.0,
+      "mean": 0.19017535348178946,
+      "median": 0.0,
+      "sum": 269689.0,
+      "zeros": 1411454,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP2": {
+      "min": 0.0,
+      "max": 631.0,
+      "mean": 2.398515767851086,
+      "median": 0.0,
+      "sum": 3401352.0,
+      "zeros": 919845,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP3": {
+      "min": 0.0,
+      "max": 1282.0,
+      "mean": 3.0811997966302966,
+      "median": 1.0,
+      "sum": 4369471.0,
+      "zeros": 702277,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP4": {
+      "min": 0.0,
+      "max": 1497.0,
+      "mean": 4.4846411448501415,
+      "median": 1.0,
+      "sum": 6359701.0,
+      "zeros": 554707,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP5": {
+      "min": 0.0,
+      "max": 2411.0,
+      "mean": 0.20782423329128197,
+      "median": 0.0,
+      "sum": 294717.0,
+      "zeros": 1366849,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP6": {
+      "min": 0.0,
+      "max": 1114.0,
+      "mean": 1.0436271734079305,
+      "median": 0.0,
+      "sum": 1479975.0,
+      "zeros": 1223204,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP7": {
+      "min": 0.0,
+      "max": 3283.0,
+      "mean": 0.26181945368015247,
+      "median": 0.0,
+      "sum": 371288.0,
+      "zeros": 1410255,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP8": {
+      "min": 0.0,
+      "max": 4262.0,
+      "mean": 0.7564118927556243,
+      "median": 0.0,
+      "sum": 1072673.0,
+      "zeros": 1404466,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP9": {
+      "min": 0.0,
+      "max": 304.0,
+      "mean": 0.08927535087267745,
+      "median": 0.0,
+      "sum": 126602.0,
+      "zeros": 1406924,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_JIP10": {
+      "min": 0.0,
+      "max": 196.0,
+      "mean": 0.022552600050630877,
+      "median": 0.0,
+      "sum": 31982.0,
+      "zeros": 1413859,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO1": {
+      "min": 0.0,
+      "max": 149.0,
+      "mean": 0.2792194101009303,
+      "median": 0.0,
+      "sum": 395963.0,
+      "zeros": 1323592,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO2": {
+      "min": 0.0,
+      "max": 300.0,
+      "mean": 0.6177855408653931,
+      "median": 0.0,
+      "sum": 876086.0,
+      "zeros": 1248898,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO3": {
+      "min": 0.0,
+      "max": 618.0,
+      "mean": 1.0135003917193837,
+      "median": 0.0,
+      "sum": 1437252.0,
+      "zeros": 1191172,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO4": {
+      "min": 0.0,
+      "max": 1469.0,
+      "mean": 0.08253396958057467,
+      "median": 0.0,
+      "sum": 117042.0,
+      "zeros": 1404756,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO5": {
+      "min": 0.0,
+      "max": 153.0,
+      "mean": 0.015197019688923332,
+      "median": 0.0,
+      "sum": 21551.0,
+      "zeros": 1414680,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO6": {
+      "min": 0.0,
+      "max": 353.0,
+      "mean": 0.06474828768210016,
+      "median": 0.0,
+      "sum": 91820.0,
+      "zeros": 1412868,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "OD_ARO7": {
+      "min": 0.0,
+      "max": 2408.0,
+      "mean": 0.2821655911718932,
+      "median": 0.0,
+      "sum": 400141.0,
+      "zeros": 1411930,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    }
+  },
+  "time_columns": {
+    "rok": {
+      "kind": "year",
+      "distinct_values": 15,
+      "example_values": [
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "min": 2010,
+      "max": 2024,
+      "missing_years_if_obvious": []
+    }
+  },
+  "warnings": [],
+  "dataset_specific_analysis": {
+    "loaded": true,
+    "shared_exact_columns_with_infectious_diseases": [
+      "pohlavi",
+      "rok",
+      "vek_kod"
+    ],
+    "likely_shared_concepts": {
+      "diagnosis": [],
+      "age": [
+        "vek_kod"
+      ],
+      "year_or_date": [
+        "rok"
+      ],
+      "region": [
+        "kraj_pacient"
+      ],
+      "sex": [
+        "pohlavi"
+      ]
+    },
+    "future_extension_assessment": "Potentially useful as a future extension if shared diagnosis, age, region, year, or sex concepts can be validated. It should not be joined in this profiling stage.",
+    "risks": [
+      "Different analytical grain may make direct comparisons invalid.",
+      "Indicators may have different semantics from infectious-disease case counts.",
+      "Hospitalization indicators must not be interpreted as treatment-effectiveness evidence without a proper study design.",
+      "Cross-table analysis can invite causal misinterpretation if not carefully scoped."
+    ]
+  }
+}

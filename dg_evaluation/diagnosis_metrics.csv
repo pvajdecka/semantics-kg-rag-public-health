@@ -1,0 +1,21 @@
+id,method,question,gold_diagnosis_codes,predicted_diagnosis_codes,tp,fp,fn,precision,recall,f1,exact
+EQ-01,RAG,Porovnej střevní infekční nemoci v České republice podle diagnózy.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 B99,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-01,KG-RAG,Porovnej střevní infekční nemoci v České republice podle diagnózy.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A01 A02 A03 A04 A05 A06 A07 A08 A09,9,0,0,1.0,1.0,1.0,1
+EQ-02,RAG,Porovnej střevní infekční nemoci v letech 2020 and 2023,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 B99,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-02,KG-RAG,Porovnej střevní infekční nemoci v letech 2020 and 2023,A01 A02 A03 A04 A05 A06 A07 A08 A09,A01 A02 A03 A04 A05 A06 A07 A08 A09,9,0,0,1.0,1.0,1.0,1
+EQ-03,RAG,Porovnej střevní infekční nemoci u dětí podle věkové skupiny.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 B99,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-03,KG-RAG,Porovnej střevní infekční nemoci u dětí podle věkové skupiny.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A01 A02 A03 A04 A05 A06 A07 A08 A09,9,0,0,1.0,1.0,1.0,1
+EQ-04,RAG,Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 B99,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-04,KG-RAG,Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A01 A02 A03 A04 A05 A06 A07 A08 A09,9,0,0,1.0,1.0,1.0,1
+EQ-05,RAG,Porovnej střevní infekční nemoci na Moravě podle kraje.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 B99,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-05,KG-RAG,Porovnej střevní infekční nemoci na Moravě podle kraje.,A01 A02 A03 A04 A05 A06 A07 A08 A09,A01 A02 A03 A04 A05 A06 A07 A08 A09,9,0,0,1.0,1.0,1.0,1
+EQ-06,RAG,Kolik případů střevních infekčních nemocí bylo v Praze?,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A07 A08 A48 J15,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-06,KG-RAG,Kolik případů střevních infekčních nemocí bylo v Praze?,A01 A02 A03 A04 A05 A06 A07 A08 A09,A04 A05 A06 A07 A08,5,0,4,1.0,0.5555555555555556,0.7142857142857143,0
+EQ-07,RAG,Porovnej virové infekce kůže a sliznic podle diagnózy.,B00 B01 B02 B04 B05 B06 B07 B08 B09,A08 A81 B07 B08 B09,3,2,6,0.6,0.3333333333333333,0.42857142857142855,0
+EQ-07,KG-RAG,Porovnej virové infekce kůže a sliznic podle diagnózy.,B00 B01 B02 B04 B05 B06 B07 B08 B09,B07 B08 B09,3,0,6,1.0,0.3333333333333333,0.5,0
+EQ-08,RAG,Porovnej virové hepatitidy podle diagnózy.,B15 B16 B17 B18 B19,B15 B16 B17 B18 B19,5,0,0,1.0,1.0,1.0,1
+EQ-08,KG-RAG,Porovnej virové hepatitidy podle diagnózy.,B15 B16 B17 B18 B19,B15 B16 B17 B18 B19,5,0,0,1.0,1.0,1.0,1
+EQ-09,RAG,Porovnej pneumonie podle diagnózy.,J12 J13 J14 J15 J16 J17 J18,J12 J15 J16 J17 J18,5,0,2,1.0,0.7142857142857143,0.8333333333333333,0
+EQ-09,KG-RAG,Porovnej pneumonie podle diagnózy.,J12 J13 J14 J15 J16 J17 J18,J12 J13 J14 J15 J16 J17 J18,7,0,0,1.0,1.0,1.0,1
+EQ-10,RAG,Porovnej pneumonie podle kraje.,J12 J13 J14 J15 J16 J17 J18,J12 J15 J16 J17 J18,5,0,2,1.0,0.7142857142857143,0.8333333333333333,0
+EQ-10,KG-RAG,Porovnej pneumonie podle kraje.,J12 J13 J14 J15 J16 J17 J18,J12 J13 J14 J15 J16 J17 J18,7,0,0,1.0,1.0,1.0,1

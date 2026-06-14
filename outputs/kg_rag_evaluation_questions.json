@@ -1,0 +1,598 @@
+[
+  {
+    "id": "EQ-01",
+    "query_cs": "Porovnej střevní infekční nemoci v České republice podle diagnózy.",
+    "query_en": "Compare intestinal infectious diseases in the Czech Republic by diagnosis.",
+    "intent": "group disease-family A00-A09 to table-present A01-A09 and aggregate by diagnosis",
+    "expected_sql_shape": "SELECT diagnoza, diagnoza_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') GROUP BY diagnoza, diagnoza_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "diagnoza": "A04",
+        "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+        "pocet_pripadu": 196550
+      },
+      {
+        "diagnoza": "A02",
+        "diagnoza_nazev": "Jiné infekce způsobené salmonelami",
+        "pocet_pripadu": 73222
+      },
+      {
+        "diagnoza": "A08",
+        "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+        "pocet_pripadu": 69601
+      },
+      {
+        "diagnoza": "A09",
+        "diagnoza_nazev": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+        "pocet_pripadu": 21048
+      },
+      {
+        "diagnoza": "A03",
+        "diagnoza_nazev": "Shigelóza",
+        "pocet_pripadu": 867
+      },
+      {
+        "diagnoza": "A05",
+        "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+        "pocet_pripadu": 789
+      },
+      {
+        "diagnoza": "A07",
+        "diagnoza_nazev": "Jiné protozoární střevní nemoci",
+        "pocet_pripadu": 704
+      },
+      {
+        "diagnoza": "A06",
+        "diagnoza_nazev": "Amébóza",
+        "pocet_pripadu": 69
+      },
+      {
+        "diagnoza": "A01",
+        "diagnoza_nazev": "Břišní tyfus a paratyfus",
+        "pocet_pripadu": 27
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "mkn_group": "A00-A09",
+      "mkn_relevant_absent_codes": [
+        "A00"
+      ],
+      "measure": "pocet_pripadu"
+    },
+    "why_this_query_is_interesting": "Main recall test: KG-RAG can expand the group to A00-A09, intersect with table evidence, and retrieve all A01-A09.",
+    "standard_rag_expected_failure": "May retrieve only labels containing střev: A04, A07, A08 and outsider B81; may miss A01, A02, A03, A05, A06, A09.",
+    "primary_metric": "exact diagnosis-code recall and weighted recall by pocet_pripadu",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-02",
+    "query_cs": "Porovnej střevní infekční nemoci v letech 2020 and 2023",
+    "query_en": "Compare intestinal infectious diseases in years 2020 and 2023.",
+    "intent": "filter years to 2020 and 2023 and aggregate A01-A09 by rok",
+    "expected_sql_shape": "SELECT rok, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') AND rok IN (2020,2023) GROUP BY rok ORDER BY rok",
+    "expected_rendered_table": [
+      {
+        "rok": 2020,
+        "pocet_pripadu": 39245
+      },
+      {
+        "rok": 2023,
+        "pocet_pripadu": 38900
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "years": [
+        2020,
+        2023
+      ],
+      "measure": "pocet_pripadu",
+      "total": 78145
+    },
+    "why_this_query_is_interesting": "Tests explicit year filtering plus disease-family expansion.",
+    "standard_rag_expected_failure": "May retrieve a partial diagnosis set or fail to apply both explicit year filters.",
+    "primary_metric": "year recall + diagnosis-code recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-03",
+    "query_cs": "Porovnej střevní infekční nemoci u dětí podle věkové skupiny.",
+    "query_en": "Compare intestinal infectious diseases in children by age group.",
+    "intent": "map děti to official age groups and aggregate A01-A09",
+    "expected_sql_shape": "SELECT vek_kod, vek_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') AND vek_kod IN (...) GROUP BY vek_kod, vek_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "vek_kod": 66001004,
+        "vek_nazev": "1–4 roky",
+        "pocet_pripadu": 81910
+      },
+      {
+        "vek_kod": 66005009,
+        "vek_nazev": "5–9 let",
+        "pocet_pripadu": 38254
+      },
+      {
+        "vek_kod": 66000000,
+        "vek_nazev": "0 let",
+        "pocet_pripadu": 25078
+      },
+      {
+        "vek_kod": 66010014,
+        "vek_nazev": "10–14 let",
+        "pocet_pripadu": 24329
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "age_groups": [
+        "66000000",
+        "66001004",
+        "66005009",
+        "66010014"
+      ],
+      "age_labels": [
+        "0 let",
+        "1–4 roky",
+        "5–9 let",
+        "10–14 let"
+      ],
+      "total": 169571
+    },
+    "why_this_query_is_interesting": "Tests informal age concept normalization.",
+    "standard_rag_expected_failure": "The table does not contain the literal value děti; standard RAG may not infer all official age groups.",
+    "primary_metric": "official age-group recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-04",
+    "query_cs": "Porovnej střevní infekční nemoci u seniorů 65+ podle věkové skupiny.",
+    "query_en": "Compare intestinal infectious diseases in seniors 65+ by age group.",
+    "intent": "map senioři 65+ to official age groups and aggregate A01-A09",
+    "expected_sql_shape": "SELECT vek_kod, vek_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') AND vek_kod IN (...) GROUP BY vek_kod, vek_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "vek_kod": 66075999,
+        "vek_nazev": "75+ let",
+        "pocet_pripadu": 44997
+      },
+      {
+        "vek_kod": 66070074,
+        "vek_nazev": "70–74 let",
+        "pocet_pripadu": 15122
+      },
+      {
+        "vek_kod": 66065069,
+        "vek_nazev": "65–69 let",
+        "pocet_pripadu": 12297
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "age_groups": [
+        "66065069",
+        "66070074",
+        "66075999"
+      ],
+      "age_labels": [
+        "65–69 let",
+        "70–74 let",
+        "75+ let"
+      ],
+      "total": 72416
+    },
+    "why_this_query_is_interesting": "Tests interval semantics from the age-group code list.",
+    "standard_rag_expected_failure": "May use only 75+ or miss 65-69 and 70-74.",
+    "primary_metric": "official age-group recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-05",
+    "query_cs": "Porovnej střevní infekční nemoci na Moravě podle kraje.",
+    "query_en": "Compare intestinal infectious diseases in Moravia by region.",
+    "intent": "map Morava to selected official region labels and aggregate A01-A09",
+    "expected_sql_shape": "SELECT kraj_kod, kraj_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') AND kraj_nazev IN (...) GROUP BY kraj_kod, kraj_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "kraj_kod": "CZ080",
+        "kraj_nazev": "Moravskoslezský kraj",
+        "pocet_pripadu": 48106
+      },
+      {
+        "kraj_kod": "CZ064",
+        "kraj_nazev": "Jihomoravský kraj",
+        "pocet_pripadu": 47723
+      },
+      {
+        "kraj_kod": "CZ071",
+        "kraj_nazev": "Olomoucký kraj",
+        "pocet_pripadu": 24326
+      },
+      {
+        "kraj_kod": "CZ072",
+        "kraj_nazev": "Zlínský kraj",
+        "pocet_pripadu": 23712
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "regions": [
+        "Jihomoravský kraj",
+        "Moravskoslezský kraj",
+        "Olomoucký kraj",
+        "Zlínský kraj"
+      ],
+      "total": 143867
+    },
+    "why_this_query_is_interesting": "Tests regional alias expansion not present as a literal table value.",
+    "standard_rag_expected_failure": "Morava is not a value in kraj_nazev; standard RAG may fail or choose incomplete regions.",
+    "primary_metric": "region alias recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-06",
+    "query_cs": "Kolik případů střevních infekčních nemocí bylo v Praze?",
+    "query_en": "How many cases of intestinal infectious diseases were in Prague?",
+    "intent": "map Praha to Hl. m. Praha/CZ010 and aggregate A01-A09",
+    "expected_sql_shape": "SELECT kraj_kod, kraj_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('A01',...,'A09') AND kraj_kod='CZ010' GROUP BY kraj_kod, kraj_nazev",
+    "expected_rendered_table": [
+      {
+        "kraj_kod": "CZ010",
+        "kraj_nazev": "Hl. m. Praha",
+        "pocet_pripadu": 31351
+      }
+    ],
+    "gold_scope": {
+      "diagnosis_codes": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "region_code": "CZ010",
+      "region_label": "Hl. m. Praha"
+    },
+    "why_this_query_is_interesting": "Tests official-value normalization for a very common user phrase.",
+    "standard_rag_expected_failure": "May search for literal Praha and not preserve official value Hl. m. Praha.",
+    "primary_metric": "official region value accuracy",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-07",
+    "query_cs": "Porovnej virové infekce kůže a sliznic podle diagnózy.",
+    "query_en": "Compare viral infections of skin and mucous membranes by diagnosis.",
+    "intent": "expand B00-B09, mark B03 absent, aggregate table-present B00,B01,B02,B04-B09",
+    "expected_sql_shape": "SELECT diagnoza, diagnoza_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('B00','B01','B02','B04','B05','B06','B07','B08','B09') GROUP BY diagnoza, diagnoza_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "diagnoza": "B01",
+        "diagnoza_nazev": "Plané neštovice [varicella]",
+        "pocet_pripadu": 275635
+      },
+      {
+        "diagnoza": "B02",
+        "diagnoza_nazev": "Pásový opar [herpes zoster]",
+        "pocet_pripadu": 39721
+      },
+      {
+        "diagnoza": "B08",
+        "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+        "pocet_pripadu": 27234
+      },
+      {
+        "diagnoza": "B00",
+        "diagnoza_nazev": "Infekce virem Herpes simplex",
+        "pocet_pripadu": 1119
+      },
+      {
+        "diagnoza": "B05",
+        "diagnoza_nazev": "Spalničky",
+        "pocet_pripadu": 877
+      },
+      {
+        "diagnoza": "B09",
+        "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+        "pocet_pripadu": 142
+      },
+      {
+        "diagnoza": "B04",
+        "diagnoza_nazev": "Opičí neštovice",
+        "pocet_pripadu": 110
+      },
+      {
+        "diagnoza": "B07",
+        "diagnoza_nazev": "Virové bradavice",
+        "pocet_pripadu": 13
+      },
+      {
+        "diagnoza": "B06",
+        "diagnoza_nazev": "Zarděnky [rubeola]",
+        "pocet_pripadu": 2
+      }
+    ],
+    "gold_scope": {
+      "mkn_group": "B00-B09",
+      "diagnosis_codes": [
+        "B00",
+        "B01",
+        "B02",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09"
+      ],
+      "mkn_relevant_absent_codes": [
+        "B03"
+      ],
+      "measure": "pocet_pripadu"
+    },
+    "why_this_query_is_interesting": "Strong second hierarchy case: literal skin/mucosa finds only B08/B09, but the MKN block covers more codes.",
+    "standard_rag_expected_failure": "May retrieve only B08 and B09 because they contain kůže/sliznic.",
+    "primary_metric": "exact diagnosis-code recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-08",
+    "query_cs": "Porovnej virové hepatitidy podle diagnózy.",
+    "query_en": "Compare viral hepatitis by diagnosis.",
+    "intent": "aggregate B15-B19 by diagnosis",
+    "expected_sql_shape": "SELECT diagnoza, diagnoza_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('B15','B16','B17','B18','B19') GROUP BY diagnoza, diagnoza_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "diagnoza": "B18",
+        "diagnoza_nazev": "Chronická virová hepatitida",
+        "pocet_pripadu": 9835
+      },
+      {
+        "diagnoza": "B15",
+        "diagnoza_nazev": "Akutní hepatitida A",
+        "pocet_pripadu": 4867
+      },
+      {
+        "diagnoza": "B17",
+        "diagnoza_nazev": "Jiná akutní virová hepatitida",
+        "pocet_pripadu": 4486
+      },
+      {
+        "diagnoza": "B16",
+        "diagnoza_nazev": "Akutní hepatitida B",
+        "pocet_pripadu": 301
+      },
+      {
+        "diagnoza": "B19",
+        "diagnoza_nazev": "Neurčená virová hepatitida",
+        "pocet_pripadu": 2
+      }
+    ],
+    "gold_scope": {
+      "mkn_group": "B15-B19",
+      "diagnosis_codes": [
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19"
+      ],
+      "measure": "pocet_pripadu"
+    },
+    "why_this_query_is_interesting": "Control case: lexical retrieval should be easier, so KG-RAG should not be artificially advantaged.",
+    "standard_rag_expected_failure": "Likely weaker failure; may still omit rare B19 without hierarchy.",
+    "primary_metric": "control-case recall / no-regression",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-09",
+    "query_cs": "Porovnej pneumonie podle diagnózy.",
+    "query_en": "Compare pneumonia by diagnosis.",
+    "intent": "aggregate J12-J18 by diagnosis",
+    "expected_sql_shape": "SELECT diagnoza, diagnoza_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('J12',...,'J18') GROUP BY diagnoza, diagnoza_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "diagnoza": "J12",
+        "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+        "pocet_pripadu": 1238
+      },
+      {
+        "diagnoza": "J13",
+        "diagnoza_nazev": "Zánět plic‚ původce: Streptococcus pneumoniae",
+        "pocet_pripadu": 1091
+      },
+      {
+        "diagnoza": "J15",
+        "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+        "pocet_pripadu": 596
+      },
+      {
+        "diagnoza": "J16",
+        "diagnoza_nazev": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+        "pocet_pripadu": 135
+      },
+      {
+        "diagnoza": "J17",
+        "diagnoza_nazev": "Zánět plic (pneumonie) při nemocech zařazených jinde",
+        "pocet_pripadu": 87
+      },
+      {
+        "diagnoza": "J14",
+        "diagnoza_nazev": "Zánět plic‚ původce: Haemophilus influenzae",
+        "pocet_pripadu": 48
+      },
+      {
+        "diagnoza": "J18",
+        "diagnoza_nazev": "Pneumonie‚ původce NS",
+        "pocet_pripadu": 2
+      }
+    ],
+    "gold_scope": {
+      "mkn_group": "J12-J18",
+      "diagnosis_codes": [
+        "J12",
+        "J13",
+        "J14",
+        "J15",
+        "J16",
+        "J17",
+        "J18"
+      ],
+      "measure": "pocet_pripadu"
+    },
+    "why_this_query_is_interesting": "Tests synonym and block scope: pneumonie/zánět plic should map to J12-J18.",
+    "standard_rag_expected_failure": "May retrieve only labels containing pneumonie and miss zánět plic wording, or add unrelated respiratory codes.",
+    "primary_metric": "synonym robustness + code recall",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  },
+  {
+    "id": "EQ-10",
+    "query_cs": "Porovnej pneumonie podle kraje.",
+    "query_en": "Compare pneumonia by region.",
+    "intent": "expand J12-J18 and aggregate by official region",
+    "expected_sql_shape": "SELECT kraj_kod, kraj_nazev, SUM(pocet_pripadu) FROM infectious_diseases WHERE diagnoza IN ('J12',...,'J18') GROUP BY kraj_kod, kraj_nazev ORDER BY SUM DESC",
+    "expected_rendered_table": [
+      {
+        "kraj_kod": "CZ064",
+        "kraj_nazev": "Jihomoravský kraj",
+        "pocet_pripadu": 1040
+      },
+      {
+        "kraj_kod": "CZ041",
+        "kraj_nazev": "Karlovarský kraj",
+        "pocet_pripadu": 712
+      },
+      {
+        "kraj_kod": "CZ031",
+        "kraj_nazev": "Jihočeský kraj",
+        "pocet_pripadu": 383
+      },
+      {
+        "kraj_kod": "CZ010",
+        "kraj_nazev": "Hl. m. Praha",
+        "pocet_pripadu": 243
+      },
+      {
+        "kraj_kod": "CZ020",
+        "kraj_nazev": "Středočeský kraj",
+        "pocet_pripadu": 198
+      },
+      {
+        "kraj_kod": "CZ052",
+        "kraj_nazev": "Královéhradecký kraj",
+        "pocet_pripadu": 163
+      },
+      {
+        "kraj_kod": "CZ051",
+        "kraj_nazev": "Liberecký kraj",
+        "pocet_pripadu": 140
+      },
+      {
+        "kraj_kod": "CZ042",
+        "kraj_nazev": "Ústecký kraj",
+        "pocet_pripadu": 121
+      },
+      {
+        "kraj_kod": "CZ080",
+        "kraj_nazev": "Moravskoslezský kraj",
+        "pocet_pripadu": 75
+      },
+      {
+        "kraj_kod": "CZ063",
+        "kraj_nazev": "Kraj Vysočina",
+        "pocet_pripadu": 55
+      },
+      {
+        "kraj_kod": "CZ032",
+        "kraj_nazev": "Plzeňský kraj",
+        "pocet_pripadu": 42
+      },
+      {
+        "kraj_kod": "CZ071",
+        "kraj_nazev": "Olomoucký kraj",
+        "pocet_pripadu": 16
+      },
+      {
+        "kraj_kod": "CZ072",
+        "kraj_nazev": "Zlínský kraj",
+        "pocet_pripadu": 7
+      },
+      {
+        "kraj_kod": "CZ053",
+        "kraj_nazev": "Pardubický kraj",
+        "pocet_pripadu": 2
+      }
+    ],
+    "gold_scope": {
+      "mkn_group": "J12-J18",
+      "diagnosis_codes": [
+        "J12",
+        "J13",
+        "J14",
+        "J15",
+        "J16",
+        "J17",
+        "J18"
+      ],
+      "dimension": "kraj",
+      "measure": "pocet_pripadu"
+    },
+    "why_this_query_is_interesting": "Turns a disease-family retrieval problem into a rendered table by region, matching the planned SQL/table output mode.",
+    "standard_rag_expected_failure": "May use only one pneumonia code or incomplete region scope.",
+    "primary_metric": "diagnosis-code recall + region aggregation correctness",
+    "answer_semantics_note": "`pocet_pripadu` is reported case count from the table; do not describe it as unique patients unless official documentation supports that."
+  }
+]

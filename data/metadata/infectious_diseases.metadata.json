@@ -1,0 +1,102 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "Otevrena-data-NR-27-01-infekcni-nemoci.csv",
+    "dc:title": "Infekční nemoci v ČR",
+    "dc:description": "Primárním cílem datové sady je poskytnout komplexní přehled o výskytu infekčních onemocnění v České republice na úrovni krajů. Datová sada umožňuje sledovat vývoj situace od roku 2018 do posledního uzavřeného roku podle jednotlivých diagnóz klasifikovaných dle MKN-10. Díky podrobné stratifikaci dat podle roku, regionu a věkových kategorií lze hodnotit trendy, porovnávat zasaženost jednotlivých skupin populace a identifikovat regionální či demografické rozdíly ve výskytu infekčních onemocnění. Využívané číselníky: Číselník věkových skupin NZIS (https://www.nzip.cz/data/2182-ciselnik-vekove-skupiny-otevrena-data) a Číselník MKN-10-CZ (https://www.nzip.cz/data/2479-ciselnik-mkn-10-cz-otevrena-data)",
+    "dc:source": "ÚZIS ČR",
+    "dcat:keyword": [
+        "ISIN",
+        "EWS",
+        "Informační systém infekční nemoci (mimo COVID)",
+        "infekční nemoc",
+        "veřejné zdraví"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2026-01-22T09:09:17.692Z",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "rok",
+                "titles": "rok",
+                "datatype": "integer",
+                "dc:description": "rok hlášení případu"
+            },
+            {
+                "name": "mesic",
+                "titles": "mesic",
+                "datatype": "integer",
+                "dc:description": "měsíc hlášení případu"
+            },
+            {
+                "name": "kraj_kod",
+                "titles": "kraj_kod",
+                "datatype": "string",
+                "dc:description": "kód kraje bydliště pacienta dle číselníku ČSÚ"
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "název kraje bydliště dítěte dle číselníku ČSÚ"
+            },
+            {
+                "name": "diagnoza",
+                "titles": "diagnoza",
+                "datatype": "string",
+                "dc:description": "tříznaková diagnóza dle MKN-10"
+            },
+            {
+                "name": "diagnoza_nazev",
+                "titles": "diagnoza_nazev",
+                "datatype": "string",
+                "dc:description": "název diagnózy dle MKN-10"
+            },
+            {
+                "name": "vek_kod",
+                "titles": "vek_kod",
+                "datatype": "integer",
+                "dc:description": "kód pětileté věkové skupiny pacienta vycházející Číselníku věkových skupin NZIS"
+            },
+            {
+                "name": "vek_nazev",
+                "titles": "vek_nazev",
+                "datatype": "string",
+                "dc:description": "název pětileté věkové skupiny"
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string",
+                "dc:description": "pohlaví pacienta"
+            },
+            {
+                "name": "EWS",
+                "titles": "EWS",
+                "datatype": "integer",
+                "dc:description": "počty hlášených případů v registru ISIN pocházejících z hlášení EWS"
+            },
+            {
+                "name": "pocet_pripadu",
+                "titles": "pocet_pripadu",
+                "datatype": "integer",
+                "dc:description": "počty případů v dle výše uvedené stratifikace v registru ISIN"
+            }
+        ]
+    }
+}

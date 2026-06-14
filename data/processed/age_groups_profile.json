@@ -1,0 +1,494 @@
+{
+  "dataset_key": "age_groups",
+  "profiled_at": "2026-06-13T09:00:27+00:00",
+  "source_url": "https://datanzis.uzis.gov.cz/data/OIS-12-CIS/OIS-12-01/Otevrena-data-OIS-12-01-ciselnik-vekove-skupiny.csv",
+  "local_file_path": "data/raw/age_groups.csv",
+  "encoding_used": "utf-8-sig",
+  "separator_used": ",",
+  "shape": {
+    "rows": 228,
+    "columns": 8
+  },
+  "columns": [
+    "ciselnik",
+    "ciselnik_kod",
+    "ciselnik_nazev",
+    "vek_IRI",
+    "vek_kod",
+    "vek_nazev",
+    "vek_od_vcetne",
+    "vek_do_vcetne"
+  ],
+  "dtypes": {
+    "ciselnik": "object",
+    "ciselnik_kod": "object",
+    "ciselnik_nazev": "object",
+    "vek_IRI": "object",
+    "vek_kod": "int64",
+    "vek_nazev": "object",
+    "vek_od_vcetne": "float64",
+    "vek_do_vcetne": "float64"
+  },
+  "first_5_rows": [
+    {
+      "ciselnik": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+      "ciselnik_kod": "CIS001",
+      "ciselnik_nazev": "Číselník věkových skupin NZIS",
+      "vek_IRI": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000000",
+      "vek_kod": 66000000,
+      "vek_nazev": "0 let",
+      "vek_od_vcetne": 0.0,
+      "vek_do_vcetne": 0.0
+    },
+    {
+      "ciselnik": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+      "ciselnik_kod": "CIS001",
+      "ciselnik_nazev": "Číselník věkových skupin NZIS",
+      "vek_IRI": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000001",
+      "vek_kod": 66000001,
+      "vek_nazev": "1 rok a méně",
+      "vek_od_vcetne": 0.0,
+      "vek_do_vcetne": 1.0
+    },
+    {
+      "ciselnik": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+      "ciselnik_kod": "CIS001",
+      "ciselnik_nazev": "Číselník věkových skupin NZIS",
+      "vek_IRI": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000003",
+      "vek_kod": 66000003,
+      "vek_nazev": "3 roky a méně",
+      "vek_od_vcetne": 0.0,
+      "vek_do_vcetne": 3.0
+    },
+    {
+      "ciselnik": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+      "ciselnik_kod": "CIS001",
+      "ciselnik_nazev": "Číselník věkových skupin NZIS",
+      "vek_IRI": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000004",
+      "vek_kod": 66000004,
+      "vek_nazev": "4 roky a méně",
+      "vek_od_vcetne": 0.0,
+      "vek_do_vcetne": 4.0
+    },
+    {
+      "ciselnik": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+      "ciselnik_kod": "CIS001",
+      "ciselnik_nazev": "Číselník věkových skupin NZIS",
+      "vek_IRI": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000009",
+      "vek_kod": 66000009,
+      "vek_nazev": "9 let a méně",
+      "vek_od_vcetne": 0.0,
+      "vek_do_vcetne": 9.0
+    }
+  ],
+  "memory_usage_bytes": 137269,
+  "duplicate_row_count": 0,
+  "missing_value_counts": {
+    "ciselnik": 0,
+    "ciselnik_kod": 0,
+    "ciselnik_nazev": 0,
+    "vek_IRI": 0,
+    "vek_kod": 0,
+    "vek_nazev": 0,
+    "vek_od_vcetne": 2,
+    "vek_do_vcetne": 2
+  },
+  "missing_value_percentages": {
+    "ciselnik": 0.0,
+    "ciselnik_kod": 0.0,
+    "ciselnik_nazev": 0.0,
+    "vek_IRI": 0.0,
+    "vek_kod": 0.0,
+    "vek_nazev": 0.0,
+    "vek_od_vcetne": 0.877,
+    "vek_do_vcetne": 0.877
+  },
+  "categorical_columns": {
+    "ciselnik": {
+      "unique_count": 1,
+      "top_20_values": [
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001",
+          "count": 228
+        }
+      ],
+      "example_values": [
+        "https://data.mzd.gov.cz/data/číselníky/CIS001"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "https://data.mzd.gov.cz/data/číselníky/CIS001"
+      ],
+      "possible_abbreviation_examples": []
+    },
+    "ciselnik_kod": {
+      "unique_count": 1,
+      "top_20_values": [
+        {
+          "value": "CIS001",
+          "count": 228
+        }
+      ],
+      "example_values": [
+        "CIS001"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "ciselnik_nazev": {
+      "unique_count": 1,
+      "top_20_values": [
+        {
+          "value": "Číselník věkových skupin NZIS",
+          "count": 228
+        }
+      ],
+      "example_values": [
+        "Číselník věkových skupin NZIS"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "Číselník věkových skupin NZIS"
+      ],
+      "possible_abbreviation_examples": [
+        "Číselník věkových skupin NZIS"
+      ]
+    },
+    "vek_IRI": {
+      "unique_count": 228,
+      "top_20_values": [
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000000",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000001",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000003",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000004",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000009",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000011",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000014",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000017",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000018",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000019",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000024",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000034",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66000999",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66001001",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66001004",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66002002",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66003003",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66004004",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66004006",
+          "count": 1
+        },
+        {
+          "value": "https://data.mzd.gov.cz/data/číselníky/CIS001/66005005",
+          "count": 1
+        }
+      ],
+      "example_values": [
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000000",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000001",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000003",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000004",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000009",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000011",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000014",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000017",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000018",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000019",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000024",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000034",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000999",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66001001",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66001004",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66002002",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66003003",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66004004",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66004006",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66005005"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000000",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000001",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000003",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000004",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000009",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000011",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000014",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000017",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000018",
+        "https://data.mzd.gov.cz/data/číselníky/CIS001/66000019"
+      ],
+      "possible_abbreviation_examples": []
+    },
+    "vek_nazev": {
+      "unique_count": 228,
+      "top_20_values": [
+        {
+          "value": "0 let",
+          "count": 1
+        },
+        {
+          "value": "1 rok a méně",
+          "count": 1
+        },
+        {
+          "value": "3 roky a méně",
+          "count": 1
+        },
+        {
+          "value": "4 roky a méně",
+          "count": 1
+        },
+        {
+          "value": "9 let a méně",
+          "count": 1
+        },
+        {
+          "value": "11 let a méně",
+          "count": 1
+        },
+        {
+          "value": "14 let a méně",
+          "count": 1
+        },
+        {
+          "value": "17 let a méně",
+          "count": 1
+        },
+        {
+          "value": "18 let a méně",
+          "count": 1
+        },
+        {
+          "value": "19 let a méně",
+          "count": 1
+        },
+        {
+          "value": "24 let a méně",
+          "count": 1
+        },
+        {
+          "value": "34 let a méně",
+          "count": 1
+        },
+        {
+          "value": "bez omezení věku",
+          "count": 1
+        },
+        {
+          "value": "1 rok",
+          "count": 1
+        },
+        {
+          "value": "1–4 roky",
+          "count": 1
+        },
+        {
+          "value": "2 roky",
+          "count": 1
+        },
+        {
+          "value": "3 roky",
+          "count": 1
+        },
+        {
+          "value": "4 roky",
+          "count": 1
+        },
+        {
+          "value": "4–6 let",
+          "count": 1
+        },
+        {
+          "value": "5 let",
+          "count": 1
+        }
+      ],
+      "example_values": [
+        "0 let",
+        "1 rok a méně",
+        "3 roky a méně",
+        "4 roky a méně",
+        "9 let a méně",
+        "11 let a méně",
+        "14 let a méně",
+        "17 let a méně",
+        "18 let a méně",
+        "19 let a méně",
+        "24 let a méně",
+        "34 let a méně",
+        "bez omezení věku",
+        "1 rok",
+        "1–4 roky",
+        "2 roky",
+        "3 roky",
+        "4 roky",
+        "4–6 let",
+        "5 let"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "1 rok a méně",
+        "3 roky a méně",
+        "4 roky a méně",
+        "9 let a méně",
+        "11 let a méně",
+        "14 let a méně",
+        "17 let a méně",
+        "18 let a méně",
+        "19 let a méně",
+        "24 let a méně"
+      ],
+      "possible_abbreviation_examples": []
+    }
+  },
+  "unique_value_counts_for_categorical_columns": {
+    "ciselnik": 1,
+    "ciselnik_kod": 1,
+    "ciselnik_nazev": 1,
+    "vek_IRI": 228,
+    "vek_nazev": 228
+  },
+  "numeric_summaries": {
+    "vek_kod": {
+      "min": 66000000.0,
+      "max": 70002000.0,
+      "mean": 66086141.71052632,
+      "median": 66050052.0,
+      "sum": 15067640310.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "vek_od_vcetne": {
+      "min": 0.0,
+      "max": 120.0,
+      "mean": 51.36725663716814,
+      "median": 49.5,
+      "sum": 11609.0,
+      "zeros": 13,
+      "negative_values": 0,
+      "missing_values": 2,
+      "parse_share": 0.9912280701754386
+    },
+    "vek_do_vcetne": {
+      "min": 0.0,
+      "max": 999.0,
+      "mean": 125.26548672566372,
+      "median": 59.0,
+      "sum": 28310.0,
+      "zeros": 1,
+      "negative_values": 0,
+      "missing_values": 2,
+      "parse_share": 0.9912280701754386
+    }
+  },
+  "time_columns": {},
+  "warnings": [],
+  "dataset_specific_analysis": {
+    "detected_code_column": "ciselnik_kod",
+    "detected_label_column": "ciselnik",
+    "infectious_age_group_code_column": "vek_kod",
+    "code_coverage_against_infectious_diseases": {
+      "source_column": "vek_kod",
+      "codelist_code_column": "ciselnik_kod",
+      "source_code_count": 17,
+      "codelist_code_count": 1,
+      "unmatched_source_codes": [
+        "66000000",
+        "66001004",
+        "66005009",
+        "66010014",
+        "66015019",
+        "66020024",
+        "66025029",
+        "66030034",
+        "66035039",
+        "66040044",
+        "66045049",
+        "66050054",
+        "66055059",
+        "66060064",
+        "66065069",
+        "66070074",
+        "66075999"
+      ],
+      "codelist_codes_not_used_in_source": [
+        "CIS001"
+      ],
+      "matched_code_count": 0
+    },
+    "usefulness_assessment": [
+      "Useful for interpreting official age-group categories if codes match.",
+      "Useful for normalization from informal terms such as children or elderly only after explicit mapping rules are added.",
+      "Future semantic modelling should keep code and Czech label mappings inspectable."
+    ]
+  }
+}

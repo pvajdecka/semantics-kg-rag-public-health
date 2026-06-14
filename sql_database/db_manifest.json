@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-13T15:47:25+00:00",
+  "database_path": "sql_database/db/semantics.duckdb",
+  "database_bytes": 72888320,
+  "duckdb_version": "1.5.3",
+  "final_table": "fact_infectious_disease_cases_enriched",
+  "final_table_rows": 272858,
+  "final_table_columns": 31,
+  "table_counts": {
+    "source_infectious_diseases": 272858,
+    "source_age_groups": 228,
+    "source_mkn10_cz": 39136,
+    "source_hospitalization": 1418107,
+    "dim_mkn10_block": 24,
+    "dim_mkn10_code": 39076,
+    "dim_age_group": 228,
+    "dim_region": 15,
+    "fact_infectious_disease_cases_enriched": 272858,
+    "kg_node": 41188,
+    "kg_edge": 84269,
+    "evaluation_question": 10
+  },
+  "source_files": {
+    "infectious_diseases": {
+      "path": "data/raw/infectious_diseases.csv",
+      "sha256": "0af9f9f99ac37a4f38f790c8939696bb2eb80b9db1f83b6ef5e432ec3f8594a2"
+    },
+    "age_groups": {
+      "path": "data/raw/age_groups.csv",
+      "sha256": "b5059ceffa0fba951a12f99816ead2014fdb041c00bff5e251f997d474259ef2"
+    },
+    "mkn10_cz": {
+      "path": "data/raw/mkn10_cz.csv",
+      "sha256": "f2b3ecf958844d93f4e65a1445261ffef1aa58572aa38f908da6cba488b3fc0e"
+    },
+    "hospitalization": {
+      "path": "data/raw/hospitalization.csv",
+      "sha256": "e260456f35da6f624211b102358ab8af336a17d7594ef976edb89215527c7d1b"
+    }
+  },
+  "notes": [
+    "The final answer table is fact_infectious_disease_cases_enriched.",
+    "Both standard RAG and KG-RAG should generate SQL against the same final table.",
+    "KG-RAG's expected advantage is better scope construction before SQL, not a different fact table."
+  ]
+}

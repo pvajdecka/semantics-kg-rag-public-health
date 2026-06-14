@@ -1,0 +1,4353 @@
+{
+  "dataset_key": "infectious_diseases",
+  "profiled_at": "2026-06-13T09:00:27+00:00",
+  "source_url": "https://datanzis.uzis.gov.cz/data/NR-27-ISIN/NR-27-01/Otevrena-data-NR-27-01-infekcni-nemoci.csv",
+  "local_file_path": "data/raw/infectious_diseases.csv",
+  "encoding_used": "utf-8-sig",
+  "separator_used": ",",
+  "shape": {
+    "rows": 272858,
+    "columns": 11
+  },
+  "columns": [
+    "rok",
+    "mesic",
+    "kraj_kod",
+    "kraj_nazev",
+    "diagnoza",
+    "diagnoza_nazev",
+    "vek_kod",
+    "vek_nazev",
+    "pohlavi",
+    "EWS",
+    "pocet_pripadu"
+  ],
+  "dtypes": {
+    "rok": "int64",
+    "mesic": "int64",
+    "kraj_kod": "object",
+    "kraj_nazev": "object",
+    "diagnoza": "object",
+    "diagnoza_nazev": "object",
+    "vek_kod": "int64",
+    "vek_nazev": "object",
+    "pohlavi": "object",
+    "EWS": "int64",
+    "pocet_pripadu": "int64"
+  },
+  "first_5_rows": [
+    {
+      "rok": 2022,
+      "mesic": 6,
+      "kraj_kod": "CZ071",
+      "kraj_nazev": "Olomoucký kraj",
+      "diagnoza": "A03",
+      "diagnoza_nazev": "Shigelóza",
+      "vek_kod": 66015019,
+      "vek_nazev": "15–19 let",
+      "pohlavi": "M",
+      "EWS": 0,
+      "pocet_pripadu": 1
+    },
+    {
+      "rok": 2022,
+      "mesic": 6,
+      "kraj_kod": "CZ071",
+      "kraj_nazev": "Olomoucký kraj",
+      "diagnoza": "A04",
+      "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+      "vek_kod": 66000000,
+      "vek_nazev": "0 let",
+      "pohlavi": "M",
+      "EWS": 0,
+      "pocet_pripadu": 9
+    },
+    {
+      "rok": 2022,
+      "mesic": 6,
+      "kraj_kod": "CZ071",
+      "kraj_nazev": "Olomoucký kraj",
+      "diagnoza": "A04",
+      "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+      "vek_kod": 66000000,
+      "vek_nazev": "0 let",
+      "pohlavi": "Z",
+      "EWS": 0,
+      "pocet_pripadu": 4
+    },
+    {
+      "rok": 2022,
+      "mesic": 6,
+      "kraj_kod": "CZ071",
+      "kraj_nazev": "Olomoucký kraj",
+      "diagnoza": "A04",
+      "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+      "vek_kod": 66001004,
+      "vek_nazev": "1–4 roky",
+      "pohlavi": "M",
+      "EWS": 0,
+      "pocet_pripadu": 28
+    },
+    {
+      "rok": 2022,
+      "mesic": 6,
+      "kraj_kod": "CZ071",
+      "kraj_nazev": "Olomoucký kraj",
+      "diagnoza": "A04",
+      "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+      "vek_kod": 66001004,
+      "vek_nazev": "1–4 roky",
+      "pohlavi": "Z",
+      "EWS": 0,
+      "pocet_pripadu": 18
+    }
+  ],
+  "memory_usage_bytes": 129798469,
+  "duplicate_row_count": 0,
+  "missing_value_counts": {
+    "rok": 0,
+    "mesic": 0,
+    "kraj_kod": 0,
+    "kraj_nazev": 0,
+    "diagnoza": 0,
+    "diagnoza_nazev": 0,
+    "vek_kod": 0,
+    "vek_nazev": 0,
+    "pohlavi": 0,
+    "EWS": 0,
+    "pocet_pripadu": 0
+  },
+  "missing_value_percentages": {
+    "rok": 0.0,
+    "mesic": 0.0,
+    "kraj_kod": 0.0,
+    "kraj_nazev": 0.0,
+    "diagnoza": 0.0,
+    "diagnoza_nazev": 0.0,
+    "vek_kod": 0.0,
+    "vek_nazev": 0.0,
+    "pohlavi": 0.0,
+    "EWS": 0.0,
+    "pocet_pripadu": 0.0
+  },
+  "categorical_columns": {
+    "rok": {
+      "unique_count": 8,
+      "top_20_values": [
+        {
+          "value": "2025",
+          "count": 40781
+        },
+        {
+          "value": "2024",
+          "count": 40586
+        },
+        {
+          "value": "2019",
+          "count": 37726
+        },
+        {
+          "value": "2018",
+          "count": 36498
+        },
+        {
+          "value": "2023",
+          "count": 34241
+        },
+        {
+          "value": "2022",
+          "count": 30377
+        },
+        {
+          "value": "2020",
+          "count": 27532
+        },
+        {
+          "value": "2021",
+          "count": 25117
+        }
+      ],
+      "example_values": [
+        "2022",
+        "2023",
+        "2021",
+        "2024",
+        "2018",
+        "2025",
+        "2019",
+        "2020"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "mesic": {
+      "unique_count": 12,
+      "top_20_values": [
+        {
+          "value": "8",
+          "count": 24994
+        },
+        {
+          "value": "7",
+          "count": 24747
+        },
+        {
+          "value": "10",
+          "count": 24145
+        },
+        {
+          "value": "6",
+          "count": 24010
+        },
+        {
+          "value": "9",
+          "count": 23959
+        },
+        {
+          "value": "11",
+          "count": 23115
+        },
+        {
+          "value": "1",
+          "count": 22149
+        },
+        {
+          "value": "5",
+          "count": 21908
+        },
+        {
+          "value": "12",
+          "count": 21803
+        },
+        {
+          "value": "4",
+          "count": 20819
+        },
+        {
+          "value": "3",
+          "count": 20649
+        },
+        {
+          "value": "2",
+          "count": 20560
+        }
+      ],
+      "example_values": [
+        "6",
+        "7",
+        "8",
+        "12",
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "5",
+        "9",
+        "4"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "kraj_kod": {
+      "unique_count": 15,
+      "top_20_values": [
+        {
+          "value": "CZ064",
+          "count": 24214
+        },
+        {
+          "value": "CZ020",
+          "count": 23221
+        },
+        {
+          "value": "CZ031",
+          "count": 22611
+        },
+        {
+          "value": "CZ010",
+          "count": 21840
+        },
+        {
+          "value": "CZ080",
+          "count": 21755
+        },
+        {
+          "value": "CZ042",
+          "count": 19802
+        },
+        {
+          "value": "CZ072",
+          "count": 19282
+        },
+        {
+          "value": "CZ071",
+          "count": 19271
+        },
+        {
+          "value": "CZ063",
+          "count": 18533
+        },
+        {
+          "value": "CZ052",
+          "count": 18517
+        },
+        {
+          "value": "CZ032",
+          "count": 18318
+        },
+        {
+          "value": "CZ053",
+          "count": 18233
+        },
+        {
+          "value": "CZ051",
+          "count": 16041
+        },
+        {
+          "value": "CZ041",
+          "count": 10858
+        },
+        {
+          "value": "CZ999",
+          "count": 362
+        }
+      ],
+      "example_values": [
+        "CZ071",
+        "CZ032",
+        "CZ041",
+        "CZ010",
+        "CZ031",
+        "CZ052",
+        "CZ053",
+        "CZ080",
+        "CZ051",
+        "CZ020",
+        "CZ063",
+        "CZ999",
+        "CZ064",
+        "CZ072",
+        "CZ042"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "kraj_nazev": {
+      "unique_count": 15,
+      "top_20_values": [
+        {
+          "value": "Jihomoravský kraj",
+          "count": 24214
+        },
+        {
+          "value": "Středočeský kraj",
+          "count": 23221
+        },
+        {
+          "value": "Jihočeský kraj",
+          "count": 22611
+        },
+        {
+          "value": "Hl. m. Praha",
+          "count": 21840
+        },
+        {
+          "value": "Moravskoslezský kraj",
+          "count": 21755
+        },
+        {
+          "value": "Ústecký kraj",
+          "count": 19802
+        },
+        {
+          "value": "Zlínský kraj",
+          "count": 19282
+        },
+        {
+          "value": "Olomoucký kraj",
+          "count": 19271
+        },
+        {
+          "value": "Kraj Vysočina",
+          "count": 18533
+        },
+        {
+          "value": "Královéhradecký kraj",
+          "count": 18517
+        },
+        {
+          "value": "Plzeňský kraj",
+          "count": 18318
+        },
+        {
+          "value": "Pardubický kraj",
+          "count": 18233
+        },
+        {
+          "value": "Liberecký kraj",
+          "count": 16041
+        },
+        {
+          "value": "Karlovarský kraj",
+          "count": 10858
+        },
+        {
+          "value": "neuvedeno",
+          "count": 362
+        }
+      ],
+      "example_values": [
+        "Olomoucký kraj",
+        "Plzeňský kraj",
+        "Karlovarský kraj",
+        "Hl. m. Praha",
+        "Jihočeský kraj",
+        "Královéhradecký kraj",
+        "Pardubický kraj",
+        "Moravskoslezský kraj",
+        "Liberecký kraj",
+        "Středočeský kraj",
+        "Kraj Vysočina",
+        "neuvedeno",
+        "Jihomoravský kraj",
+        "Zlínský kraj",
+        "Ústecký kraj"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "Olomoucký kraj",
+        "Plzeňský kraj",
+        "Karlovarský kraj",
+        "Jihočeský kraj",
+        "Královéhradecký kraj",
+        "Pardubický kraj",
+        "Moravskoslezský kraj",
+        "Liberecký kraj",
+        "Středočeský kraj",
+        "Kraj Vysočina"
+      ],
+      "possible_abbreviation_examples": []
+    },
+    "diagnoza": {
+      "unique_count": 114,
+      "top_20_values": [
+        {
+          "value": "A04",
+          "count": 39806
+        },
+        {
+          "value": "A02",
+          "count": 26812
+        },
+        {
+          "value": "B86",
+          "count": 22321
+        },
+        {
+          "value": "B02",
+          "count": 20183
+        },
+        {
+          "value": "A08",
+          "count": 17910
+        },
+        {
+          "value": "A69",
+          "count": 17772
+        },
+        {
+          "value": "B01",
+          "count": 13613
+        },
+        {
+          "value": "A46",
+          "count": 10928
+        },
+        {
+          "value": "A37",
+          "count": 10164
+        },
+        {
+          "value": "A56",
+          "count": 8261
+        },
+        {
+          "value": "B27",
+          "count": 7461
+        },
+        {
+          "value": "B18",
+          "count": 7178
+        },
+        {
+          "value": "B08",
+          "count": 6258
+        },
+        {
+          "value": "A41",
+          "count": 5836
+        },
+        {
+          "value": "A38",
+          "count": 4845
+        },
+        {
+          "value": "A84",
+          "count": 4648
+        },
+        {
+          "value": "W54",
+          "count": 4521
+        },
+        {
+          "value": "B80",
+          "count": 4447
+        },
+        {
+          "value": "A09",
+          "count": 3787
+        },
+        {
+          "value": "B17",
+          "count": 3781
+        }
+      ],
+      "example_values": [
+        "A03",
+        "A04",
+        "A08",
+        "A28",
+        "A32",
+        "A38",
+        "A40",
+        "A46",
+        "A48",
+        "A56",
+        "A69",
+        "A84",
+        "B00",
+        "B01",
+        "B02",
+        "B08",
+        "B18",
+        "B26",
+        "B27",
+        "B35"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "diagnoza_nazev": {
+      "unique_count": 114,
+      "top_20_values": [
+        {
+          "value": "Jiné bakteriální střevní infekce",
+          "count": 39806
+        },
+        {
+          "value": "Jiné infekce způsobené salmonelami",
+          "count": 26812
+        },
+        {
+          "value": "Svrab [scabies]",
+          "count": 22321
+        },
+        {
+          "value": "Pásový opar [herpes zoster]",
+          "count": 20183
+        },
+        {
+          "value": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "count": 17910
+        },
+        {
+          "value": "Jiné spirochetové infekce",
+          "count": 17772
+        },
+        {
+          "value": "Plané neštovice [varicella]",
+          "count": 13613
+        },
+        {
+          "value": "Růže – erysipel",
+          "count": 10928
+        },
+        {
+          "value": "Dávivý kašel [pertussis]",
+          "count": 10164
+        },
+        {
+          "value": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "count": 8261
+        },
+        {
+          "value": "Infekční mononukleóza",
+          "count": 7461
+        },
+        {
+          "value": "Chronická virová hepatitida",
+          "count": 7178
+        },
+        {
+          "value": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "count": 6258
+        },
+        {
+          "value": "Jiná sepse",
+          "count": 5836
+        },
+        {
+          "value": "Spála [scarlatina]",
+          "count": 4845
+        },
+        {
+          "value": "Virová encefalitida přenášená klíšťaty",
+          "count": 4648
+        },
+        {
+          "value": "Kousnutí nebo úder psem",
+          "count": 4521
+        },
+        {
+          "value": "Enterobióza [enterobiasis]",
+          "count": 4447
+        },
+        {
+          "value": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "count": 3787
+        },
+        {
+          "value": "Jiná akutní virová hepatitida",
+          "count": 3781
+        }
+      ],
+      "example_values": [
+        "Shigelóza",
+        "Jiné bakteriální střevní infekce",
+        "Střevní infekce viry a jinými určenými mikroorganismy",
+        "Další bakteriální zoonózy nezařazené jinde",
+        "Listerióza [listeriosis]",
+        "Spála [scarlatina]",
+        "Streptokoková sepse",
+        "Růže – erysipel",
+        "Jiné bakteriální nemoci nezařazené jinde",
+        "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+        "Jiné spirochetové infekce",
+        "Virová encefalitida přenášená klíšťaty",
+        "Infekce virem Herpes simplex",
+        "Plané neštovice [varicella]",
+        "Pásový opar [herpes zoster]",
+        "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+        "Chronická virová hepatitida",
+        "Příušnice [parotitis epidemica]",
+        "Infekční mononukleóza",
+        "Dermatofytóza"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": true,
+      "values_with_diacritics_examples": [
+        "Shigelóza",
+        "Jiné bakteriální střevní infekce",
+        "Střevní infekce viry a jinými určenými mikroorganismy",
+        "Další bakteriální zoonózy nezařazené jinde",
+        "Listerióza [listeriosis]",
+        "Spála [scarlatina]",
+        "Streptokoková sepse",
+        "Růže – erysipel",
+        "Jiné bakteriální nemoci nezařazené jinde",
+        "Jiná chlamydiová onemocnění přenášená pohlavním stykem"
+      ],
+      "possible_abbreviation_examples": [
+        "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+        "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+        "Jiná gastroenteritida a kolitida infekčního a NS původu",
+        "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+        "Malárie NS",
+        "Pneumonie‚ původce NS"
+      ]
+    },
+    "vek_kod": {
+      "unique_count": 17,
+      "top_20_values": [
+        {
+          "value": "66005009",
+          "count": 22686
+        },
+        {
+          "value": "66001004",
+          "count": 21380
+        },
+        {
+          "value": "66075999",
+          "count": 20025
+        },
+        {
+          "value": "66010014",
+          "count": 18632
+        },
+        {
+          "value": "66015019",
+          "count": 17157
+        },
+        {
+          "value": "66070074",
+          "count": 15781
+        },
+        {
+          "value": "66065069",
+          "count": 15252
+        },
+        {
+          "value": "66045049",
+          "count": 15163
+        },
+        {
+          "value": "66040044",
+          "count": 15028
+        },
+        {
+          "value": "66030034",
+          "count": 14494
+        },
+        {
+          "value": "66035039",
+          "count": 14386
+        },
+        {
+          "value": "66050054",
+          "count": 14299
+        },
+        {
+          "value": "66060064",
+          "count": 14255
+        },
+        {
+          "value": "66025029",
+          "count": 14251
+        },
+        {
+          "value": "66055059",
+          "count": 14097
+        },
+        {
+          "value": "66020024",
+          "count": 14018
+        },
+        {
+          "value": "66000000",
+          "count": 11954
+        }
+      ],
+      "example_values": [
+        "66015019",
+        "66000000",
+        "66001004",
+        "66005009",
+        "66010014",
+        "66020024",
+        "66025029",
+        "66030034",
+        "66035039",
+        "66040044",
+        "66045049",
+        "66050054",
+        "66055059",
+        "66060064",
+        "66065069",
+        "66070074",
+        "66075999"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "vek_nazev": {
+      "unique_count": 17,
+      "top_20_values": [
+        {
+          "value": "5–9 let",
+          "count": 22686
+        },
+        {
+          "value": "1–4 roky",
+          "count": 21380
+        },
+        {
+          "value": "75+ let",
+          "count": 20025
+        },
+        {
+          "value": "10–14 let",
+          "count": 18632
+        },
+        {
+          "value": "15–19 let",
+          "count": 17157
+        },
+        {
+          "value": "70–74 let",
+          "count": 15781
+        },
+        {
+          "value": "65–69 let",
+          "count": 15252
+        },
+        {
+          "value": "45–49 let",
+          "count": 15163
+        },
+        {
+          "value": "40–44 let",
+          "count": 15028
+        },
+        {
+          "value": "30–34 let",
+          "count": 14494
+        },
+        {
+          "value": "35–39 let",
+          "count": 14386
+        },
+        {
+          "value": "50–54 let",
+          "count": 14299
+        },
+        {
+          "value": "60–64 let",
+          "count": 14255
+        },
+        {
+          "value": "25–29 let",
+          "count": 14251
+        },
+        {
+          "value": "55–59 let",
+          "count": 14097
+        },
+        {
+          "value": "20–24 let",
+          "count": 14018
+        },
+        {
+          "value": "0 let",
+          "count": 11954
+        }
+      ],
+      "example_values": [
+        "15–19 let",
+        "0 let",
+        "1–4 roky",
+        "5–9 let",
+        "10–14 let",
+        "20–24 let",
+        "25–29 let",
+        "30–34 let",
+        "35–39 let",
+        "40–44 let",
+        "45–49 let",
+        "50–54 let",
+        "55–59 let",
+        "60–64 let",
+        "65–69 let",
+        "70–74 let",
+        "75+ let"
+      ],
+      "looks_like_code": false,
+      "looks_like_label_or_name": true,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "pohlavi": {
+      "unique_count": 2,
+      "top_20_values": [
+        {
+          "value": "M",
+          "count": 138137
+        },
+        {
+          "value": "Z",
+          "count": 134721
+        }
+      ],
+      "example_values": [
+        "M",
+        "Z"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "EWS": {
+      "unique_count": 74,
+      "top_20_values": [
+        {
+          "value": "0",
+          "count": 265152
+        },
+        {
+          "value": "1",
+          "count": 3401
+        },
+        {
+          "value": "2",
+          "count": 1531
+        },
+        {
+          "value": "3",
+          "count": 909
+        },
+        {
+          "value": "4",
+          "count": 547
+        },
+        {
+          "value": "5",
+          "count": 369
+        },
+        {
+          "value": "6",
+          "count": 244
+        },
+        {
+          "value": "7",
+          "count": 154
+        },
+        {
+          "value": "8",
+          "count": 126
+        },
+        {
+          "value": "9",
+          "count": 95
+        },
+        {
+          "value": "10",
+          "count": 51
+        },
+        {
+          "value": "11",
+          "count": 41
+        },
+        {
+          "value": "13",
+          "count": 32
+        },
+        {
+          "value": "12",
+          "count": 30
+        },
+        {
+          "value": "14",
+          "count": 20
+        },
+        {
+          "value": "17",
+          "count": 13
+        },
+        {
+          "value": "16",
+          "count": 11
+        },
+        {
+          "value": "15",
+          "count": 10
+        },
+        {
+          "value": "22",
+          "count": 9
+        },
+        {
+          "value": "19",
+          "count": 8
+        }
+      ],
+      "example_values": [
+        "0",
+        "1",
+        "2",
+        "4",
+        "3",
+        "5",
+        "6",
+        "14",
+        "8",
+        "15",
+        "7",
+        "97",
+        "133",
+        "113",
+        "100",
+        "18",
+        "11",
+        "13",
+        "9",
+        "10"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    },
+    "pocet_pripadu": {
+      "unique_count": 247,
+      "top_20_values": [
+        {
+          "value": "1",
+          "count": 137637
+        },
+        {
+          "value": "2",
+          "count": 51534
+        },
+        {
+          "value": "3",
+          "count": 25036
+        },
+        {
+          "value": "4",
+          "count": 15389
+        },
+        {
+          "value": "5",
+          "count": 9359
+        },
+        {
+          "value": "6",
+          "count": 6736
+        },
+        {
+          "value": "7",
+          "count": 4637
+        },
+        {
+          "value": "8",
+          "count": 3698
+        },
+        {
+          "value": "9",
+          "count": 2566
+        },
+        {
+          "value": "10",
+          "count": 2177
+        },
+        {
+          "value": "11",
+          "count": 1686
+        },
+        {
+          "value": "12",
+          "count": 1383
+        },
+        {
+          "value": "13",
+          "count": 1096
+        },
+        {
+          "value": "14",
+          "count": 918
+        },
+        {
+          "value": "15",
+          "count": 778
+        },
+        {
+          "value": "16",
+          "count": 658
+        },
+        {
+          "value": "17",
+          "count": 530
+        },
+        {
+          "value": "18",
+          "count": 509
+        },
+        {
+          "value": "19",
+          "count": 377
+        },
+        {
+          "value": "20",
+          "count": 362
+        }
+      ],
+      "example_values": [
+        "1",
+        "9",
+        "4",
+        "28",
+        "18",
+        "7",
+        "5",
+        "12",
+        "11",
+        "6",
+        "2",
+        "3",
+        "24",
+        "21",
+        "10",
+        "126",
+        "144",
+        "148",
+        "123",
+        "15"
+      ],
+      "looks_like_code": true,
+      "looks_like_label_or_name": false,
+      "contains_czech_diacritics": false,
+      "values_with_diacritics_examples": [],
+      "possible_abbreviation_examples": []
+    }
+  },
+  "unique_value_counts_for_categorical_columns": {
+    "rok": 8,
+    "mesic": 12,
+    "kraj_kod": 15,
+    "kraj_nazev": 15,
+    "diagnoza": 114,
+    "diagnoza_nazev": 114,
+    "vek_kod": 17,
+    "vek_nazev": 17,
+    "pohlavi": 2,
+    "EWS": 74,
+    "pocet_pripadu": 247
+  },
+  "numeric_summaries": {
+    "rok": {
+      "min": 2018.0,
+      "max": 2025.0,
+      "mean": 2021.6276634733085,
+      "median": 2022.0,
+      "sum": 551617281.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "mesic": {
+      "min": 1.0,
+      "max": 12.0,
+      "mean": 6.627091747355768,
+      "median": 7.0,
+      "sum": 1808255.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "vek_kod": {
+      "min": 66000000.0,
+      "max": 66075999.0,
+      "mean": 66034484.01971355,
+      "median": 66035039.0,
+      "sum": 18018037240651.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "EWS": {
+      "min": 0.0,
+      "max": 216.0,
+      "mean": 0.09510807819451876,
+      "median": 0.0,
+      "sum": 25951.0,
+      "zeros": 265152,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    },
+    "pocet_pripadu": {
+      "min": 1.0,
+      "max": 387.0,
+      "mean": 3.655549773142074,
+      "median": 1.0,
+      "sum": 997446.0,
+      "zeros": 0,
+      "negative_values": 0,
+      "missing_values": 0,
+      "parse_share": 1.0
+    }
+  },
+  "time_columns": {
+    "rok": {
+      "kind": "year",
+      "distinct_values": 8,
+      "example_values": [
+        "2022",
+        "2023",
+        "2021",
+        "2024",
+        "2018",
+        "2025",
+        "2019",
+        "2020"
+      ],
+      "min": 2018,
+      "max": 2025,
+      "missing_years_if_obvious": []
+    },
+    "mesic": {
+      "kind": "month",
+      "distinct_values": 12,
+      "example_values": [
+        "6",
+        "7",
+        "8",
+        "12",
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "5",
+        "9",
+        "4"
+      ],
+      "min": 1,
+      "max": 12,
+      "missing_months_if_obvious": []
+    }
+  },
+  "warnings": [],
+  "dataset_specific_analysis": {
+    "warnings": [],
+    "expected_columns": [
+      "rok",
+      "mesic",
+      "kraj_kod",
+      "kraj_nazev",
+      "diagnoza",
+      "diagnoza_nazev",
+      "vek_kod",
+      "vek_nazev",
+      "pohlavi",
+      "EWS",
+      "pocet_pripadu"
+    ],
+    "available_columns": [
+      "rok",
+      "mesic",
+      "kraj_kod",
+      "kraj_nazev",
+      "diagnoza",
+      "diagnoza_nazev",
+      "vek_kod",
+      "vek_nazev",
+      "pohlavi",
+      "EWS",
+      "pocet_pripadu"
+    ],
+    "missing_expected_columns": [],
+    "column_roles": {
+      "diagnosis_code_columns": [
+        "diagnoza"
+      ],
+      "diagnosis_label_columns": [
+        "diagnoza_nazev"
+      ],
+      "region_code_columns": [
+        "kraj_kod"
+      ],
+      "region_label_columns": [
+        "kraj_nazev"
+      ],
+      "age_group_code_columns": [
+        "vek_kod"
+      ],
+      "age_group_label_columns": [
+        "vek_nazev"
+      ],
+      "sex_columns": [
+        "pohlavi"
+      ],
+      "year_month_columns": [
+        "rok",
+        "mesic"
+      ],
+      "measure_columns": [
+        "EWS",
+        "pocet_pripadu"
+      ],
+      "possible_metadata_or_flag_columns": [],
+      "other_columns": []
+    },
+    "detected_key_columns": {
+      "year": "rok",
+      "month": "mesic",
+      "diagnosis_code": "diagnoza",
+      "diagnosis_label": "diagnoza_nazev",
+      "region_code": "kraj_kod",
+      "region_label": "kraj_nazev",
+      "age_group_code": "vek_kod",
+      "age_group_label": "vek_nazev",
+      "sex": "pohlavi",
+      "measure": "pocet_pripadu",
+      "ews": "EWS"
+    },
+    "grain_analysis": {
+      "tested_columns": [
+        "rok",
+        "mesic",
+        "kraj_kod",
+        "kraj_nazev",
+        "diagnoza",
+        "diagnoza_nazev",
+        "vek_kod",
+        "vek_nazev",
+        "pohlavi"
+      ],
+      "missing_candidate_columns": [],
+      "row_count": 272858,
+      "unique_combinations": 272858,
+      "duplicate_rows_on_candidate_grain": 0,
+      "appears_unique": true,
+      "duplicate_examples": []
+    },
+    "coverage_analysis": {
+      "number_of_years": 8,
+      "year_range": [
+        2018,
+        2025
+      ],
+      "number_of_diseases": 114,
+      "number_of_regions": 15,
+      "number_of_age_groups": 17,
+      "number_of_sex_categories": 2,
+      "total_reported_cases_by_year": [
+        {
+          "rok": 2024,
+          "pocet_pripadu": 169746
+        },
+        {
+          "rok": 2019,
+          "pocet_pripadu": 149453
+        },
+        {
+          "rok": 2025,
+          "pocet_pripadu": 139304
+        },
+        {
+          "rok": 2022,
+          "pocet_pripadu": 133946
+        },
+        {
+          "rok": 2018,
+          "pocet_pripadu": 127350
+        },
+        {
+          "rok": 2023,
+          "pocet_pripadu": 123029
+        },
+        {
+          "rok": 2020,
+          "pocet_pripadu": 83099
+        },
+        {
+          "rok": 2021,
+          "pocet_pripadu": 71519
+        }
+      ],
+      "total_reported_cases_by_region": [
+        {
+          "kraj_nazev": "Moravskoslezský kraj",
+          "pocet_pripadu": 115167
+        },
+        {
+          "kraj_nazev": "Jihomoravský kraj",
+          "pocet_pripadu": 114277
+        },
+        {
+          "kraj_nazev": "Středočeský kraj",
+          "pocet_pripadu": 100689
+        },
+        {
+          "kraj_nazev": "Jihočeský kraj",
+          "pocet_pripadu": 77116
+        },
+        {
+          "kraj_nazev": "Olomoucký kraj",
+          "pocet_pripadu": 70725
+        },
+        {
+          "kraj_nazev": "Ústecký kraj",
+          "pocet_pripadu": 69965
+        },
+        {
+          "kraj_nazev": "Hl. m. Praha",
+          "pocet_pripadu": 69730
+        },
+        {
+          "kraj_nazev": "Kraj Vysočina",
+          "pocet_pripadu": 65645
+        },
+        {
+          "kraj_nazev": "Zlínský kraj",
+          "pocet_pripadu": 65213
+        },
+        {
+          "kraj_nazev": "Královéhradecký kraj",
+          "pocet_pripadu": 63457
+        },
+        {
+          "kraj_nazev": "Pardubický kraj",
+          "pocet_pripadu": 57643
+        },
+        {
+          "kraj_nazev": "Plzeňský kraj",
+          "pocet_pripadu": 55519
+        },
+        {
+          "kraj_nazev": "Liberecký kraj",
+          "pocet_pripadu": 44404
+        },
+        {
+          "kraj_nazev": "Karlovarský kraj",
+          "pocet_pripadu": 27275
+        },
+        {
+          "kraj_nazev": "neuvedeno",
+          "pocet_pripadu": 621
+        }
+      ],
+      "total_reported_cases_by_diagnosis": [
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "pocet_pripadu": 275635
+        },
+        {
+          "diagnoza": "A04",
+          "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+          "pocet_pripadu": 196550
+        },
+        {
+          "diagnoza": "A02",
+          "diagnoza_nazev": "Jiné infekce způsobené salmonelami",
+          "pocet_pripadu": 73222
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "pocet_pripadu": 69601
+        },
+        {
+          "diagnoza": "B86",
+          "diagnoza_nazev": "Svrab [scabies]",
+          "pocet_pripadu": 47874
+        },
+        {
+          "diagnoza": "A37",
+          "diagnoza_nazev": "Dávivý kašel [pertussis]",
+          "pocet_pripadu": 45898
+        },
+        {
+          "diagnoza": "B02",
+          "diagnoza_nazev": "Pásový opar [herpes zoster]",
+          "pocet_pripadu": 39721
+        },
+        {
+          "diagnoza": "A69",
+          "diagnoza_nazev": "Jiné spirochetové infekce",
+          "pocet_pripadu": 37573
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "pocet_pripadu": 27234
+        },
+        {
+          "diagnoza": "A09",
+          "diagnoza_nazev": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "pocet_pripadu": 21048
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "pocet_pripadu": 20264
+        },
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "pocet_pripadu": 18842
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "pocet_pripadu": 15737
+        },
+        {
+          "diagnoza": "A56",
+          "diagnoza_nazev": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "pocet_pripadu": 15211
+        },
+        {
+          "diagnoza": "B27",
+          "diagnoza_nazev": "Infekční mononukleóza",
+          "pocet_pripadu": 12138
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "pocet_pripadu": 10466
+        },
+        {
+          "diagnoza": "B18",
+          "diagnoza_nazev": "Chronická virová hepatitida",
+          "pocet_pripadu": 9835
+        },
+        {
+          "diagnoza": "B80",
+          "diagnoza_nazev": "Enterobióza [enterobiasis]",
+          "pocet_pripadu": 8147
+        },
+        {
+          "diagnoza": "A84",
+          "diagnoza_nazev": "Virová encefalitida přenášená klíšťaty",
+          "pocet_pripadu": 5567
+        },
+        {
+          "diagnoza": "W54",
+          "diagnoza_nazev": "Kousnutí nebo úder psem",
+          "pocet_pripadu": 5533
+        },
+        {
+          "diagnoza": "B15",
+          "diagnoza_nazev": "Akutní hepatitida A",
+          "pocet_pripadu": 4867
+        },
+        {
+          "diagnoza": "B17",
+          "diagnoza_nazev": "Jiná akutní virová hepatitida",
+          "pocet_pripadu": 4486
+        },
+        {
+          "diagnoza": "A40",
+          "diagnoza_nazev": "Streptokoková sepse",
+          "pocet_pripadu": 4213
+        },
+        {
+          "diagnoza": "B35",
+          "diagnoza_nazev": "Dermatofytóza",
+          "pocet_pripadu": 3373
+        },
+        {
+          "diagnoza": "A48",
+          "diagnoza_nazev": "Jiné bakteriální nemoci nezařazené jinde",
+          "pocet_pripadu": 3002
+        },
+        {
+          "diagnoza": "W55",
+          "diagnoza_nazev": "Kousnutí nebo úder jinými savci",
+          "pocet_pripadu": 2040
+        },
+        {
+          "diagnoza": "A87",
+          "diagnoza_nazev": "Virová meningitida",
+          "pocet_pripadu": 1856
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "pocet_pripadu": 1740
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "pocet_pripadu": 1238
+        },
+        {
+          "diagnoza": "B00",
+          "diagnoza_nazev": "Infekce virem Herpes simplex",
+          "pocet_pripadu": 1119
+        },
+        {
+          "diagnoza": "J13",
+          "diagnoza_nazev": "Zánět plic‚ původce: Streptococcus pneumoniae",
+          "pocet_pripadu": 1091
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "pocet_pripadu": 877
+        },
+        {
+          "diagnoza": "A03",
+          "diagnoza_nazev": "Shigelóza",
+          "pocet_pripadu": 867
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "pocet_pripadu": 789
+        },
+        {
+          "diagnoza": "B58",
+          "diagnoza_nazev": "Toxoplazmóza [toxoplasmosis]",
+          "pocet_pripadu": 784
+        },
+        {
+          "diagnoza": "G00",
+          "diagnoza_nazev": "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+          "pocet_pripadu": 732
+        },
+        {
+          "diagnoza": "A07",
+          "diagnoza_nazev": "Jiné protozoární střevní nemoci",
+          "pocet_pripadu": 704
+        },
+        {
+          "diagnoza": "J15",
+          "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "pocet_pripadu": 596
+        },
+        {
+          "diagnoza": "B85",
+          "diagnoza_nazev": "Zavšivení – pedikulóza [pediculosis], ftiriáza [phthiriasis]",
+          "pocet_pripadu": 576
+        },
+        {
+          "diagnoza": "A97",
+          "diagnoza_nazev": "Dengue",
+          "pocet_pripadu": 489
+        },
+        {
+          "diagnoza": "A21",
+          "diagnoza_nazev": "Tularemie",
+          "pocet_pripadu": 483
+        },
+        {
+          "diagnoza": "A63",
+          "diagnoza_nazev": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+          "pocet_pripadu": 458
+        },
+        {
+          "diagnoza": "B25",
+          "diagnoza_nazev": "Cytomegalovirová nemoc",
+          "pocet_pripadu": 417
+        },
+        {
+          "diagnoza": "A59",
+          "diagnoza_nazev": "Trichomoniáza",
+          "pocet_pripadu": 410
+        },
+        {
+          "diagnoza": "A28",
+          "diagnoza_nazev": "Další bakteriální zoonózy nezařazené jinde",
+          "pocet_pripadu": 368
+        },
+        {
+          "diagnoza": "A32",
+          "diagnoza_nazev": "Listerióza [listeriosis]",
+          "pocet_pripadu": 322
+        },
+        {
+          "diagnoza": "B16",
+          "diagnoza_nazev": "Akutní hepatitida B",
+          "pocet_pripadu": 301
+        },
+        {
+          "diagnoza": "B96",
+          "diagnoza_nazev": "Jiná určená bakteriální agens jako příč. nemoci zař. do jiných kapitol",
+          "pocet_pripadu": 260
+        },
+        {
+          "diagnoza": "A39",
+          "diagnoza_nazev": "Meningokokové infekce",
+          "pocet_pripadu": 220
+        },
+        {
+          "diagnoza": "B50",
+          "diagnoza_nazev": "Malárie‚ původce: Plasmodium falciparum",
+          "pocet_pripadu": 184
+        }
+      ],
+      "total_reported_cases_by_age_group": [
+        {
+          "vek_nazev": "1–4 roky",
+          "pocet_pripadu": 240204
+        },
+        {
+          "vek_nazev": "5–9 let",
+          "pocet_pripadu": 202770
+        },
+        {
+          "vek_nazev": "75+ let",
+          "pocet_pripadu": 80282
+        },
+        {
+          "vek_nazev": "10–14 let",
+          "pocet_pripadu": 63482
+        },
+        {
+          "vek_nazev": "15–19 let",
+          "pocet_pripadu": 50788
+        },
+        {
+          "vek_nazev": "0 let",
+          "pocet_pripadu": 39754
+        },
+        {
+          "vek_nazev": "70–74 let",
+          "pocet_pripadu": 34655
+        },
+        {
+          "vek_nazev": "65–69 let",
+          "pocet_pripadu": 31387
+        },
+        {
+          "vek_nazev": "45–49 let",
+          "pocet_pripadu": 30832
+        },
+        {
+          "vek_nazev": "20–24 let",
+          "pocet_pripadu": 30519
+        },
+        {
+          "vek_nazev": "40–44 let",
+          "pocet_pripadu": 29108
+        },
+        {
+          "vek_nazev": "25–29 let",
+          "pocet_pripadu": 28549
+        },
+        {
+          "vek_nazev": "50–54 let",
+          "pocet_pripadu": 27788
+        },
+        {
+          "vek_nazev": "60–64 let",
+          "pocet_pripadu": 27566
+        },
+        {
+          "vek_nazev": "30–34 let",
+          "pocet_pripadu": 26960
+        },
+        {
+          "vek_nazev": "55–59 let",
+          "pocet_pripadu": 26610
+        },
+        {
+          "vek_nazev": "35–39 let",
+          "pocet_pripadu": 26192
+        }
+      ],
+      "total_reported_cases_by_sex": [
+        {
+          "pohlavi": "M",
+          "pocet_pripadu": 501751
+        },
+        {
+          "pohlavi": "Z",
+          "pocet_pripadu": 495695
+        }
+      ],
+      "total_EWS_by_year": [
+        {
+          "rok": 2025,
+          "EWS": 25951
+        },
+        {
+          "rok": 2018,
+          "EWS": 0
+        },
+        {
+          "rok": 2020,
+          "EWS": 0
+        },
+        {
+          "rok": 2019,
+          "EWS": 0
+        },
+        {
+          "rok": 2021,
+          "EWS": 0
+        },
+        {
+          "rok": 2022,
+          "EWS": 0
+        },
+        {
+          "rok": 2023,
+          "EWS": 0
+        },
+        {
+          "rok": 2024,
+          "EWS": 0
+        }
+      ],
+      "total_EWS_by_diagnosis": [
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "EWS": 8196
+        },
+        {
+          "diagnoza": "A69",
+          "diagnoza_nazev": "Jiné spirochetové infekce",
+          "EWS": 6744
+        },
+        {
+          "diagnoza": "B02",
+          "diagnoza_nazev": "Pásový opar [herpes zoster]",
+          "EWS": 5285
+        },
+        {
+          "diagnoza": "B86",
+          "diagnoza_nazev": "Svrab [scabies]",
+          "EWS": 3317
+        },
+        {
+          "diagnoza": "B27",
+          "diagnoza_nazev": "Infekční mononukleóza",
+          "EWS": 1294
+        },
+        {
+          "diagnoza": "A04",
+          "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+          "EWS": 339
+        },
+        {
+          "diagnoza": "A02",
+          "diagnoza_nazev": "Jiné infekce způsobené salmonelami",
+          "EWS": 206
+        },
+        {
+          "diagnoza": "A37",
+          "diagnoza_nazev": "Dávivý kašel [pertussis]",
+          "EWS": 123
+        },
+        {
+          "diagnoza": "B15",
+          "diagnoza_nazev": "Akutní hepatitida A",
+          "EWS": 116
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "EWS": 94
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "EWS": 40
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "EWS": 35
+        },
+        {
+          "diagnoza": "A09",
+          "diagnoza_nazev": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "EWS": 30
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "EWS": 23
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "EWS": 16
+        },
+        {
+          "diagnoza": "J13",
+          "diagnoza_nazev": "Zánět plic‚ původce: Streptococcus pneumoniae",
+          "EWS": 9
+        },
+        {
+          "diagnoza": "B80",
+          "diagnoza_nazev": "Enterobióza [enterobiasis]",
+          "EWS": 9
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "EWS": 8
+        },
+        {
+          "diagnoza": "A40",
+          "diagnoza_nazev": "Streptokoková sepse",
+          "EWS": 7
+        },
+        {
+          "diagnoza": "B37",
+          "diagnoza_nazev": "Kandidóza [candidosis]",
+          "EWS": 7
+        },
+        {
+          "diagnoza": "B96",
+          "diagnoza_nazev": "Jiná určená bakteriální agens jako příč. nemoci zař. do jiných kapitol",
+          "EWS": 6
+        },
+        {
+          "diagnoza": "B00",
+          "diagnoza_nazev": "Infekce virem Herpes simplex",
+          "EWS": 6
+        },
+        {
+          "diagnoza": "B95",
+          "diagnoza_nazev": "Streptokok a stafylokok jako příčina nemoci zařazené do jiných kapitol",
+          "EWS": 4
+        },
+        {
+          "diagnoza": "J15",
+          "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "EWS": 3
+        },
+        {
+          "diagnoza": "A63",
+          "diagnoza_nazev": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+          "EWS": 3
+        },
+        {
+          "diagnoza": "B85",
+          "diagnoza_nazev": "Zavšivení – pedikulóza [pediculosis], ftiriáza [phthiriasis]",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "B18",
+          "diagnoza_nazev": "Chronická virová hepatitida",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "B35",
+          "diagnoza_nazev": "Dermatofytóza",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "B25",
+          "diagnoza_nazev": "Cytomegalovirová nemoc",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "J18",
+          "diagnoza_nazev": "Pneumonie‚ původce NS",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "W55",
+          "diagnoza_nazev": "Kousnutí nebo úder jinými savci",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "G00",
+          "diagnoza_nazev": "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+          "EWS": 2
+        },
+        {
+          "diagnoza": "J16",
+          "diagnoza_nazev": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A84",
+          "diagnoza_nazev": "Virová encefalitida přenášená klíšťaty",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A48",
+          "diagnoza_nazev": "Jiné bakteriální nemoci nezařazené jinde",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A56",
+          "diagnoza_nazev": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "G61",
+          "diagnoza_nazev": "Zánětlivá polyneuropatie",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A26",
+          "diagnoza_nazev": "Červenka – erysipeloid",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "J17",
+          "diagnoza_nazev": "Zánět plic (pneumonie) při nemocech zařazených jinde",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "B36",
+          "diagnoza_nazev": "Jiné povrchové mykózy",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "B48",
+          "diagnoza_nazev": "Jiné mykózy nezařazené jinde",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "J04",
+          "diagnoza_nazev": "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "J14",
+          "diagnoza_nazev": "Zánět plic‚ původce: Haemophilus influenzae",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A07",
+          "diagnoza_nazev": "Jiné protozoární střevní nemoci",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A74",
+          "diagnoza_nazev": "Jiné nemoci způsobené chlamydiemi",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A03",
+          "diagnoza_nazev": "Shigelóza",
+          "EWS": 1
+        },
+        {
+          "diagnoza": "A36",
+          "diagnoza_nazev": "Záškrt [diphtheria]",
+          "EWS": 0
+        },
+        {
+          "diagnoza": "A35",
+          "diagnoza_nazev": "Tetanus jiný",
+          "EWS": 0
+        }
+      ]
+    },
+    "sparse_combination_analysis": {
+      "disease_x_year": {
+        "dimensions": [
+          "diagnoza",
+          "rok"
+        ],
+        "distinct_counts": {
+          "diagnoza": 114,
+          "rok": 8
+        },
+        "total_possible_combinations": 912,
+        "row_count": 272858,
+        "present_combinations": 716,
+        "absent_combinations": 196,
+        "sparsity_percentage": 21.491,
+        "zero_or_sparse_present_examples": [
+          {
+            "diagnoza": "A01",
+            "rok": 2020,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A01",
+            "rok": 2021,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J17",
+            "rok": 2021,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J17",
+            "rok": 2019,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A23",
+            "rok": 2023,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A23",
+            "rok": 2024,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A23",
+            "rok": 2025,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A23",
+            "rok": 2021,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A26",
+            "rok": 2019,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A26",
+            "rok": 2021,
+            "pocet_pripadu": 1
+          }
+        ]
+      },
+      "disease_x_region": {
+        "dimensions": [
+          "diagnoza",
+          "kraj_kod"
+        ],
+        "distinct_counts": {
+          "diagnoza": 114,
+          "kraj_kod": 15
+        },
+        "total_possible_combinations": 1710,
+        "row_count": 272858,
+        "present_combinations": 1131,
+        "absent_combinations": 579,
+        "sparsity_percentage": 33.86,
+        "zero_or_sparse_present_examples": [
+          {
+            "diagnoza": "A03",
+            "kraj_kod": "CZ999",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J17",
+            "kraj_kod": "CZ052",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A01",
+            "kraj_kod": "CZ080",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J18",
+            "kraj_kod": "CZ020",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J18",
+            "kraj_kod": "CZ010",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J04",
+            "kraj_kod": "CZ020",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "G61",
+            "kraj_kod": "CZ064",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A01",
+            "kraj_kod": "CZ072",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A88",
+            "kraj_kod": "CZ064",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A88",
+            "kraj_kod": "CZ072",
+            "pocet_pripadu": 1
+          }
+        ]
+      },
+      "disease_x_age_group": {
+        "dimensions": [
+          "diagnoza",
+          "vek_kod"
+        ],
+        "distinct_counts": {
+          "diagnoza": 114,
+          "vek_kod": 17
+        },
+        "total_possible_combinations": 1938,
+        "row_count": 272858,
+        "present_combinations": 1352,
+        "absent_combinations": 586,
+        "sparsity_percentage": 30.237,
+        "zero_or_sparse_present_examples": [
+          {
+            "diagnoza": "B75",
+            "vek_kod": 66015019,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B99",
+            "vek_kod": 66005009,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B65",
+            "vek_kod": 66070074,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B65",
+            "vek_kod": 66075999,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B67",
+            "vek_kod": 66015019,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "G51",
+            "vek_kod": 66025029,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "G51",
+            "vek_kod": 66020024,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A98",
+            "vek_kod": 66065069,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "G51",
+            "vek_kod": 66000000,
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B99",
+            "vek_kod": 66070074,
+            "pocet_pripadu": 1
+          }
+        ]
+      },
+      "disease_x_sex": {
+        "dimensions": [
+          "diagnoza",
+          "pohlavi"
+        ],
+        "distinct_counts": {
+          "diagnoza": 114,
+          "pohlavi": 2
+        },
+        "total_possible_combinations": 228,
+        "row_count": 272858,
+        "present_combinations": 218,
+        "absent_combinations": 10,
+        "sparsity_percentage": 4.386,
+        "zero_or_sparse_present_examples": [
+          {
+            "diagnoza": "A35",
+            "pohlavi": "M",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A78",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B19",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B33",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A94",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A95",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A88",
+            "pohlavi": "M",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A83",
+            "pohlavi": "M",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "B19",
+            "pohlavi": "M",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "J18",
+            "pohlavi": "Z",
+            "pocet_pripadu": 1
+          }
+        ]
+      },
+      "disease_x_year_x_region": {
+        "dimensions": [
+          "diagnoza",
+          "rok",
+          "kraj_kod"
+        ],
+        "distinct_counts": {
+          "diagnoza": 114,
+          "rok": 8,
+          "kraj_kod": 15
+        },
+        "total_possible_combinations": 13680,
+        "row_count": 272858,
+        "present_combinations": 5783,
+        "absent_combinations": 7897,
+        "sparsity_percentage": 57.727,
+        "zero_or_sparse_present_examples": [
+          {
+            "diagnoza": "A32",
+            "rok": 2021,
+            "kraj_kod": "CZ063",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2021,
+            "kraj_kod": "CZ064",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2022,
+            "kraj_kod": "CZ041",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2022,
+            "kraj_kod": "CZ042",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2022,
+            "kraj_kod": "CZ071",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2023,
+            "kraj_kod": "CZ042",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2019,
+            "kraj_kod": "CZ042",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A32",
+            "rok": 2019,
+            "kraj_kod": "CZ051",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A36",
+            "rok": 2023,
+            "kraj_kod": "CZ063",
+            "pocet_pripadu": 1
+          },
+          {
+            "diagnoza": "A28",
+            "rok": 2024,
+            "kraj_kod": "CZ051",
+            "pocet_pripadu": 1
+          }
+        ]
+      }
+    },
+    "interesting_disease_candidates": {
+      "high_total_counts": [
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "pocet_pripadu": 275635
+        },
+        {
+          "diagnoza": "A04",
+          "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+          "pocet_pripadu": 196550
+        },
+        {
+          "diagnoza": "A02",
+          "diagnoza_nazev": "Jiné infekce způsobené salmonelami",
+          "pocet_pripadu": 73222
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "pocet_pripadu": 69601
+        },
+        {
+          "diagnoza": "B86",
+          "diagnoza_nazev": "Svrab [scabies]",
+          "pocet_pripadu": 47874
+        },
+        {
+          "diagnoza": "A37",
+          "diagnoza_nazev": "Dávivý kašel [pertussis]",
+          "pocet_pripadu": 45898
+        },
+        {
+          "diagnoza": "B02",
+          "diagnoza_nazev": "Pásový opar [herpes zoster]",
+          "pocet_pripadu": 39721
+        },
+        {
+          "diagnoza": "A69",
+          "diagnoza_nazev": "Jiné spirochetové infekce",
+          "pocet_pripadu": 37573
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "pocet_pripadu": 27234
+        },
+        {
+          "diagnoza": "A09",
+          "diagnoza_nazev": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "pocet_pripadu": 21048
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "pocet_pripadu": 20264
+        },
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "pocet_pripadu": 18842
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "pocet_pripadu": 15737
+        },
+        {
+          "diagnoza": "A56",
+          "diagnoza_nazev": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "pocet_pripadu": 15211
+        },
+        {
+          "diagnoza": "B27",
+          "diagnoza_nazev": "Infekční mononukleóza",
+          "pocet_pripadu": 12138
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "pocet_pripadu": 10466
+        },
+        {
+          "diagnoza": "B18",
+          "diagnoza_nazev": "Chronická virová hepatitida",
+          "pocet_pripadu": 9835
+        },
+        {
+          "diagnoza": "B80",
+          "diagnoza_nazev": "Enterobióza [enterobiasis]",
+          "pocet_pripadu": 8147
+        },
+        {
+          "diagnoza": "A84",
+          "diagnoza_nazev": "Virová encefalitida přenášená klíšťaty",
+          "pocet_pripadu": 5567
+        },
+        {
+          "diagnoza": "W54",
+          "diagnoza_nazev": "Kousnutí nebo úder psem",
+          "pocet_pripadu": 5533
+        }
+      ],
+      "strong_year_to_year_variation": [
+        {
+          "diagnoza": "A37",
+          "diagnoza_nazev": "Dávivý kašel [pertussis]",
+          "years_observed": 8,
+          "total": 45898.0,
+          "mean_per_year": 5737.25,
+          "stddev_per_year": 12219.096486135953,
+          "coefficient_of_variation": 2.1297828203644524,
+          "min_year_total": 82.0,
+          "max_year_total": 37918.0
+        },
+        {
+          "diagnoza": "J17",
+          "diagnoza_nazev": "Zánět plic (pneumonie) při nemocech zařazených jinde",
+          "years_observed": 7,
+          "total": 87.0,
+          "mean_per_year": 12.428571428571429,
+          "stddev_per_year": 26.36478789628937,
+          "coefficient_of_variation": 2.121304773264662,
+          "min_year_total": 1.0,
+          "max_year_total": 77.0
+        },
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "years_observed": 8,
+          "total": 142.0,
+          "mean_per_year": 17.75,
+          "stddev_per_year": 36.420289674850196,
+          "coefficient_of_variation": 2.051847305625363,
+          "min_year_total": 1.0,
+          "max_year_total": 114.0
+        },
+        {
+          "diagnoza": "B15",
+          "diagnoza_nazev": "Akutní hepatitida A",
+          "years_observed": 8,
+          "total": 4867.0,
+          "mean_per_year": 608.375,
+          "stddev_per_year": 1013.3015268788457,
+          "coefficient_of_variation": 1.6655870587694197,
+          "min_year_total": 65.0,
+          "max_year_total": 3253.0
+        },
+        {
+          "diagnoza": "B30",
+          "diagnoza_nazev": "Virová konjunktivitida",
+          "years_observed": 5,
+          "total": 47.0,
+          "mean_per_year": 9.4,
+          "stddev_per_year": 14.374978260853128,
+          "coefficient_of_variation": 1.529253006473737,
+          "min_year_total": 1.0,
+          "max_year_total": 38.0
+        },
+        {
+          "diagnoza": "J15",
+          "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "years_observed": 8,
+          "total": 596.0,
+          "mean_per_year": 74.5,
+          "stddev_per_year": 111.70608756912043,
+          "coefficient_of_variation": 1.4994105713975896,
+          "min_year_total": 3.0,
+          "max_year_total": 324.0
+        },
+        {
+          "diagnoza": "J16",
+          "diagnoza_nazev": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+          "years_observed": 7,
+          "total": 135.0,
+          "mean_per_year": 19.285714285714285,
+          "stddev_per_year": 28.115650373383993,
+          "coefficient_of_variation": 1.4578485378791701,
+          "min_year_total": 1.0,
+          "max_year_total": 79.0
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "years_observed": 6,
+          "total": 877.0,
+          "mean_per_year": 146.16666666666666,
+          "stddev_per_year": 210.3975733911608,
+          "coefficient_of_variation": 1.4394360779326851,
+          "min_year_total": 1.0,
+          "max_year_total": 590.0
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "years_observed": 7,
+          "total": 116.0,
+          "mean_per_year": 16.571428571428573,
+          "stddev_per_year": 19.99183506804103,
+          "coefficient_of_variation": 1.2064038403128208,
+          "min_year_total": 2.0,
+          "max_year_total": 60.0
+        },
+        {
+          "diagnoza": "J14",
+          "diagnoza_nazev": "Zánět plic‚ původce: Haemophilus influenzae",
+          "years_observed": 7,
+          "total": 48.0,
+          "mean_per_year": 6.857142857142857,
+          "stddev_per_year": 7.845445838711989,
+          "coefficient_of_variation": 1.1441275181454986,
+          "min_year_total": 1.0,
+          "max_year_total": 23.0
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "years_observed": 8,
+          "total": 1740.0,
+          "mean_per_year": 217.5,
+          "stddev_per_year": 225.67066712357635,
+          "coefficient_of_variation": 1.0375662856256385,
+          "min_year_total": 38.0,
+          "max_year_total": 659.0
+        },
+        {
+          "diagnoza": "A36",
+          "diagnoza_nazev": "Záškrt [diphtheria]",
+          "years_observed": 4,
+          "total": 128.0,
+          "mean_per_year": 32.0,
+          "stddev_per_year": 33.12099032335839,
+          "coefficient_of_variation": 1.0350309476049497,
+          "min_year_total": 5.0,
+          "max_year_total": 87.0
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "years_observed": 8,
+          "total": 1238.0,
+          "mean_per_year": 154.75,
+          "stddev_per_year": 152.87637979753444,
+          "coefficient_of_variation": 0.9878925996609657,
+          "min_year_total": 3.0,
+          "max_year_total": 381.0
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "years_observed": 8,
+          "total": 27234.0,
+          "mean_per_year": 3404.25,
+          "stddev_per_year": 3287.558773238891,
+          "coefficient_of_variation": 0.9657218985793907,
+          "min_year_total": 878.0,
+          "max_year_total": 11462.0
+        },
+        {
+          "diagnoza": "B96",
+          "diagnoza_nazev": "Jiná určená bakteriální agens jako příč. nemoci zař. do jiných kapitol",
+          "years_observed": 8,
+          "total": 260.0,
+          "mean_per_year": 32.5,
+          "stddev_per_year": 30.97579700346708,
+          "coefficient_of_variation": 0.9531014462605255,
+          "min_year_total": 6.0,
+          "max_year_total": 97.0
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "years_observed": 8,
+          "total": 15737.0,
+          "mean_per_year": 1967.125,
+          "stddev_per_year": 1729.986664507851,
+          "coefficient_of_variation": 0.8794492797904815,
+          "min_year_total": 9.0,
+          "max_year_total": 6082.0
+        },
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "years_observed": 8,
+          "total": 18842.0,
+          "mean_per_year": 2355.25,
+          "stddev_per_year": 2027.7524349634004,
+          "coefficient_of_variation": 0.8609499776938331,
+          "min_year_total": 167.0,
+          "max_year_total": 6935.0
+        },
+        {
+          "diagnoza": "B36",
+          "diagnoza_nazev": "Jiné povrchové mykózy",
+          "years_observed": 6,
+          "total": 29.0,
+          "mean_per_year": 4.833333333333333,
+          "stddev_per_year": 4.058598553961973,
+          "coefficient_of_variation": 0.8397100456473048,
+          "min_year_total": 1.0,
+          "max_year_total": 13.0
+        },
+        {
+          "diagnoza": "B83",
+          "diagnoza_nazev": "Jiné helmintózy",
+          "years_observed": 8,
+          "total": 30.0,
+          "mean_per_year": 3.75,
+          "stddev_per_year": 2.9895651857753496,
+          "coefficient_of_variation": 0.7972173828734266,
+          "min_year_total": 1.0,
+          "max_year_total": 11.0
+        },
+        {
+          "diagnoza": "B68",
+          "diagnoza_nazev": "Tenióza [taeniasis] – napadení tasemnicí",
+          "years_observed": 7,
+          "total": 24.0,
+          "mean_per_year": 3.4285714285714284,
+          "stddev_per_year": 2.718042512920064,
+          "coefficient_of_variation": 0.7927623996016854,
+          "min_year_total": 1.0,
+          "max_year_total": 9.0
+        }
+      ],
+      "regionally_concentrated_counts": [
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "top_dimension_value": "Olomoucký kraj",
+          "top_dimension_count": 124,
+          "total": 142,
+          "share": 0.8732394366197183
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 82,
+          "total": 110,
+          "share": 0.7454545454545455
+        },
+        {
+          "diagnoza": "J16",
+          "diagnoza_nazev": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 72,
+          "total": 135,
+          "share": 0.5333333333333333
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "top_dimension_value": "Karlovarský kraj",
+          "top_dimension_count": 59,
+          "total": 116,
+          "share": 0.5086206896551724
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 620,
+          "total": 1238,
+          "share": 0.5008077544426495
+        },
+        {
+          "diagnoza": "B25",
+          "diagnoza_nazev": "Cytomegalovirová nemoc",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 185,
+          "total": 417,
+          "share": 0.44364508393285373
+        },
+        {
+          "diagnoza": "B35",
+          "diagnoza_nazev": "Dermatofytóza",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 1474,
+          "total": 3373,
+          "share": 0.4369997035280166
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 6349,
+          "total": 15737,
+          "share": 0.4034441126008769
+        },
+        {
+          "diagnoza": "A63",
+          "diagnoza_nazev": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 177,
+          "total": 458,
+          "share": 0.3864628820960699
+        },
+        {
+          "diagnoza": "B50",
+          "diagnoza_nazev": "Malárie‚ původce: Plasmodium falciparum",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 70,
+          "total": 184,
+          "share": 0.3804347826086957
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 312,
+          "total": 877,
+          "share": 0.3557582668187001
+        },
+        {
+          "diagnoza": "A59",
+          "diagnoza_nazev": "Trichomoniáza",
+          "top_dimension_value": "Liberecký kraj",
+          "top_dimension_count": 140,
+          "total": 410,
+          "share": 0.34146341463414637
+        },
+        {
+          "diagnoza": "J15",
+          "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 201,
+          "total": 596,
+          "share": 0.337248322147651
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "top_dimension_value": "Plzeňský kraj",
+          "top_dimension_count": 573,
+          "total": 1740,
+          "share": 0.3293103448275862
+        },
+        {
+          "diagnoza": "B15",
+          "diagnoza_nazev": "Akutní hepatitida A",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 1512,
+          "total": 4867,
+          "share": 0.3106636531744401
+        },
+        {
+          "diagnoza": "W54",
+          "diagnoza_nazev": "Kousnutí nebo úder psem",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 1709,
+          "total": 5533,
+          "share": 0.3088740285559371
+        },
+        {
+          "diagnoza": "B16",
+          "diagnoza_nazev": "Akutní hepatitida B",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 89,
+          "total": 301,
+          "share": 0.2956810631229236
+        },
+        {
+          "diagnoza": "A74",
+          "diagnoza_nazev": "Jiné nemoci způsobené chlamydiemi",
+          "top_dimension_value": "Pardubický kraj",
+          "top_dimension_count": 40,
+          "total": 148,
+          "share": 0.2702702702702703
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "top_dimension_value": "Středočeský kraj",
+          "top_dimension_count": 211,
+          "total": 789,
+          "share": 0.2674271229404309
+        },
+        {
+          "diagnoza": "W55",
+          "diagnoza_nazev": "Kousnutí nebo úder jinými savci",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 534,
+          "total": 2040,
+          "share": 0.26176470588235295
+        }
+      ],
+      "age_group_concentrated_counts": [
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 11110,
+          "total": 18842,
+          "share": 0.5896401655875172
+        },
+        {
+          "diagnoza": "B80",
+          "diagnoza_nazev": "Enterobióza [enterobiasis]",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 3963,
+          "total": 8147,
+          "share": 0.486436725174911
+        },
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 127723,
+          "total": 275635,
+          "share": 0.4633772924338346
+        },
+        {
+          "diagnoza": "B77",
+          "diagnoza_nazev": "Askarióza [ascariasis]",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 47,
+          "total": 103,
+          "share": 0.4563106796116505
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 4745,
+          "total": 10466,
+          "share": 0.45337282629466846
+        },
+        {
+          "diagnoza": "A48",
+          "diagnoza_nazev": "Jiné bakteriální nemoci nezařazené jinde",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 1178,
+          "total": 3002,
+          "share": 0.3924050632911392
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "top_dimension_value": "10–14 let",
+          "top_dimension_count": 45,
+          "total": 116,
+          "share": 0.3879310344827586
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 26978,
+          "total": 69601,
+          "share": 0.3876093734285427
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 10270,
+          "total": 27234,
+          "share": 0.3771021517221121
+        },
+        {
+          "diagnoza": "B27",
+          "diagnoza_nazev": "Infekční mononukleóza",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 4540,
+          "total": 12138,
+          "share": 0.37403196572746744
+        },
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 52,
+          "total": 142,
+          "share": 0.36619718309859156
+        },
+        {
+          "diagnoza": "A40",
+          "diagnoza_nazev": "Streptokoková sepse",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 1427,
+          "total": 4213,
+          "share": 0.3387135058153335
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "0 let",
+          "top_dimension_count": 412,
+          "total": 1238,
+          "share": 0.33279483037156704
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 6330,
+          "total": 20264,
+          "share": 0.3123766285037505
+        },
+        {
+          "diagnoza": "J13",
+          "diagnoza_nazev": "Zánět plic‚ původce: Streptococcus pneumoniae",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 338,
+          "total": 1091,
+          "share": 0.30980751604032997
+        },
+        {
+          "diagnoza": "A32",
+          "diagnoza_nazev": "Listerióza [listeriosis]",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 94,
+          "total": 322,
+          "share": 0.2919254658385093
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 222,
+          "total": 789,
+          "share": 0.2813688212927757
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 483,
+          "total": 1740,
+          "share": 0.2775862068965517
+        },
+        {
+          "diagnoza": "A81",
+          "diagnoza_nazev": "Atypické virové infekce centrální nervové soustavy",
+          "top_dimension_value": "70–74 let",
+          "top_dimension_count": 45,
+          "total": 170,
+          "share": 0.2647058823529412
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "top_dimension_value": "35–39 let",
+          "top_dimension_count": 29,
+          "total": 110,
+          "share": 0.2636363636363636
+        }
+      ],
+      "clear_seasonality_by_month": [
+        {
+          "diagnoza": "B30",
+          "diagnoza_nazev": "Virová konjunktivitida",
+          "total": 47.0,
+          "top_month": 12,
+          "top_month_count": 38.0,
+          "top_month_share": 0.8085106382978723,
+          "seasonality_non_uniformity_score": 0.5749192994911764
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "total": 15737.0,
+          "top_month": 2,
+          "top_month_count": 5818.0,
+          "top_month_share": 0.36970197623435214,
+          "seasonality_non_uniformity_score": 0.3800386398621697
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "total": 116.0,
+          "top_month": 8,
+          "top_month_count": 62.0,
+          "top_month_share": 0.5344827586206896,
+          "seasonality_non_uniformity_score": 0.29296458725991614
+        },
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "total": 142.0,
+          "top_month": 1,
+          "top_month_count": 59.0,
+          "top_month_share": 0.4154929577464789,
+          "seasonality_non_uniformity_score": 0.2680311704080307
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "total": 789.0,
+          "top_month": 5,
+          "top_month_count": 226.0,
+          "top_month_share": 0.2864385297845374,
+          "seasonality_non_uniformity_score": 0.25787936966141156
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "total": 1238.0,
+          "top_month": 3,
+          "top_month_count": 336.0,
+          "top_month_share": 0.27140549273021003,
+          "seasonality_non_uniformity_score": 0.24432198484647327
+        },
+        {
+          "diagnoza": "A84",
+          "diagnoza_nazev": "Virová encefalitida přenášená klíšťaty",
+          "total": 5567.0,
+          "top_month": 7,
+          "top_month_count": 1351.0,
+          "top_month_share": 0.24268007903718342,
+          "seasonality_non_uniformity_score": 0.1966318125400286
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "total": 877.0,
+          "top_month": 3,
+          "top_month_count": 237.0,
+          "top_month_share": 0.2702394526795895,
+          "seasonality_non_uniformity_score": 0.1751033092648716
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "total": 110.0,
+          "top_month": 8,
+          "top_month_count": 31.0,
+          "top_month_share": 0.2818181818181818,
+          "seasonality_non_uniformity_score": 0.13818700989556
+        },
+        {
+          "diagnoza": "A69",
+          "diagnoza_nazev": "Jiné spirochetové infekce",
+          "total": 37573.0,
+          "top_month": 8,
+          "top_month_count": 7301.0,
+          "top_month_share": 0.1943150666702153,
+          "seasonality_non_uniformity_score": 0.10443718510445388
+        },
+        {
+          "diagnoza": "A86",
+          "diagnoza_nazev": "Neurčená virová encefalitida",
+          "total": 116.0,
+          "top_month": 8,
+          "top_month_count": 26.0,
+          "top_month_share": 0.22413793103448276,
+          "seasonality_non_uniformity_score": 0.08564089262064756
+        },
+        {
+          "diagnoza": "A01",
+          "diagnoza_nazev": "Břišní tyfus a paratyfus",
+          "total": 27.0,
+          "top_month": 12,
+          "top_month_count": 6.0,
+          "top_month_share": 0.2222222222222222,
+          "seasonality_non_uniformity_score": 0.0845761465321192
+        },
+        {
+          "diagnoza": "B88",
+          "diagnoza_nazev": "Napadení jinými ektoparazity",
+          "total": 62.0,
+          "top_month": 3,
+          "top_month_count": 9.0,
+          "top_month_share": 0.14516129032258066,
+          "seasonality_non_uniformity_score": 0.0803388900109111
+        },
+        {
+          "diagnoza": "A79",
+          "diagnoza_nazev": "Jiné rickettsiózy",
+          "total": 40.0,
+          "top_month": 8,
+          "top_month_count": 9.0,
+          "top_month_share": 0.225,
+          "seasonality_non_uniformity_score": 0.07912655816847192
+        },
+        {
+          "diagnoza": "B68",
+          "diagnoza_nazev": "Tenióza [taeniasis] – napadení tasemnicí",
+          "total": 24.0,
+          "top_month": 4,
+          "top_month_count": 5.0,
+          "top_month_share": 0.20833333333333334,
+          "seasonality_non_uniformity_score": 0.07590599575167356
+        },
+        {
+          "diagnoza": "B71",
+          "diagnoza_nazev": "Jiné infekce cestody – tasemnicemi",
+          "total": 11.0,
+          "top_month": 6,
+          "top_month_count": 3.0,
+          "top_month_share": 0.2727272727272727,
+          "seasonality_non_uniformity_score": 0.07567561270733603
+        },
+        {
+          "diagnoza": "B07",
+          "diagnoza_nazev": "Virové bradavice",
+          "total": 13.0,
+          "top_month": 2,
+          "top_month_count": 4.0,
+          "top_month_share": 0.3076923076923077,
+          "seasonality_non_uniformity_score": 0.07421240164527687
+        },
+        {
+          "diagnoza": "A87",
+          "diagnoza_nazev": "Virová meningitida",
+          "total": 1856.0,
+          "top_month": 8,
+          "top_month_count": 311.0,
+          "top_month_share": 0.16756465517241378,
+          "seasonality_non_uniformity_score": 0.0710278500308471
+        },
+        {
+          "diagnoza": "A98",
+          "diagnoza_nazev": "Jiná virová hemoragická horečka nezařazená jinde",
+          "total": 72.0,
+          "top_month": 9,
+          "top_month_count": 13.0,
+          "top_month_share": 0.18055555555555555,
+          "seasonality_non_uniformity_score": 0.06855415418906796
+        },
+        {
+          "diagnoza": "B51",
+          "diagnoza_nazev": "Malárie‚ původce: Plasmodium vivax",
+          "total": 23.0,
+          "top_month": 3,
+          "top_month_count": 4.0,
+          "top_month_share": 0.17391304347826086,
+          "seasonality_non_uniformity_score": 0.06327726128224909
+        }
+      ],
+      "enough_data_across_years_and_regions": [
+        {
+          "diagnoza": "A02",
+          "diagnoza_nazev": "Jiné infekce způsobené salmonelami",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A03",
+          "diagnoza_nazev": "Shigelóza",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A04",
+          "diagnoza_nazev": "Jiné bakteriální střevní infekce",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A07",
+          "diagnoza_nazev": "Jiné protozoární střevní nemoci",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A09",
+          "diagnoza_nazev": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A37",
+          "diagnoza_nazev": "Dávivý kašel [pertussis]",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A40",
+          "diagnoza_nazev": "Streptokoková sepse",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A56",
+          "diagnoza_nazev": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "A87",
+          "diagnoza_nazev": "Virová meningitida",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "years_observed": 8,
+          "regions_observed": 15
+        },
+        {
+          "diagnoza": "B02",
+          "diagnoza_nazev": "Pásový opar [herpes zoster]",
+          "years_observed": 8,
+          "regions_observed": 15
+        }
+      ],
+      "sparse_but_interesting_coverage": [
+        {
+          "diagnoza": "A83",
+          "diagnoza_nazev": "Virová encefalitida přenášená komáry",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "A94",
+          "diagnoza_nazev": "Neurčená virová horečka přenášená členovci",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "A95",
+          "diagnoza_nazev": "Žlutá zimnice",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "B19",
+          "diagnoza_nazev": "Neurčená virová hepatitida",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "B69",
+          "diagnoza_nazev": "Cysticerkóza",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "B70",
+          "diagnoza_nazev": "Difylobotrióza [diphyllobothriasis] a sparganóza [sparganosis]",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "B75",
+          "diagnoza_nazev": "Trichinóza [trichinellosis]",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "J04",
+          "diagnoza_nazev": "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+          "years_observed": 1,
+          "regions_observed": 1
+        },
+        {
+          "diagnoza": "B06",
+          "diagnoza_nazev": "Zarděnky [rubeola]",
+          "years_observed": 1,
+          "regions_observed": 2
+        },
+        {
+          "diagnoza": "J18",
+          "diagnoza_nazev": "Pneumonie‚ původce NS",
+          "years_observed": 1,
+          "regions_observed": 2
+        },
+        {
+          "diagnoza": "G51",
+          "diagnoza_nazev": "Poruchy lícního nervu [nervi facialis]",
+          "years_observed": 1,
+          "regions_observed": 9
+        },
+        {
+          "diagnoza": "A70",
+          "diagnoza_nazev": "Infekce původce: Chlamydia psittaci",
+          "years_observed": 2,
+          "regions_observed": 2
+        },
+        {
+          "diagnoza": "A77",
+          "diagnoza_nazev": "Purpurová horečka (rickettsióza přenášená klíštětem)",
+          "years_observed": 2,
+          "regions_observed": 2
+        },
+        {
+          "diagnoza": "A35",
+          "diagnoza_nazev": "Tetanus jiný",
+          "years_observed": 2,
+          "regions_observed": 3
+        },
+        {
+          "diagnoza": "A88",
+          "diagnoza_nazev": "Jiné virové infekce centrální nervové soustavy nezařazené jinde",
+          "years_observed": 2,
+          "regions_observed": 3
+        }
+      ],
+      "retrieval_or_matching_difficulty": {
+        "label_column": "diagnoza_nazev",
+        "code_column": "diagnoza",
+        "label_count": 114,
+        "long_czech_disease_names": [
+          {
+            "code": "B96",
+            "label": "Jiná určená bakteriální agens jako příč. nemoci zař. do jiných kapitol",
+            "length": 70
+          },
+          {
+            "code": "B95",
+            "label": "Streptokok a stafylokok jako příčina nemoci zařazené do jiných kapitol",
+            "length": 70
+          },
+          {
+            "code": "G00",
+            "label": "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+            "length": 67
+          },
+          {
+            "code": "B09",
+            "label": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+            "length": 66
+          },
+          {
+            "code": "J04",
+            "label": "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+            "length": 65
+          },
+          {
+            "code": "B08",
+            "label": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+            "length": 65
+          },
+          {
+            "code": "A63",
+            "label": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+            "length": 65
+          },
+          {
+            "code": "A88",
+            "label": "Jiné virové infekce centrální nervové soustavy nezařazené jinde",
+            "length": 63
+          },
+          {
+            "code": "J16",
+            "label": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+            "length": 63
+          },
+          {
+            "code": "B70",
+            "label": "Difylobotrióza [diphyllobothriasis] a sparganóza [sparganosis]",
+            "length": 62
+          },
+          {
+            "code": "B65",
+            "label": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+            "length": 60
+          },
+          {
+            "code": "B85",
+            "label": "Zavšivení – pedikulóza [pediculosis], ftiriáza [phthiriasis]",
+            "length": 60
+          },
+          {
+            "code": "J10",
+            "label": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+            "length": 59
+          },
+          {
+            "code": "A05",
+            "label": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+            "length": 56
+          },
+          {
+            "code": "A09",
+            "label": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+            "length": 55
+          },
+          {
+            "code": "A93",
+            "label": "Jiné virové horečky přenášené členovci nezařazené jinde",
+            "length": 55
+          },
+          {
+            "code": "A56",
+            "label": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+            "length": 54
+          },
+          {
+            "code": "A08",
+            "label": "Střevní infekce viry a jinými určenými mikroorganismy",
+            "length": 53
+          },
+          {
+            "code": "A77",
+            "label": "Purpurová horečka (rickettsióza přenášená klíštětem)",
+            "length": 52
+          },
+          {
+            "code": "J17",
+            "label": "Zánět plic (pneumonie) při nemocech zařazených jinde",
+            "length": 52
+          }
+        ],
+        "labels_with_diacritics_examples": [
+          "Aktinomykóza – actinomycosis",
+          "Akutní hepatitida A",
+          "Akutní hepatitida B",
+          "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+          "Amébóza",
+          "Askarióza [ascariasis]",
+          "Atypické virové infekce centrální nervové soustavy",
+          "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+          "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "Brucelóza – vlnivá horečka",
+          "Břišní tyfus a paratyfus",
+          "Chronická virová hepatitida",
+          "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "Cysticerkóza",
+          "Cytomegalovirová nemoc",
+          "Další bakteriální zoonózy nezařazené jinde",
+          "Dermatofytóza",
+          "Difylobotrióza [diphyllobothriasis] a sparganóza [sparganosis]",
+          "Dávivý kašel [pertussis]",
+          "Echinokokóza"
+        ],
+        "labels_with_abbreviations_examples": [
+          "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+          "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "Malárie NS",
+          "Pneumonie‚ původce NS",
+          "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ"
+        ],
+        "possible_variant_groups_by_prefix": [
+          {
+            "normalized_prefix": "jine virove infekce",
+            "labels": [
+              "Jiné virové infekce centrální nervové soustavy nezařazené jinde",
+              "Jiné virové infekce charakterizované postižením kůže a sliznic NJ"
+            ]
+          },
+          {
+            "normalized_prefix": "kousnuti nebo uder",
+            "labels": [
+              "Kousnutí nebo úder jinými savci",
+              "Kousnutí nebo úder psem"
+            ]
+          },
+          {
+            "normalized_prefix": "malarie puvodce plasmodium",
+            "labels": [
+              "Malárie‚ původce: Plasmodium falciparum",
+              "Malárie‚ původce: Plasmodium malariae",
+              "Malárie‚ původce: Plasmodium vivax"
+            ]
+          },
+          {
+            "normalized_prefix": "virova encefalitida prenasena",
+            "labels": [
+              "Virová encefalitida přenášená klíšťaty",
+              "Virová encefalitida přenášená komáry"
+            ]
+          },
+          {
+            "normalized_prefix": "zanet plic pneumonie",
+            "labels": [
+              "Zánět plic (pneumonie) při nemocech zařazených jinde",
+              "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ"
+            ]
+          },
+          {
+            "normalized_prefix": "zanet plic puvodce",
+            "labels": [
+              "Zánět plic‚ původce: Haemophilus influenzae",
+              "Zánět plic‚ původce: Streptococcus pneumoniae"
+            ]
+          }
+        ],
+        "similar_label_pairs": [
+          {
+            "left": "Akutní hepatitida A",
+            "right": "Akutní hepatitida B",
+            "similarity": 0.947
+          },
+          {
+            "left": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+            "right": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+            "similarity": 0.916
+          },
+          {
+            "left": "Malárie‚ původce: Plasmodium falciparum",
+            "right": "Malárie‚ původce: Plasmodium malariae",
+            "similarity": 0.868
+          },
+          {
+            "left": "Virová encefalitida přenášená klíšťaty",
+            "right": "Virová encefalitida přenášená komáry",
+            "similarity": 0.892
+          }
+        ],
+        "retrieval_risk_notes": [
+          "Long Czech names, diacritics, abbreviations, and near-duplicate labels can weaken exact lexical retrieval.",
+          "Diagnosis code ↔ label mapping and MKN-10 hierarchy should be evaluated as recall aids, not assumed to help."
+        ]
+      }
+    },
+    "seasonality_analysis": {
+      "method": "For each diagnosis, aggregate monthly case counts and compute normalized entropy; higher non-uniformity indicates stronger seasonality.",
+      "top_candidates": [
+        {
+          "diagnoza": "B30",
+          "diagnoza_nazev": "Virová konjunktivitida",
+          "total": 47.0,
+          "top_month": 12,
+          "top_month_count": 38.0,
+          "top_month_share": 0.8085106382978723,
+          "seasonality_non_uniformity_score": 0.5749192994911764
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "total": 15737.0,
+          "top_month": 2,
+          "top_month_count": 5818.0,
+          "top_month_share": 0.36970197623435214,
+          "seasonality_non_uniformity_score": 0.3800386398621697
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "total": 116.0,
+          "top_month": 8,
+          "top_month_count": 62.0,
+          "top_month_share": 0.5344827586206896,
+          "seasonality_non_uniformity_score": 0.29296458725991614
+        },
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "total": 142.0,
+          "top_month": 1,
+          "top_month_count": 59.0,
+          "top_month_share": 0.4154929577464789,
+          "seasonality_non_uniformity_score": 0.2680311704080307
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "total": 789.0,
+          "top_month": 5,
+          "top_month_count": 226.0,
+          "top_month_share": 0.2864385297845374,
+          "seasonality_non_uniformity_score": 0.25787936966141156
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "total": 1238.0,
+          "top_month": 3,
+          "top_month_count": 336.0,
+          "top_month_share": 0.27140549273021003,
+          "seasonality_non_uniformity_score": 0.24432198484647327
+        },
+        {
+          "diagnoza": "A84",
+          "diagnoza_nazev": "Virová encefalitida přenášená klíšťaty",
+          "total": 5567.0,
+          "top_month": 7,
+          "top_month_count": 1351.0,
+          "top_month_share": 0.24268007903718342,
+          "seasonality_non_uniformity_score": 0.1966318125400286
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "total": 877.0,
+          "top_month": 3,
+          "top_month_count": 237.0,
+          "top_month_share": 0.2702394526795895,
+          "seasonality_non_uniformity_score": 0.1751033092648716
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "total": 110.0,
+          "top_month": 8,
+          "top_month_count": 31.0,
+          "top_month_share": 0.2818181818181818,
+          "seasonality_non_uniformity_score": 0.13818700989556
+        },
+        {
+          "diagnoza": "A69",
+          "diagnoza_nazev": "Jiné spirochetové infekce",
+          "total": 37573.0,
+          "top_month": 8,
+          "top_month_count": 7301.0,
+          "top_month_share": 0.1943150666702153,
+          "seasonality_non_uniformity_score": 0.10443718510445388
+        },
+        {
+          "diagnoza": "A86",
+          "diagnoza_nazev": "Neurčená virová encefalitida",
+          "total": 116.0,
+          "top_month": 8,
+          "top_month_count": 26.0,
+          "top_month_share": 0.22413793103448276,
+          "seasonality_non_uniformity_score": 0.08564089262064756
+        },
+        {
+          "diagnoza": "A01",
+          "diagnoza_nazev": "Břišní tyfus a paratyfus",
+          "total": 27.0,
+          "top_month": 12,
+          "top_month_count": 6.0,
+          "top_month_share": 0.2222222222222222,
+          "seasonality_non_uniformity_score": 0.0845761465321192
+        },
+        {
+          "diagnoza": "B88",
+          "diagnoza_nazev": "Napadení jinými ektoparazity",
+          "total": 62.0,
+          "top_month": 3,
+          "top_month_count": 9.0,
+          "top_month_share": 0.14516129032258066,
+          "seasonality_non_uniformity_score": 0.0803388900109111
+        },
+        {
+          "diagnoza": "A79",
+          "diagnoza_nazev": "Jiné rickettsiózy",
+          "total": 40.0,
+          "top_month": 8,
+          "top_month_count": 9.0,
+          "top_month_share": 0.225,
+          "seasonality_non_uniformity_score": 0.07912655816847192
+        },
+        {
+          "diagnoza": "B68",
+          "diagnoza_nazev": "Tenióza [taeniasis] – napadení tasemnicí",
+          "total": 24.0,
+          "top_month": 4,
+          "top_month_count": 5.0,
+          "top_month_share": 0.20833333333333334,
+          "seasonality_non_uniformity_score": 0.07590599575167356
+        },
+        {
+          "diagnoza": "B71",
+          "diagnoza_nazev": "Jiné infekce cestody – tasemnicemi",
+          "total": 11.0,
+          "top_month": 6,
+          "top_month_count": 3.0,
+          "top_month_share": 0.2727272727272727,
+          "seasonality_non_uniformity_score": 0.07567561270733603
+        },
+        {
+          "diagnoza": "B07",
+          "diagnoza_nazev": "Virové bradavice",
+          "total": 13.0,
+          "top_month": 2,
+          "top_month_count": 4.0,
+          "top_month_share": 0.3076923076923077,
+          "seasonality_non_uniformity_score": 0.07421240164527687
+        },
+        {
+          "diagnoza": "A87",
+          "diagnoza_nazev": "Virová meningitida",
+          "total": 1856.0,
+          "top_month": 8,
+          "top_month_count": 311.0,
+          "top_month_share": 0.16756465517241378,
+          "seasonality_non_uniformity_score": 0.0710278500308471
+        },
+        {
+          "diagnoza": "A98",
+          "diagnoza_nazev": "Jiná virová hemoragická horečka nezařazená jinde",
+          "total": 72.0,
+          "top_month": 9,
+          "top_month_count": 13.0,
+          "top_month_share": 0.18055555555555555,
+          "seasonality_non_uniformity_score": 0.06855415418906796
+        },
+        {
+          "diagnoza": "B51",
+          "diagnoza_nazev": "Malárie‚ původce: Plasmodium vivax",
+          "total": 23.0,
+          "top_month": 3,
+          "top_month_count": 4.0,
+          "top_month_share": 0.17391304347826086,
+          "seasonality_non_uniformity_score": 0.06327726128224909
+        }
+      ]
+    },
+    "regional_contrast_analysis": {
+      "method": "For each diagnosis, compute the share of total reported cases in its top region.",
+      "top_candidates": [
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "top_dimension_value": "Olomoucký kraj",
+          "top_dimension_count": 124,
+          "total": 142,
+          "share": 0.8732394366197183
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 82,
+          "total": 110,
+          "share": 0.7454545454545455
+        },
+        {
+          "diagnoza": "J16",
+          "diagnoza_nazev": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 72,
+          "total": 135,
+          "share": 0.5333333333333333
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "top_dimension_value": "Karlovarský kraj",
+          "top_dimension_count": 59,
+          "total": 116,
+          "share": 0.5086206896551724
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 620,
+          "total": 1238,
+          "share": 0.5008077544426495
+        },
+        {
+          "diagnoza": "B25",
+          "diagnoza_nazev": "Cytomegalovirová nemoc",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 185,
+          "total": 417,
+          "share": 0.44364508393285373
+        },
+        {
+          "diagnoza": "B35",
+          "diagnoza_nazev": "Dermatofytóza",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 1474,
+          "total": 3373,
+          "share": 0.4369997035280166
+        },
+        {
+          "diagnoza": "J10",
+          "diagnoza_nazev": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "top_dimension_value": "Jihomoravský kraj",
+          "top_dimension_count": 6349,
+          "total": 15737,
+          "share": 0.4034441126008769
+        },
+        {
+          "diagnoza": "A63",
+          "diagnoza_nazev": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 177,
+          "total": 458,
+          "share": 0.3864628820960699
+        },
+        {
+          "diagnoza": "B50",
+          "diagnoza_nazev": "Malárie‚ původce: Plasmodium falciparum",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 70,
+          "total": 184,
+          "share": 0.3804347826086957
+        },
+        {
+          "diagnoza": "B05",
+          "diagnoza_nazev": "Spalničky",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 312,
+          "total": 877,
+          "share": 0.3557582668187001
+        },
+        {
+          "diagnoza": "A59",
+          "diagnoza_nazev": "Trichomoniáza",
+          "top_dimension_value": "Liberecký kraj",
+          "top_dimension_count": 140,
+          "total": 410,
+          "share": 0.34146341463414637
+        },
+        {
+          "diagnoza": "J15",
+          "diagnoza_nazev": "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "Jihočeský kraj",
+          "top_dimension_count": 201,
+          "total": 596,
+          "share": 0.337248322147651
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "top_dimension_value": "Plzeňský kraj",
+          "top_dimension_count": 573,
+          "total": 1740,
+          "share": 0.3293103448275862
+        },
+        {
+          "diagnoza": "B15",
+          "diagnoza_nazev": "Akutní hepatitida A",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 1512,
+          "total": 4867,
+          "share": 0.3106636531744401
+        },
+        {
+          "diagnoza": "W54",
+          "diagnoza_nazev": "Kousnutí nebo úder psem",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 1709,
+          "total": 5533,
+          "share": 0.3088740285559371
+        },
+        {
+          "diagnoza": "B16",
+          "diagnoza_nazev": "Akutní hepatitida B",
+          "top_dimension_value": "Hl. m. Praha",
+          "top_dimension_count": 89,
+          "total": 301,
+          "share": 0.2956810631229236
+        },
+        {
+          "diagnoza": "A74",
+          "diagnoza_nazev": "Jiné nemoci způsobené chlamydiemi",
+          "top_dimension_value": "Pardubický kraj",
+          "top_dimension_count": 40,
+          "total": 148,
+          "share": 0.2702702702702703
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "top_dimension_value": "Středočeský kraj",
+          "top_dimension_count": 211,
+          "total": 789,
+          "share": 0.2674271229404309
+        },
+        {
+          "diagnoza": "W55",
+          "diagnoza_nazev": "Kousnutí nebo úder jinými savci",
+          "top_dimension_value": "Zlínský kraj",
+          "top_dimension_count": 534,
+          "total": 2040,
+          "share": 0.26176470588235295
+        }
+      ]
+    },
+    "age_profile_analysis": {
+      "method": "For each diagnosis, compute the share of total reported cases in its top age-group category.",
+      "top_candidates": [
+        {
+          "diagnoza": "A38",
+          "diagnoza_nazev": "Spála [scarlatina]",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 11110,
+          "total": 18842,
+          "share": 0.5896401655875172
+        },
+        {
+          "diagnoza": "B80",
+          "diagnoza_nazev": "Enterobióza [enterobiasis]",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 3963,
+          "total": 8147,
+          "share": 0.486436725174911
+        },
+        {
+          "diagnoza": "B01",
+          "diagnoza_nazev": "Plané neštovice [varicella]",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 127723,
+          "total": 275635,
+          "share": 0.4633772924338346
+        },
+        {
+          "diagnoza": "B77",
+          "diagnoza_nazev": "Askarióza [ascariasis]",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 47,
+          "total": 103,
+          "share": 0.4563106796116505
+        },
+        {
+          "diagnoza": "A41",
+          "diagnoza_nazev": "Jiná sepse",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 4745,
+          "total": 10466,
+          "share": 0.45337282629466846
+        },
+        {
+          "diagnoza": "A48",
+          "diagnoza_nazev": "Jiné bakteriální nemoci nezařazené jinde",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 1178,
+          "total": 3002,
+          "share": 0.3924050632911392
+        },
+        {
+          "diagnoza": "B65",
+          "diagnoza_nazev": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "top_dimension_value": "10–14 let",
+          "top_dimension_count": 45,
+          "total": 116,
+          "share": 0.3879310344827586
+        },
+        {
+          "diagnoza": "A08",
+          "diagnoza_nazev": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 26978,
+          "total": 69601,
+          "share": 0.3876093734285427
+        },
+        {
+          "diagnoza": "B08",
+          "diagnoza_nazev": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "top_dimension_value": "1–4 roky",
+          "top_dimension_count": 10270,
+          "total": 27234,
+          "share": 0.3771021517221121
+        },
+        {
+          "diagnoza": "B27",
+          "diagnoza_nazev": "Infekční mononukleóza",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 4540,
+          "total": 12138,
+          "share": 0.37403196572746744
+        },
+        {
+          "diagnoza": "B09",
+          "diagnoza_nazev": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "top_dimension_value": "5–9 let",
+          "top_dimension_count": 52,
+          "total": 142,
+          "share": 0.36619718309859156
+        },
+        {
+          "diagnoza": "A40",
+          "diagnoza_nazev": "Streptokoková sepse",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 1427,
+          "total": 4213,
+          "share": 0.3387135058153335
+        },
+        {
+          "diagnoza": "J12",
+          "diagnoza_nazev": "Virový zánět plic (pneumonie) nezařazený jinde",
+          "top_dimension_value": "0 let",
+          "top_dimension_count": 412,
+          "total": 1238,
+          "share": 0.33279483037156704
+        },
+        {
+          "diagnoza": "A46",
+          "diagnoza_nazev": "Růže – erysipel",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 6330,
+          "total": 20264,
+          "share": 0.3123766285037505
+        },
+        {
+          "diagnoza": "J13",
+          "diagnoza_nazev": "Zánět plic‚ původce: Streptococcus pneumoniae",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 338,
+          "total": 1091,
+          "share": 0.30980751604032997
+        },
+        {
+          "diagnoza": "A32",
+          "diagnoza_nazev": "Listerióza [listeriosis]",
+          "top_dimension_value": "75+ let",
+          "top_dimension_count": 94,
+          "total": 322,
+          "share": 0.2919254658385093
+        },
+        {
+          "diagnoza": "A05",
+          "diagnoza_nazev": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 222,
+          "total": 789,
+          "share": 0.2813688212927757
+        },
+        {
+          "diagnoza": "B26",
+          "diagnoza_nazev": "Příušnice [parotitis epidemica]",
+          "top_dimension_value": "15–19 let",
+          "top_dimension_count": 483,
+          "total": 1740,
+          "share": 0.2775862068965517
+        },
+        {
+          "diagnoza": "A81",
+          "diagnoza_nazev": "Atypické virové infekce centrální nervové soustavy",
+          "top_dimension_value": "70–74 let",
+          "top_dimension_count": 45,
+          "total": 170,
+          "share": 0.2647058823529412
+        },
+        {
+          "diagnoza": "B04",
+          "diagnoza_nazev": "Opičí neštovice",
+          "top_dimension_value": "35–39 let",
+          "top_dimension_count": 29,
+          "total": 110,
+          "share": 0.2636363636363636
+        }
+      ]
+    },
+    "terminology_and_retrieval_difficulty_analysis": {
+      "label_column": "diagnoza_nazev",
+      "code_column": "diagnoza",
+      "label_count": 114,
+      "long_czech_disease_names": [
+        {
+          "code": "B96",
+          "label": "Jiná určená bakteriální agens jako příč. nemoci zař. do jiných kapitol",
+          "length": 70
+        },
+        {
+          "code": "B95",
+          "label": "Streptokok a stafylokok jako příčina nemoci zařazené do jiných kapitol",
+          "length": 70
+        },
+        {
+          "code": "G00",
+          "label": "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+          "length": 67
+        },
+        {
+          "code": "B09",
+          "label": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "length": 66
+        },
+        {
+          "code": "J04",
+          "label": "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+          "length": 65
+        },
+        {
+          "code": "B08",
+          "label": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "length": 65
+        },
+        {
+          "code": "A63",
+          "label": "Jiné, převážně pohlavním stykem přenášené nemoci nezařazené jinde",
+          "length": 65
+        },
+        {
+          "code": "A88",
+          "label": "Jiné virové infekce centrální nervové soustavy nezařazené jinde",
+          "length": 63
+        },
+        {
+          "code": "J16",
+          "label": "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ",
+          "length": 63
+        },
+        {
+          "code": "B70",
+          "label": "Difylobotrióza [diphyllobothriasis] a sparganóza [sparganosis]",
+          "length": 62
+        },
+        {
+          "code": "B65",
+          "label": "Schistozomóza [schistosomiasis] a bilharzióza [bilharziasis]",
+          "length": 60
+        },
+        {
+          "code": "B85",
+          "label": "Zavšivení – pedikulóza [pediculosis], ftiriáza [phthiriasis]",
+          "length": 60
+        },
+        {
+          "code": "J10",
+          "label": "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+          "length": 59
+        },
+        {
+          "code": "A05",
+          "label": "Jiné bakteriální intoxikace – otravy, přenesené potravou",
+          "length": 56
+        },
+        {
+          "code": "A09",
+          "label": "Jiná gastroenteritida a kolitida infekčního a NS původu",
+          "length": 55
+        },
+        {
+          "code": "A93",
+          "label": "Jiné virové horečky přenášené členovci nezařazené jinde",
+          "length": 55
+        },
+        {
+          "code": "A56",
+          "label": "Jiná chlamydiová onemocnění přenášená pohlavním stykem",
+          "length": 54
+        },
+        {
+          "code": "A08",
+          "label": "Střevní infekce viry a jinými určenými mikroorganismy",
+          "length": 53
+        },
+        {
+          "code": "A77",
+          "label": "Purpurová horečka (rickettsióza přenášená klíštětem)",
+          "length": 52
+        },
+        {
+          "code": "J17",
+          "label": "Zánět plic (pneumonie) při nemocech zařazených jinde",
+          "length": 52
+        }
+      ],
+      "labels_with_diacritics_examples": [
+        "Aktinomykóza – actinomycosis",
+        "Akutní hepatitida A",
+        "Akutní hepatitida B",
+        "Akutní zánět hrtanu a průdušnice [laryngitis et tracheitis acuta]",
+        "Amébóza",
+        "Askarióza [ascariasis]",
+        "Atypické virové infekce centrální nervové soustavy",
+        "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+        "Bakteriální zánět plic (pneumonie) nezařazený jinde",
+        "Brucelóza – vlnivá horečka",
+        "Břišní tyfus a paratyfus",
+        "Chronická virová hepatitida",
+        "Chřipka způsobená identifikovaným sezónním chřipkovým virem",
+        "Cysticerkóza",
+        "Cytomegalovirová nemoc",
+        "Další bakteriální zoonózy nezařazené jinde",
+        "Dermatofytóza",
+        "Difylobotrióza [diphyllobothriasis] a sparganóza [sparganosis]",
+        "Dávivý kašel [pertussis]",
+        "Echinokokóza"
+      ],
+      "labels_with_abbreviations_examples": [
+        "Bakteriální zánět mozkových a míšních plen (bakter. meningitida) NJ",
+        "Jiná gastroenteritida a kolitida infekčního a NS původu",
+        "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+        "Malárie NS",
+        "Pneumonie‚ původce NS",
+        "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ"
+      ],
+      "possible_variant_groups_by_prefix": [
+        {
+          "normalized_prefix": "jine virove infekce",
+          "labels": [
+            "Jiné virové infekce centrální nervové soustavy nezařazené jinde",
+            "Jiné virové infekce charakterizované postižením kůže a sliznic NJ"
+          ]
+        },
+        {
+          "normalized_prefix": "kousnuti nebo uder",
+          "labels": [
+            "Kousnutí nebo úder jinými savci",
+            "Kousnutí nebo úder psem"
+          ]
+        },
+        {
+          "normalized_prefix": "malarie puvodce plasmodium",
+          "labels": [
+            "Malárie‚ původce: Plasmodium falciparum",
+            "Malárie‚ původce: Plasmodium malariae",
+            "Malárie‚ původce: Plasmodium vivax"
+          ]
+        },
+        {
+          "normalized_prefix": "virova encefalitida prenasena",
+          "labels": [
+            "Virová encefalitida přenášená klíšťaty",
+            "Virová encefalitida přenášená komáry"
+          ]
+        },
+        {
+          "normalized_prefix": "zanet plic pneumonie",
+          "labels": [
+            "Zánět plic (pneumonie) při nemocech zařazených jinde",
+            "Zánět plic (pneumonie) způsobený jinými infekčními organismy NJ"
+          ]
+        },
+        {
+          "normalized_prefix": "zanet plic puvodce",
+          "labels": [
+            "Zánět plic‚ původce: Haemophilus influenzae",
+            "Zánět plic‚ původce: Streptococcus pneumoniae"
+          ]
+        }
+      ],
+      "similar_label_pairs": [
+        {
+          "left": "Akutní hepatitida A",
+          "right": "Akutní hepatitida B",
+          "similarity": 0.947
+        },
+        {
+          "left": "Jiné virové infekce charakterizované postižením kůže a sliznic NJ",
+          "right": "Neurčené virové infekce charakterizované postižením kůže a sliznic",
+          "similarity": 0.916
+        },
+        {
+          "left": "Malárie‚ původce: Plasmodium falciparum",
+          "right": "Malárie‚ původce: Plasmodium malariae",
+          "similarity": 0.868
+        },
+        {
+          "left": "Virová encefalitida přenášená klíšťaty",
+          "right": "Virová encefalitida přenášená komáry",
+          "similarity": 0.892
+        }
+      ],
+      "retrieval_risk_notes": [
+        "Long Czech names, diacritics, abbreviations, and near-duplicate labels can weaken exact lexical retrieval.",
+        "Diagnosis code ↔ label mapping and MKN-10 hierarchy should be evaluated as recall aids, not assumed to help."
+      ]
+    }
+  }
+}
