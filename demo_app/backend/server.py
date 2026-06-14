@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import base64
 import json
 import math
 import os
 import re
+import secrets
 import sys
 import unicodedata
 from dataclasses import dataclass
@@ -17,9 +19,9 @@ if PROJECT_PACKAGES.exists():
 
 import duckdb  # type: ignore  # noqa: E402
 import numpy as np  # noqa: E402
-from fastapi import FastAPI, HTTPException, Query  # noqa: E402
+from fastapi import FastAPI, HTTPException, Query, Request  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
-from fastapi.responses import FileResponse, StreamingResponse  # noqa: E402
+from fastapi.responses import FileResponse, Response, StreamingResponse  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from openai import OpenAI  # type: ignore  # noqa: E402
 from pydantic import BaseModel, Field  # noqa: E402
@@ -33,8 +35,6 @@ RETRIEVAL_DIR = ROOT / "artifacts" / "retrieval"
 KG_DIR = ROOT / "artifacts" / "kg"
 EVALUATION_PATH = ROOT / "outputs" / "kg_rag_evaluation_queries.json"
 FINAL_TABLE = "fact_infectious_disease_cases_enriched"
-EMBED_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
-CHAT_MODEL = os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")
 PAGE_SIZE_MAX = 500
 DEFAULT_PAGE_SIZE = 100
 SQL_FORBIDDEN_RE = re.compile(
@@ -66,6 +66,12 @@ def load_env_file(path: Path) -> None:
 
 
 load_env_file(ROOT / ".env")
+
+EMBED_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+CHAT_MODEL = os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")
+APP_USERNAME = os.getenv("APP_USERNAME", "").strip()
+APP_PASSWORD = os.getenv("APP_PASSWORD", "")
+APP_AUTH_REALM = os.getenv("APP_AUTH_REALM", "SEMANTiCS KG-RAG")
 
 
 FINAL_COLUMNS = [
@@ -506,6 +512,45 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def auth_enabled() -> bool:
+    return bool(APP_USERNAME and APP_PASSWORD)
+
+
+def auth_challenge() -> Response:
+    return Response(
+        "Authentication required.",
+        status_code=401,
+        headers={"WWW-Authenticate": f'Basic realm="{APP_AUTH_REALM}", charset="UTF-8"'},
+    )
+
+
+@app.middleware("http")
+async def require_basic_auth(request: Request, call_next):
+    if not auth_enabled() or request.url.path.startswith("/.well-known/acme-challenge/"):
+        return await call_next(request)
+
+    auth_header = request.headers.get("Authorization", "")
+    scheme, _, token = auth_header.partition(" ")
+    if scheme.lower() != "basic" or not token:
+        return auth_challenge()
+
+    try:
+        decoded = base64.b64decode(token, validate=True).decode("utf-8")
+    except (ValueError, UnicodeDecodeError):
+        return auth_challenge()
+
+    username, separator, password = decoded.partition(":")
+    if not separator:
+        return auth_challenge()
+
+    username_ok = secrets.compare_digest(username, APP_USERNAME)
+    password_ok = secrets.compare_digest(password, APP_PASSWORD)
+    if not (username_ok and password_ok):
+        return auth_challenge()
+
+    return await call_next(request)
 
 
 @app.on_event("startup")
